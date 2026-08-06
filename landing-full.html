@@ -4,12 +4,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FREZE FABRİKASI — Karbür Kesici Takımda Fabrika Fiyatı</title>
-<meta name="description" content="Karbür freze, matkap ve kesici takımları üreticisinden alın. Aracı yok, bayi marjı yok. Aynı gün kargo, mühendis desteği.">
+<meta name="description" content="Karbür freze ve matkabı üreticisinden alın: aynı üründen 10+ adette dip fiyat, kapıda ödeme, aynı gün kargo. Bir MONCARB kuruluşu.">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* sayfaya özel: fotoğraflı hero + banner vitrini */
+  .hero{
+    background:
+      linear-gradient(100deg, rgba(216,31,38,.93) 0%, rgba(216,31,38,.75) 28%, rgba(23,20,19,.55) 55%, rgba(23,20,19,.25) 100%),
+      url('images/hero-kesme.jpg') center 40%/cover no-repeat, var(--coal);
+    padding:3.6rem 1.4rem 3rem;
+  }
+  .bannerlar{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:.8rem;}
+  .banner{
+    border-radius:6px; overflow:hidden; color:#fff; padding:1.3rem 1.2rem; min-height:170px;
+    display:flex; flex-direction:column; justify-content:flex-end; gap:.3rem; position:relative;
+    text-decoration:none;
+  }
+  .banner .bk{position:absolute; inset:0; z-index:0;}
+  .banner > *:not(.bk){position:relative; z-index:1;}
+  .banner .tag{font-size:.7rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; opacity:.9;}
+  .banner .bas{font-size:1.25rem; font-weight:900; line-height:1.15; text-transform:uppercase;}
+  .banner .alt{font-size:.85rem; opacity:.92; max-width:38ch;}
+  .banner .git{margin-top:.5rem; align-self:flex-start; background:#fff; color:var(--red-dark);
+    font-weight:800; font-size:.8rem; padding:.4rem .9rem; border-radius:3px; text-transform:uppercase;}
+  .b1 .bk{background:linear-gradient(15deg, #7a0e12 0%, var(--red) 70%, #ff5c47 100%);}
+  .b2 .bk{background:linear-gradient(rgba(20,17,16,.78), rgba(20,17,16,.45)), url('images/fabrika-taslama.jpg') center/cover;}
+  .b3 .bk{background:linear-gradient(15deg, #17203a 0%, #2c3f74 100%);}
+  .banner img.urun{position:absolute; right:-12px; bottom:-8px; width:150px; transform:rotate(-18deg); z-index:0; filter:drop-shadow(0 6px 12px rgba(0,0,0,.4));}
+  .cat img{width:100%; height:74px; object-fit:contain; margin-bottom:.3rem;}
+  .prod img.foto{width:100%; height:96px; object-fit:contain;}
+  .video-yeri{
+    border-radius:6px; overflow:hidden; position:relative; min-height:210px; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(rgba(20,17,16,.55), rgba(20,17,16,.55)), url('images/fabrika-taslama.jpg') center/cover;
+    color:#fff; font-weight:800; font-size:1.05rem; text-align:center; padding:1rem;
+  }
+  .video-yeri .oynat{display:block; font-size:2.6rem; margin-bottom:.4rem;}
+</style>
 </head>
 <body>
 
-<div class="ribbon">🔥 1.500 $ üzeri KARGO BEDAVA · 16:00'a kadar sipariş = BUGÜN kargoda</div>
+<div class="ribbon">🔥 AÇILIŞA ÖZEL: Her yeni vergi numarasına 1 kez — 10'lu Tanışma Paketi DİP FİYAT + kargo bedava</div>
 
 <header class="site">
   <a class="logo" href="index.html">FREZE<span>FABRİKASI</span></a>
@@ -17,38 +51,121 @@
     <a href="katalog.html">Tüm Ürünler</a>
     <a href="katalog.html?kat=Düz Frezeler">Düz</a>
     <a href="katalog.html?kat=Küre Frezeler">Küre</a>
-    <a href="katalog.html?kat=Köşe Radüslü">Radüslü</a>
     <a href="katalog.html?kat=Sert Malzeme">Sert Malzeme</a>
     <a href="katalog.html?kat=Karbür Matkap">Matkap</a>
+    <a href="#taniisma">Tanışma Paketi</a>
   </nav>
 </header>
 
 <div class="hero">
   <div class="hero-in">
-    <p class="eyebrow">Satıcı değiliz — Üreticiyiz</p>
+    <p class="eyebrow">Satıcı değiliz — Üreticiyiz · 2018'den beri</p>
     <h1>Aracıya para ödemeyin.</h1>
-    <p class="lead">Bu frezeleri satan çok. Üreten biziz. Tezgâhtan çıkan takım, ithalatçı ve bayi marjı olmadan doğrudan kapınıza gelir — bugün sipariş, bugün kargo.</p>
-    <a class="cta" href="katalog.html">Fiyatları Gör</a><a class="cta ghost" href="#sert">Rakip Kıyası</a>
+    <p class="lead">Bu frezeleri satan çok. Üreten biziz. Tezgâhtan çıkan takım, bayi marjı olmadan kapınıza gelir — bugün sipariş, bugün kargo.</p>
+    <div class="kademe3" role="img" aria-label="Adet arttıkça fiyat düşer">
+      <div class="k1">TEK ADET</div><div class="k2">5+ ADET → İNDİRİM</div><div class="k3">10+ ADET → DİP FİYAT</div>
+    </div>
+    <br>
+    <a class="cta" href="katalog.html">Fiyatları Gör</a><a class="cta ghost" href="#taniisma">Tanışma Paketi</a>
     <div class="chips">
-      <div class="chip"><b>Fabrika</b> — 371 teknik resimlik ürün ağacı</div>
-      <div class="chip"><b>55-65 HRC</b> sert malzeme uzmanı</div>
-      <div class="chip"><b>Aynı gün</b> kargo, stoktan</div>
-      <div class="chip"><b>Mühendis</b> desteği — ücretsiz takım seçimi</div>
+      <div class="chip"><b>Kapıda ödeme</b> — takımı gör, öde</div>
+      <div class="chip"><b>14 gün</b> iade garantisi</div>
+      <div class="chip"><b>Aynı gün</b> kargo</div>
+      <div class="chip"><b>55-65 HRC</b> uzmanı</div>
+      <div class="chip"><b>Mühendis</b> desteği</div>
     </div>
   </div>
 </div>
 
 <main>
   <section>
+    <div class="bannerlar">
+      <a class="banner b1" href="#taniisma">
+        <span class="bk"></span>
+        <img class="urun" src="images/urun-sert.png" alt="">
+        <span class="tag">Açılış kampanyası</span>
+        <span class="bas">Tanışma Paketi</span>
+        <span class="alt">Her yeni vergi numarasına 1 kez: seçtiğin 10 takım, hepsi DİP fiyattan + kargo bedava.</span>
+        <span class="git">Paketi Kur →</span>
+      </a>
+      <a class="banner b2" href="katalog.html?kat=Sert Malzeme">
+        <span class="bk"></span>
+        <span class="tag">Bizim saha</span>
+        <span class="bas">Sert malzemede rakipten %39'a varan ucuzluk</span>
+        <span class="alt">55-65 HRC kalıp çeliği frezeleri — kanıtı aşağıdaki kıyas tablosunda.</span>
+        <span class="git">Sert Seriye Git →</span>
+      </a>
+      <a class="banner b3" href="katalog.html?kat=Karbür Matkap">
+        <span class="bk"></span>
+        <img class="urun" src="images/urun-duz.png" alt="">
+        <span class="tag">Stoktan teslim</span>
+        <span class="bas">Karbür matkapta adet fiyatı şakası yok</span>
+        <span class="alt">3D ve 5D seriler — 10+ adette matkap başı fiyatı görün, karar verin.</span>
+        <span class="git">Matkaplara Git →</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
     <h2><span class="tick">/</span> Kategoriler</h2>
-    <p class="sec-sub">Tamamı stoktan. Kendi üretimimiz veya kontrollü tedarik — başkasının kutusunu satmıyoruz.</p>
     <div class="cats">
-      <a class="cat" href="katalog.html?kat=Düz Frezeler"><div class="ic">▬</div><div class="nm">Düz Frezeler</div><div class="ct">SharpRO serisi · 3-20 mm</div></a>
-      <a class="cat" href="katalog.html?kat=Küre Frezeler"><div class="ic">●</div><div class="nm">Küre Frezeler</div><div class="ct">HardBALL serisi · tam küre</div></a>
-      <a class="cat" href="katalog.html?kat=Köşe Radüslü"><div class="ic">◢</div><div class="nm">Köşe Radüslü</div><div class="ct">HardCO serisi · R0,2-R3</div></a>
-      <a class="cat" href="katalog.html?kat=Sert Malzeme"><div class="ic">◆</div><div class="nm">Sert Malzeme</div><div class="ct">55-65 HRC · kalıp çeliği</div></a>
-      <a class="cat" href="katalog.html?kat=Karbür Matkap"><div class="ic">⌀</div><div class="nm">Karbür Matkap</div><div class="ct">3D / 5D · AlTiN-TLX</div></a>
-      <a class="cat" href="katalog.html?kat=Alüminyum"><div class="ic">▣</div><div class="nm">Alüminyum Serisi</div><div class="ct">AluRO · AluBALL · AluCO</div></a>
+      <a class="cat" href="katalog.html?kat=Düz Frezeler"><img src="images/urun-duz.png" alt=""><div class="nm">Düz Frezeler</div><div class="ct">SharpRO · 3-20 mm</div></a>
+      <a class="cat" href="katalog.html?kat=Küre Frezeler"><img src="images/urun-kure.png" alt=""><div class="nm">Küre Frezeler</div><div class="ct">HardBALL · tam küre</div></a>
+      <a class="cat" href="katalog.html?kat=Köşe Radüslü"><img src="images/urun-radus.jpg" alt=""><div class="nm">Köşe Radüslü</div><div class="ct">HardCO · R0,2-R3</div></a>
+      <a class="cat" href="katalog.html?kat=Sert Malzeme"><img src="images/urun-sert.png" alt=""><div class="nm">Sert Malzeme</div><div class="ct">55-65 HRC</div></a>
+      <a class="cat" href="katalog.html?kat=Karbür Matkap"><div class="ic" style="font-size:3.2rem; line-height:74px;">⌀</div><div class="nm">Karbür Matkap</div><div class="ct">3D / 5D</div></a>
+      <a class="cat" href="katalog.html?kat=Alüminyum"><img src="images/urun-alu.png" alt=""><div class="nm">Alüminyum</div><div class="ct">AluRO · AluBALL</div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="tick">/</span> Çok satanlar</h2>
+    <p class="sec-sub">Kırmızı fiyat = <b>aynı üründen 10+ adet</b> alım fiyatı. Adet düştükçe fiyat kademeli artar (tek adet ≈ %14 üstü). Üstü çizili = liste fiyatı.</p>
+    <div class="prods">
+      <div class="prod"><div class="disc">10+ DİP</div><img class="foto" src="images/urun-duz.png" alt="">
+        <div class="fam">SharpRO-430</div><div class="nm">Düz Karbür Freze 12×75</div>
+        <div class="spec mono">Z4 · TSH · mikro tane karbür</div>
+        <div class="price"><span class="old mono">132,23 $</span><span class="now mono">59,50 $</span></div>
+        <div class="tier">10+ adette · tek: <span class="mono">67,61 $</span></div>
+        <a class="btn" href="katalog.html?kat=Düz Frezeler">İncele</a></div>
+      <div class="prod"><div class="disc">10+ DİP</div><img class="foto" src="images/urun-kure.png" alt="">
+        <div class="fam">HardBALL-220</div><div class="nm">Küre Freze 10×70</div>
+        <div class="spec mono">Z2 · R5 · 55 HRC'ye kadar</div>
+        <div class="price"><span class="old mono">98,16 $</span><span class="now mono">44,17 $</span></div>
+        <div class="tier">10+ adette · tek: <span class="mono">50,19 $</span></div>
+        <a class="btn" href="katalog.html?kat=Küre Frezeler">İncele</a></div>
+      <div class="prod"><div class="disc">10+ DİP</div><img class="foto" src="images/urun-radus.jpg" alt="">
+        <div class="fam">HardCO-430R</div><div class="nm">Köşe Radüslü 8×60 R0,5</div>
+        <div class="spec mono">Z4 · TSH · kalıp çeliği</div>
+        <div class="price"><span class="old mono">70,46 $</span><span class="now mono">31,71 $</span></div>
+        <div class="tier">10+ adette · tek: <span class="mono">36,03 $</span></div>
+        <a class="btn" href="katalog.html?kat=Köşe Radüslü">İncele</a></div>
+      <div class="prod"><div class="disc">10+ DİP</div><img class="foto" src="images/urun-sert.png" alt="">
+        <div class="fam">HardBALL-240L</div><div class="nm">Sert Küre 8×100 · 65 HRC</div>
+        <div class="spec mono">Z2 · TLX · uzun boy</div>
+        <div class="price"><span class="old mono">110,08 $</span><span class="now mono">49,53 $</span></div>
+        <div class="tier">10+ adette · tek: <span class="mono">56,28 $</span></div>
+        <a class="btn" href="katalog.html?kat=Sert Malzeme">İncele</a></div>
+      <div class="prod"><div class="disc">10+ DİP</div><img class="foto" src="images/urun-duz.png" alt="">
+        <div class="fam">SharpRO-430L</div><div class="nm">Düz Karbür Freze 10×100</div>
+        <div class="spec mono">Z4 · TSH · uzun boy</div>
+        <div class="price"><span class="old mono">132,55 $</span><span class="now mono">59,65 $</span></div>
+        <div class="tier">10+ adette · tek: <span class="mono">67,78 $</span></div>
+        <a class="btn" href="katalog.html?kat=Düz Frezeler">İncele</a></div>
+      <div class="prod"><div class="disc">10+ DİP</div><img class="foto" src="images/urun-alu.png" alt="">
+        <div class="fam">SharpRO-430L</div><div class="nm">Düz Karbür Freze 20×150</div>
+        <div class="spec mono">Z4 · TSH · ağır talaş</div>
+        <div class="price"><span class="old mono">650,57 $</span><span class="now mono">292,76 $</span></div>
+        <div class="tier">10+ adette · tek: <span class="mono">332,68 $</span></div>
+        <a class="btn" href="katalog.html?kat=Düz Frezeler">İncele</a></div>
+    </div>
+  </section>
+
+  <section id="taniisma">
+    <div class="band">
+      <div class="big">🎁 Tanışma Paketi<br><span style="font-size:.9rem; font-weight:600; color:#ffb08a;">Her yeni vergi numarasına 1 kez</span></div>
+      <p>Bizi denemenin en ucuz yolu: katalogdan seçtiğin <b>10 takımın tamamı DİP fiyattan</b> + kargo bedava + 14 gün iade. Beğenmezsen paranı iade ediyoruz — risk bizde.</p>
+      <a class="cta" href="katalog.html">Paketini Kur</a>
     </div>
   </section>
 
@@ -69,19 +186,40 @@
   </section>
 
   <section>
-    <div class="band">
-      <div class="big">Takımınız erken mi aşınıyor?<br>Fotoğrafını gönderin, sebebini söyleyelim.</div>
-      <p>Kaplama mı yanlış, kesme şartı mı, malzeme uyumu mu? Fabrika mühendisi failure-mode analizini ücretsiz yapar, doğru takımı önerir. WhatsApp'tan fotoğraf + malzeme bilgisi yeter.</p>
-      <a class="cta" id="wa-band" href="#">WhatsApp'tan Sor</a>
+    <div class="band" style="display:block;">
+      <div class="big" style="margin-bottom:.6rem;">"Fiyat ucuz diye kaliteyi düşük sanmayın."</div>
+      <p style="max-width:70ch;">Son sistem kaplama ve hammadde kullanıyoruz. Her yıl <b style="color:#fff;">4 doktora projesine</b> danışmanlık ve yüklenicilik yapıyoruz — takım tezgâhının başında da, literatürün başında da biz varız.</p>
+      <p style="max-width:70ch; margin-top:.6rem;">Peki fiyat neden bu kadar iyi? Normalde arada <b style="color:#fff;">distribütör ve bayi</b> olur; bizde ikisi de yok. Fabrikadan çıkan takım doğrudan size gelir — aradaki iki marjı cebinizde tutarsınız.</p>
+      <p style="max-width:70ch; margin-top:.6rem;">Deneyince kaliteyi daha da iyi anlayacaksınız — ama korkmayın, <b style="color:#fff;">fiyat yükseltmeyeceğiz.</b> Tek istediğimiz: memnun kaldıysanız yorum yapın, paylaşın — daha çok imalatçı arkadaşımız kazansın.</p>
+      <p style="margin-top:.8rem; font-weight:800; color:#ffb08a; letter-spacing:.04em;">ÜRETTİKÇE GÜÇLÜYÜZ. 🇹🇷</p>
     </div>
+  </section>
+
+  <section>
+    <h2><span class="tick">/</span> Neden güvenilir?</h2>
+    <div class="guven">
+      <div class="g"><b>2018'den beri üreticiyiz</b><span>Bir MONCARB kuruluşu — İstanbul'da kendi fabrikamız, 371 teknik resimlik ürün ağacı.</span></div>
+      <div class="g"><b>Kapıda ödeme</b><span>Takımı görmeden para ödemezsin. Kargoda gör, teslim alırken öde.</span></div>
+      <div class="g"><b>14 gün iade — soru sormadan</b><span>Beğenmedin mi? Geri gönder, paran iade. Risk tamamen bizde.</span></div>
+      <div class="g"><b>Mühendis desteği</b><span>Aşınan takımın fotoğrafını gönder; kaplama mı, kesme şartı mı — sebebini söyleyelim, doğru takımı seçelim. Ücretsiz.</span></div>
+    </div>
+    <br>
+    <div class="video-yeri"><div><span class="oynat">▶</span>Fabrikadan 30 saniye — tezgâhlar iş başında<br><span style="font-size:.8rem; font-weight:600; opacity:.8;">(video yakında burada)</span></div></div>
   </section>
 </main>
 
+<div id="cartbar">
+  <span class="info"></span>
+  <span class="next"></span>
+  <a class="cta wa" href="#" target="_blank" rel="noopener">Siparişi WhatsApp'tan Gönder</a>
+  <button class="clear">Boşalt</button>
+</div>
+
 <footer class="site">
   <div class="in">
-    <div><b>FREZE FABRİKASI</b> — karbür kesici takım üreticisi</div>
-    <div><a href="katalog.html" style="color:inherit">Tüm ürünler</a> · Kurumsal · Bayilik</div>
-    <div>Sipariş / WhatsApp: <span class="mono" id="tel-foot">+90 ___ ___ __ __</span></div>
+    <div><b>FREZE FABRİKASI</b> — frezefabrikasi.com<br>Bir <b>MONCARB</b> kuruluşudur · 2018'den beri karbür kesici takım üreticisi · İstanbul</div>
+    <div>Kapıda ödeme · 14 gün iade · Aynı gün kargo<br>Kurumsal · Bayilik · İletişim</div>
+    <div>Sipariş / WhatsApp<br><span class="mono">+90 ___ ___ __ __</span></div>
   </div>
 </footer>
 

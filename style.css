@@ -120,3 +120,19 @@ td.our{font-weight:900; color:var(--red);}
 footer.site{background:var(--coal); color:#a5a19c; padding:1.7rem 1.4rem 2.6rem; font-size:.8rem; border-top:3px solid var(--red);}
 footer .in{max-width:1020px; margin:0 auto; display:flex; gap:2rem; flex-wrap:wrap; justify-content:space-between;}
 footer b{color:#f5f3f0;}
+
+/* kademeli fiyat + adet satırı */
+.prod .tier{color:var(--muted); font-size:.74rem;}
+.prod .buyrow{display:flex; gap:.4rem; margin-top:.55rem;}
+.prod .qty{width:4.2rem; padding:.4rem .5rem; border:1px solid var(--line); border-radius:3px; text-align:center; font-size:.9rem;}
+.prod .buyrow .btn{flex:1; margin-top:0;}
+#cartbar .next{color:#ffb08a; font-size:.82rem;}
+.kademe3{display:inline-flex; border:2px solid var(--red); border-radius:4px; overflow:hidden; flex-wrap:wrap; margin:.4rem 0 .8rem;}
+.kademe3 div{padding:.55rem 1rem; font-weight:800; font-size:.88rem;}
+.kademe3 .k1{background:var(--panel); color:var(--muted);}
+.kademe3 .k2{background:var(--red-soft); color:var(--red);}
+.kademe3 .k3{background:var(--red); color:#fff;}
+.guven{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:.7rem;}
+.guven .g{background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--red); border-radius:4px; padding: .9rem 1rem;}
+.guven .g b{display:block; margin-bottom:.2rem;}
+.guven .g span{color:var(--muted); font-size:.85rem;}
