@@ -1,0 +1,5186 @@
+[
+ {
+  "sku": "MONEPF4301010",
+  "ad": "SharpRO-430- 3,0 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "3*50",
+  "satis": 12.36,
+  "liste": 27.46
+ },
+ {
+  "sku": "MONEPF430L1010",
+  "ad": "SharpRO-430L-  3 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "3*75",
+  "satis": 14.33,
+  "liste": 31.85
+ },
+ {
+  "sku": "MONEPF4301020",
+  "ad": "SharpRO-430- 4,0 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "4*50",
+  "satis": 13.61,
+  "liste": 30.24
+ },
+ {
+  "sku": "MONEPF430L1020",
+  "ad": "SharpRO-430L-  4 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "4*75",
+  "satis": 16.13,
+  "liste": 35.85
+ },
+ {
+  "sku": "MONEPF4301030",
+  "ad": "SharpRO-430- 5,0 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "5*50",
+  "satis": 18.1,
+  "liste": 40.22
+ },
+ {
+  "sku": "MONEPF430L1030",
+  "ad": "SharpRO-430L-  5 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "5*75",
+  "satis": 24.16,
+  "liste": 53.68
+ },
+ {
+  "sku": "MONEPF4301040",
+  "ad": "SharpRO-430- 6,0 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "6*55",
+  "satis": 21.37,
+  "liste": 47.48
+ },
+ {
+  "sku": "MONEPF430L1040",
+  "ad": "SharpRO-430L-  6 X75 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "6*75",
+  "satis": 28.39,
+  "liste": 63.09
+ },
+ {
+  "sku": "MONEPF430L1041",
+  "ad": "SharpRO-430L-  6 X100 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "6*100",
+  "satis": 33.26,
+  "liste": 73.92
+ },
+ {
+  "sku": "MONEPF4301060",
+  "ad": "SharpRO-430- 8,0 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "8*60",
+  "satis": 29.52,
+  "liste": 65.61
+ },
+ {
+  "sku": "MONEPF430L1060",
+  "ad": "SharpRO-430L-  8 *75 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "8*75",
+  "satis": 37.85,
+  "liste": 84.1
+ },
+ {
+  "sku": "MONEPF430L1061",
+  "ad": "SharpRO-430L-  8*100 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "8*100",
+  "satis": 45.53,
+  "liste": 101.19
+ },
+ {
+  "sku": "MONEPF430L1062",
+  "ad": "SharpRO-430L-  8*110 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "8*130",
+  "satis": 53.68,
+  "liste": 119.28
+ },
+ {
+  "sku": "MONEPF4301080",
+  "ad": "SharpRO-430- 10 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "10*70",
+  "satis": 43.37,
+  "liste": 96.39
+ },
+ {
+  "sku": "MONEPF430L1080",
+  "ad": "SharpRO-430L-10 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "10*100",
+  "satis": 59.65,
+  "liste": 132.55
+ },
+ {
+  "sku": "MONEPF430L1081",
+  "ad": "SharpRO-430L-10*110 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "10*130",
+  "satis": 71.93,
+  "liste": 159.84
+ },
+ {
+  "sku": "MONEPF4301090",
+  "ad": "SharpRO-430- 12 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "12*75",
+  "satis": 59.5,
+  "liste": 132.23
+ },
+ {
+  "sku": "MONEPF430L1090",
+  "ad": "SharpRO-430L-12 TSH KARBÜR FREZE",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "12*100",
+  "satis": 79.08,
+  "liste": 175.73
+ },
+ {
+  "sku": "MONEPF430L1092",
+  "ad": "SharpRO-430L-12X110 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "12*130",
+  "satis": 99.04,
+  "liste": 220.09
+ },
+ {
+  "sku": "MONEPF4301110",
+  "ad": "SharpRO-430- 14 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "14*330",
+  "satis": 126.55,
+  "liste": 281.23
+ },
+ {
+  "sku": "MONEPF4301120",
+  "ad": "SharpRO-430- 16 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "16*100",
+  "satis": 139.55,
+  "liste": 310.11
+ },
+ {
+  "sku": "MONEPF430L1120",
+  "ad": "SharpRO-430L-16 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "16*150",
+  "satis": 195.19,
+  "liste": 433.74
+ },
+ {
+  "sku": "MONEPF4301130",
+  "ad": "SharpRO-430- 18 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "18*330",
+  "satis": 190.59,
+  "liste": 423.54
+ },
+ {
+  "sku": "MONEPF4301140",
+  "ad": "SharpRO-430- 20 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "20*100",
+  "satis": 203.4,
+  "liste": 452.01
+ },
+ {
+  "sku": "MONEPF430L1140",
+  "ad": "SharpRO-430L-20 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "20*150",
+  "satis": 292.76,
+  "liste": 650.57
+ },
+ {
+  "sku": "MONEPF430LX1030",
+  "ad": "SharpRO-430LX-  4*100 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "4*100",
+  "satis": 26.92,
+  "liste": 59.82
+ },
+ {
+  "sku": "MONEPF430LX1014",
+  "ad": "SharpRO-430LX-  5*100 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "5*100",
+  "satis": 30.19,
+  "liste": 67.09
+ },
+ {
+  "sku": "MONEPF430LX1016",
+  "ad": "SharpRO-430LX-  6*150 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "6*150",
+  "satis": 34.7,
+  "liste": 77.1
+ },
+ {
+  "sku": "MONEPF430LX1020",
+  "ad": "SharpRO-430LX-  8*150 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "8*150",
+  "satis": 66.15,
+  "liste": 147.0
+ },
+ {
+  "sku": "MONEPF430LX1040",
+  "ad": "SharpRO-430LX-  10*150 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "10*150",
+  "satis": 84.52,
+  "liste": 187.83
+ },
+ {
+  "sku": "MONEPF430LX1050",
+  "ad": "SharpRO-430LX-  12*150 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "12*150",
+  "satis": 107.01,
+  "liste": 237.79
+ },
+ {
+  "sku": "MONEPF4301131",
+  "ad": "SharpRO-430- 19 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 452.01,
+  "liste": 520.0
+ },
+ {
+  "sku": "MONEPF4301112",
+  "ad": "SharpRO-430- 15 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 310.11,
+  "liste": 354.0
+ },
+ {
+  "sku": "MONEPF4301081",
+  "ad": "SharpRO-430- 11 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 132.23,
+  "liste": 151.2
+ },
+ {
+  "sku": "MONEPF4301061",
+  "ad": "SharpRO-430- 8,5 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 96.39,
+  "liste": 108.8
+ },
+ {
+  "sku": "MONEPF4301041",
+  "ad": "SharpRO-430- 6,5 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 65.61,
+  "liste": 72.5
+ },
+ {
+  "sku": "MONEPF4301021",
+  "ad": "SharpRO-430- 4,5 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 40.22,
+  "liste": 42.5
+ },
+ {
+  "sku": "MONEPF4301141",
+  "ad": "SharpRO-430- 28 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 452.01,
+  "liste": 800.0
+ },
+ {
+  "sku": "MONEPF430L1052",
+  "ad": "SharpRO-430L-  7,1 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 84.1,
+  "liste": 112.0
+ },
+ {
+  "sku": "MONEPF430L1082",
+  "ad": "SharpRO-430L-10*150 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 187.83,
+  "liste": 214.0
+ },
+ {
+  "sku": "MONEPF430L1091",
+  "ad": "SharpRO-430L-12*150 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 237.79,
+  "liste": 275.7
+ },
+ {
+  "sku": "MONEPF430L1145",
+  "ad": "SharpRO-430L-20 ANV",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 650.57,
+  "liste": 754.0
+ },
+ {
+  "sku": "MONEPF430LX1010",
+  "ad": "SharpRO-430LX-  3*100 TSH",
+  "aile": "SHARPRO-430",
+  "kat": "Düz Frezeler",
+  "olcu": "",
+  "satis": 59.82,
+  "liste": 63.0
+ },
+ {
+  "sku": "MONEPF420TH1010",
+  "ad": "HardSharp-420- 3,0 TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "3*50",
+  "satis": 14.21,
+  "liste": 31.57
+ },
+ {
+  "sku": "MONEPF420LTH1010",
+  "ad": "HardSharp-420L- 3,0 TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "3*75",
+  "satis": 16.87,
+  "liste": 37.48
+ },
+ {
+  "sku": "MONEPF420TH1020",
+  "ad": "HardSharp-420- 4,0 TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "4*50",
+  "satis": 16.21,
+  "liste": 36.01
+ },
+ {
+  "sku": "MONEPF420LTH1020",
+  "ad": "HardSharp-420L- 4,0 TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "4*75",
+  "satis": 19.37,
+  "liste": 43.05
+ },
+ {
+  "sku": "MONEPF420TH1030",
+  "ad": "HardSharp-420- 5,0 TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "5*50",
+  "satis": 24.13,
+  "liste": 53.62
+ },
+ {
+  "sku": "MONEPF420LTH1030",
+  "ad": "HardSharp-420L- 5,0 TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "5*75",
+  "satis": 29.79,
+  "liste": 66.2
+ },
+ {
+  "sku": "MONEPF420TH1040",
+  "ad": "HardSharp-420- 6,0 TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "6*55",
+  "satis": 28.84,
+  "liste": 64.08
+ },
+ {
+  "sku": "MONEPF420LTH1045",
+  "ad": "HardSharp-420L- 6X75 TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "6*75",
+  "satis": 36.94,
+  "liste": 82.09
+ },
+ {
+  "sku": "MONEPF420LTH1040",
+  "ad": "HardSharp-420L- 6,0 TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "6*100",
+  "satis": 41.76,
+  "liste": 92.8
+ },
+ {
+  "sku": "MONEPF420TH1050",
+  "ad": "HardSharp-420- 8,0 TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "8*64",
+  "satis": 39.39,
+  "liste": 87.53
+ },
+ {
+  "sku": "MONEPF420LTH1055",
+  "ad": "HardSharp-420L- 8,0X75 TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "8*75",
+  "satis": 45.85,
+  "liste": 101.89
+ },
+ {
+  "sku": "MONEPF420LTH1050",
+  "ad": "HardSharp-420L- 8,0 TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "8*100",
+  "satis": 53.42,
+  "liste": 118.7
+ },
+ {
+  "sku": "MONEPF420TH1060",
+  "ad": "HardSharp-420- 10  TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "10*73",
+  "satis": 55.55,
+  "liste": 123.45
+ },
+ {
+  "sku": "MONEPF420LTH1060",
+  "ad": "HardSharp-420L- 10  TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "10*100",
+  "satis": 70.46,
+  "liste": 156.57
+ },
+ {
+  "sku": "MONEPF420TH1070",
+  "ad": "HardSharp-420- 12  TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "12*83",
+  "satis": 79.01,
+  "liste": 175.57
+ },
+ {
+  "sku": "MONEPF420LTH1070",
+  "ad": "HardSharp-420L- 12  TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "12*100",
+  "satis": 90.94,
+  "liste": 202.09
+ },
+ {
+  "sku": "MONEPF420TH1080",
+  "ad": "HardSharp-420- 16  TH/TX",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "16*100",
+  "satis": 149.97,
+  "liste": 333.26
+ },
+ {
+  "sku": "MONEPF420LTH1090",
+  "ad": "HardSharp-420L- 16X150  TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "16*130",
+  "satis": 189.1,
+  "liste": 420.22
+ },
+ {
+  "sku": "MONEPF420LTH1080",
+  "ad": "HardSharp-420L- 16X130  TH",
+  "aile": "SHARPRO-420",
+  "kat": "Düz Frezeler",
+  "olcu": "HardSharp-420L- 16X150  TH",
+  "satis": 420.22,
+  "liste": 479.0
+ },
+ {
+  "sku": "MONEPF410TH1008",
+  "ad": "HighRO-410   2,0 R0,5 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "6*55",
+  "satis": 35.09,
+  "liste": 77.99
+ },
+ {
+  "sku": "MONEPF410TH1010",
+  "ad": "HighRO-410   3,0 R1,0 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "6*55",
+  "satis": 35.09,
+  "liste": 77.99
+ },
+ {
+  "sku": "MONEPF410TH1020",
+  "ad": "HighRO-410   4,0 R1,0 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "6*55",
+  "satis": 34.1,
+  "liste": 75.78
+ },
+ {
+  "sku": "MONEPF410TH1040",
+  "ad": "HighRO-410   6,0 R1,0 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "6*55",
+  "satis": 34.53,
+  "liste": 76.73
+ },
+ {
+  "sku": "MONEPF410LTH1040",
+  "ad": "HighRO-410 L-  6,0 R1,0 TH",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "6*75",
+  "satis": 40.41,
+  "liste": 89.79
+ },
+ {
+  "sku": "MONEPF410TH1050",
+  "ad": "HighRO-410   8,0 R1,0 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "8*64",
+  "satis": 46.97,
+  "liste": 104.38
+ },
+ {
+  "sku": "MONEPF410LTH1050",
+  "ad": "HighRO-410 L-  8,0 R1,0 TH",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "8*100",
+  "satis": 59.88,
+  "liste": 133.06
+ },
+ {
+  "sku": "MONEPF410TH1060",
+  "ad": "HighRO-410 10,0 R1,0 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "10*73",
+  "satis": 66.32,
+  "liste": 147.38
+ },
+ {
+  "sku": "MONEPF410LTH1060",
+  "ad": "HighRO-410 L-10,0 R1,0 TH",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "10*100",
+  "satis": 79.35,
+  "liste": 176.33
+ },
+ {
+  "sku": "MONEPF410TH1070",
+  "ad": "HighRO-410 12,0 R1,0 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "12*83",
+  "satis": 88.55,
+  "liste": 196.78
+ },
+ {
+  "sku": "MONEPF410LTH1070",
+  "ad": "HighRO-410 L-12,0 R1,0 TH",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "12*100",
+  "satis": 103.52,
+  "liste": 230.04
+ },
+ {
+  "sku": "MONEPF410LTH1080",
+  "ad": "HighRO-410 L-16,0 R1,0 TH",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "HighRO-410 12,0 R1,0 TH/TX",
+  "satis": 196.78,
+  "liste": 196.78
+ },
+ {
+  "sku": "MONEPF410TH1005",
+  "ad": "HighRO-410   2,0X10 R0,5 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "HighRO-410   4,0 R1,0 TH/TX",
+  "satis": 75.78,
+  "liste": 71.0
+ },
+ {
+  "sku": "MONEPF410TH1006",
+  "ad": "HighRO-410   2,0X12 R0,5 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "HighRO-410   4,0 R1,0 TH/TX",
+  "satis": 75.78,
+  "liste": 71.0
+ },
+ {
+  "sku": "MONEPF410TH1007",
+  "ad": "HighRO-410   2,0X16 R0,5 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "HighRO-410   4,0 R1,0 TH/TX",
+  "satis": 75.78,
+  "liste": 71.0
+ },
+ {
+  "sku": "MONEPF410TH1009",
+  "ad": "HighRO-410   2,5x10 R0,5 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "HighRO-410   4,0 R1,0 TH/TX",
+  "satis": 75.78,
+  "liste": 71.0
+ },
+ {
+  "sku": "MONEPF410TH1082",
+  "ad": "HighRO-410   2,5x16 R0,5 TH/TX",
+  "aile": "HIGHRO-410R",
+  "kat": "Düz Frezeler",
+  "olcu": "HighRO-410   4,0 R1,0 TH/TX",
+  "satis": 75.78,
+  "liste": 71.0
+ },
+ {
+  "sku": "MONEPF430R1010",
+  "ad": "HardCO-430R-  3,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "3*50",
+  "satis": 11.02,
+  "liste": 24.49
+ },
+ {
+  "sku": "MONEPF430RL1010",
+  "ad": "HardCO-430RL-  3,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "3*75",
+  "satis": 12.88,
+  "liste": 28.62
+ },
+ {
+  "sku": "MONEPF430R1020",
+  "ad": "HardCO-430R-  4,0 R0,5 TSH KARBÜR FREZE",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "4*50",
+  "satis": 12.27,
+  "liste": 27.28
+ },
+ {
+  "sku": "MONEPF430RL1019",
+  "ad": "HardCO-430RL-  4,0*75 R0,2 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "4*75",
+  "satis": 14.68,
+  "liste": 32.62
+ },
+ {
+  "sku": "MONEPF430R1030",
+  "ad": "HardCO-430R-  5,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "5*50",
+  "satis": 19.92,
+  "liste": 44.26
+ },
+ {
+  "sku": "MONEPF430RL1030",
+  "ad": "HardCO-430RL-  5,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "5*75",
+  "satis": 26.56,
+  "liste": 59.01
+ },
+ {
+  "sku": "MONEPF430R1040",
+  "ad": "HardCO-430R-  6,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*55",
+  "satis": 23.3,
+  "liste": 51.79
+ },
+ {
+  "sku": "MONEPF430RL1040",
+  "ad": "HardCO-430RL-  6*75 R0,5 TSH KARBÜR FREZE",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*75",
+  "satis": 31.06,
+  "liste": 69.02
+ },
+ {
+  "sku": "MONEPF430RL1050",
+  "ad": "HardCO-430RL-  6*100 R0,5 TSH KARBÜR FREZE",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*100",
+  "satis": 34.37,
+  "liste": 76.38
+ },
+ {
+  "sku": "MONEPF430R1050",
+  "ad": "HardCO-430R-  8,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*60",
+  "satis": 31.71,
+  "liste": 70.46
+ },
+ {
+  "sku": "MONEPF430RL1060",
+  "ad": "HardCO-430RL-  8*75 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*75",
+  "satis": 38.51,
+  "liste": 85.59
+ },
+ {
+  "sku": "MONEPF430RL1070",
+  "ad": "HardCO-430RL-  8*100 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*100",
+  "satis": 44.2,
+  "liste": 98.23
+ },
+ {
+  "sku": "MONEPF430RL1071",
+  "ad": "HardCO-430RL-  8*110 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*130",
+  "satis": 53.21,
+  "liste": 118.25
+ },
+ {
+  "sku": "MONEPF430R1060",
+  "ad": "HardCO-430R-10,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*70",
+  "satis": 46.04,
+  "liste": 102.31
+ },
+ {
+  "sku": "MONEPF430RL1080",
+  "ad": "HardCO-430RL-10,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*100",
+  "satis": 58.83,
+  "liste": 130.73
+ },
+ {
+  "sku": "MONEPF430RL1081",
+  "ad": "HardCO-430RL-10*110 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*130",
+  "satis": 71.11,
+  "liste": 158.02
+ },
+ {
+  "sku": "MONEPF430R1070",
+  "ad": "HardCO-430R-12,0 R0,5 TSH KARBÜR FREZE",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*75",
+  "satis": 62.66,
+  "liste": 139.25
+ },
+ {
+  "sku": "MONEPF430RL1090",
+  "ad": "HardCO-430RL-12,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*100",
+  "satis": 76.9,
+  "liste": 170.89
+ },
+ {
+  "sku": "MONEPF430RL1091",
+  "ad": "HardCO-430RL-12*110 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*130",
+  "satis": 94.24,
+  "liste": 209.43
+ },
+ {
+  "sku": "MONEPF430R1142",
+  "ad": "HardCO-430R-14,0 R1,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "14*330",
+  "satis": 120.39,
+  "liste": 267.54
+ },
+ {
+  "sku": "MONEPF430R1075",
+  "ad": "HardCO-430R-16,0 R0,5 TSH KARBÜR FREZE",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "16*100",
+  "satis": 140.8,
+  "liste": 312.89
+ },
+ {
+  "sku": "MONEPF430RL1221",
+  "ad": "HardRO-430RL-16,0-150  R2,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "16*150",
+  "satis": 200.17,
+  "liste": 444.83
+ },
+ {
+  "sku": "MONEPF430RLX0107",
+  "ad": "HardRO-430RLX-20*150 R3 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "20*150",
+  "satis": 293.28,
+  "liste": 651.73
+ },
+ {
+  "sku": "MONEPF430RL1225",
+  "ad": "HardRO-430RL-20,0-180  R2,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "20*330",
+  "satis": 546.96,
+  "liste": 1215.48
+ },
+ {
+  "sku": "MONEPF430RLX080",
+  "ad": "HardRO-430RLX-4*100 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "4*100",
+  "satis": 24.19,
+  "liste": 53.76
+ },
+ {
+  "sku": "MONEPF430RLX0090",
+  "ad": "HardRO-430RLX-5*100 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "5*100",
+  "satis": 27.46,
+  "liste": 61.03
+ },
+ {
+  "sku": "MONEPF430RLX0100",
+  "ad": "HardRO-430RLX-6*150 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*150",
+  "satis": 43.7,
+  "liste": 97.1
+ },
+ {
+  "sku": "MONEPF430RLX0101",
+  "ad": "HardRO-430RLX-8*150 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*150",
+  "satis": 58.35,
+  "liste": 129.67
+ },
+ {
+  "sku": "MONEPF430RLX0104",
+  "ad": "HardRO-430RLX-10*150 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*150",
+  "satis": 83.72,
+  "liste": 186.05
+ },
+ {
+  "sku": "MONEPF430RLX0105",
+  "ad": "HardRO-430RLX-12*150 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*150",
+  "satis": 106.21,
+  "liste": 236.01
+ },
+ {
+  "sku": "MONEPF430R1041",
+  "ad": "HardCO-430R-  6,0 R0,2 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 51.79,
+  "liste": 55.4
+ },
+ {
+  "sku": "MONEPF430R1045",
+  "ad": "HardCO-430R-  6,0 R2,8 TH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-430R-  6,0 R2,8 TH",
+  "satis": 51.79,
+  "liste": 55.4
+ },
+ {
+  "sku": "MONEPF430R1051",
+  "ad": "HardCO-430R-  8,0 R0,2 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 70.46,
+  "liste": 77.4
+ },
+ {
+  "sku": "MONEPF430R1065",
+  "ad": "HardCO-430R-12,0 R0,2 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 139.25,
+  "liste": 158.2
+ },
+ {
+  "sku": "MONEPF430R1115",
+  "ad": "HardCO-430R-  7,0 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 70.46,
+  "liste": 77.4
+ },
+ {
+  "sku": "MONEPF430R1145",
+  "ad": "HardCO-430R-16,0 R2.0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 312.89,
+  "liste": 357.2
+ },
+ {
+  "sku": "MONEPF430R1162",
+  "ad": "HardCO-430R-  8,0 R2.0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 70.46,
+  "liste": 77.4
+ },
+ {
+  "sku": "MONEPF430R1168",
+  "ad": "HardCO-430R-10,0 R1,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 102.31,
+  "liste": 114.7
+ },
+ {
+  "sku": "MONEPF430R1175",
+  "ad": "HardCO-430R-10,0 R3,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 102.31,
+  "liste": 114.7
+ },
+ {
+  "sku": "MONEPF430RL1023",
+  "ad": "HardCO-430RL-  4,0*100 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 53.76,
+  "liste": 56.9
+ },
+ {
+  "sku": "MONEPF430RL1140",
+  "ad": "HardCO-430RL-  6*100 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 76.38,
+  "liste": 83.0
+ },
+ {
+  "sku": "MONEPF430RL1160",
+  "ad": "HardCO-430RL-  8*100 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 98.23,
+  "liste": 109.7
+ },
+ {
+  "sku": "MONEPF430RL1161",
+  "ad": "HardCO-430RL-  8*110 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 118.25,
+  "liste": 120.0
+ },
+ {
+  "sku": "MONEPF430RL1171",
+  "ad": "HardCO-430RL-10*110 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 158.02,
+  "liste": 170.0
+ },
+ {
+  "sku": "MONEPF430RL1181",
+  "ad": "HardCO-430RL-12*110 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 209.43,
+  "liste": 220.0
+ },
+ {
+  "sku": "MONEPF430RL1183",
+  "ad": "HardCO-430RL-8*40*100 R1,0 TH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-430RL-8*40*100 R1,0 TH",
+  "satis": 98.23,
+  "liste": 109.0
+ },
+ {
+  "sku": "MONEPF430RL1184",
+  "ad": "HardCO-430RL-12*40*100 R1,0 TH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-430RL-12*40*100 R1,0 TH",
+  "satis": 170.89,
+  "liste": 196.1
+ },
+ {
+  "sku": "MONEPF430RL1190",
+  "ad": "HardCO-430RL-  6*100 R1,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 76.38,
+  "liste": 83.0
+ },
+ {
+  "sku": "MONEPF430RL1200",
+  "ad": "HardCO-430RL-  8*100 R1,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 98.23,
+  "liste": 109.7
+ },
+ {
+  "sku": "MONEPF430RLX0095",
+  "ad": "HardRO-430RLX-6*130 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 97.1,
+  "liste": 105.0
+ },
+ {
+  "sku": "MONEPF430RLX0103",
+  "ad": "HardRO-430RLX-20*180 R2,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 1215.48,
+  "liste": 760.0
+ },
+ {
+  "sku": "MONEPF430RLX0106",
+  "ad": "HardRO-430RLX-8*150 R1 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 129.67,
+  "liste": 147.0
+ },
+ {
+  "sku": "MONEPF430RLX0200",
+  "ad": "HardRO-430RLX-10*150 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 186.05,
+  "liste": 212.0
+ },
+ {
+  "sku": "MONEPF430RLX0201",
+  "ad": "HardRO-430RLX-12*150 R1,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 236.01,
+  "liste": 274.0
+ },
+ {
+  "sku": "MONEPF430RLX0205",
+  "ad": "HardRO-430RLX-10*150 R2,0 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 186.05,
+  "liste": 212.0
+ },
+ {
+  "sku": "MONEPF430R1006",
+  "ad": "HardCO-430R-  1,5X3  R0,2  Z:4 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 24.49,
+  "liste": 34.7
+ },
+ {
+  "sku": "MONEPF430R1008",
+  "ad": "HardCO-430R-  2X3  R0,2  Z:4 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 24.49,
+  "liste": 34.7
+ },
+ {
+  "sku": "MONEPF430R1009",
+  "ad": "HardCO-430R-  2,0 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 24.49,
+  "liste": 34.7
+ },
+ {
+  "sku": "MONEPF430R1033",
+  "ad": "HardCO-430R-  5,2 R2,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 44.26,
+  "liste": 55.4
+ },
+ {
+  "sku": "MONEPF430RLX0102",
+  "ad": "HardRO-430RLX-3*100 R0,5 TSH",
+  "aile": "HARDCO-430R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 53.76,
+  "liste": 56.0
+ },
+ {
+  "sku": "MONEPF420RTH1010",
+  "ad": "HardCO-420R-  3,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "3*50",
+  "satis": 14.97,
+  "liste": 33.28
+ },
+ {
+  "sku": "MONEPF420RLTH1010",
+  "ad": "HardCO-420RL-  3,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "3*75",
+  "satis": 17.39,
+  "liste": 38.65
+ },
+ {
+  "sku": "MONEPF420RTH1020",
+  "ad": "HardCO-420R-  4,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "4*50",
+  "satis": 16.97,
+  "liste": 37.72
+ },
+ {
+  "sku": "MONEPF420RLTH1020",
+  "ad": "HardCO-420RL-  4,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "4*75",
+  "satis": 19.9,
+  "liste": 44.22
+ },
+ {
+  "sku": "MONEPF420RTH1030",
+  "ad": "HardCO-420R-  5,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "5*50",
+  "satis": 23.87,
+  "liste": 53.04
+ },
+ {
+  "sku": "MONEPF420RLTH1030",
+  "ad": "HardCO-420RL-  5,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "5*75",
+  "satis": 29.14,
+  "liste": 64.76
+ },
+ {
+  "sku": "MONEPF420RTH1040",
+  "ad": "HardCO-420R-  6,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*55",
+  "satis": 28.84,
+  "liste": 64.08
+ },
+ {
+  "sku": "MONEPF420RLTH1040",
+  "ad": "HardCO-420RL-  6*75 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*75",
+  "satis": 34.61,
+  "liste": 76.91
+ },
+ {
+  "sku": "MONEPF420RLTH1050",
+  "ad": "HardCO-420RL-  6,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*100",
+  "satis": 42.58,
+  "liste": 94.62
+ },
+ {
+  "sku": "MONEPF420RTH1050",
+  "ad": "HardCO-420R-  8,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*64",
+  "satis": 39.39,
+  "liste": 87.53
+ },
+ {
+  "sku": "MONEPF420RLTH1060",
+  "ad": "HardCO-420RL-  8*75 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*75",
+  "satis": 45.85,
+  "liste": 101.89
+ },
+ {
+  "sku": "MONEPF420RLTH1070",
+  "ad": "HardCO-420RL-  8,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*100",
+  "satis": 53.42,
+  "liste": 118.7
+ },
+ {
+  "sku": "MONEPF420RTH1060",
+  "ad": "HardCO-420R-10,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*73",
+  "satis": 55.55,
+  "liste": 123.45
+ },
+ {
+  "sku": "MONEPF420RLTH1080",
+  "ad": "HardCO-420RL-10,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*100",
+  "satis": 70.46,
+  "liste": 156.57
+ },
+ {
+  "sku": "MONEPF420RTH1070",
+  "ad": "HardCO-420R-12,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*83",
+  "satis": 79.01,
+  "liste": 175.57
+ },
+ {
+  "sku": "MONEPF420RLTH1090",
+  "ad": "HardCO-420RL-12,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*100",
+  "satis": 95.25,
+  "liste": 211.66
+ },
+ {
+  "sku": "MONEPF420RTH1072",
+  "ad": "HardCO-420R-16,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "16*100",
+  "satis": 154.63,
+  "liste": 343.63
+ },
+ {
+  "sku": "MONEPF420RLTH1181",
+  "ad": "HardCO-420RL-16,0 R1,0 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "16*150",
+  "satis": 214.26,
+  "liste": 476.13
+ },
+ {
+  "sku": "MONEPF420RLTH1182",
+  "ad": "HardCO-420RL-20 R1,0 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "20*150",
+  "satis": 350.33,
+  "liste": 778.51
+ },
+ {
+  "sku": "MONEPF420RLTH1205",
+  "ad": "HardCO-420RL-  6,0 X 75 R2,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-420RL-  6*75 R0,5 TH/TX",
+  "satis": 76.91,
+  "liste": 82.2
+ },
+ {
+  "sku": "MONEPF420RTH1071",
+  "ad": "HardCO-420R-14,0 R0,5 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-420R-12,0 R0,5 TH/TX",
+  "satis": 175.57,
+  "liste": 389.0
+ },
+ {
+  "sku": "MONEPF420RTH1111",
+  "ad": "HardCO-420R-  7,0 R1,0 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-420R-  6,0 R0,5 TH/TX",
+  "satis": 64.08,
+  "liste": 95.2
+ },
+ {
+  "sku": "MONEPF420RTH1142",
+  "ad": "HardCO-420R-14,0 R1,0 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-420R-12,0 R0,5 TH/TX",
+  "satis": 175.57,
+  "liste": 389.0
+ },
+ {
+  "sku": "MONEPF420RTH1178",
+  "ad": "HardCO-420R-12,0 R0,2 TH/TX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-420R-12,0 R0,5 TH/TX",
+  "satis": 175.57,
+  "liste": 197.2
+ },
+ {
+  "sku": "MONEPF420RTH1185",
+  "ad": "HardCO-420R-16,0 R2,0 THX",
+  "aile": "HARDCO-420R",
+  "kat": "Köşe Radüslü",
+  "olcu": "HardCO-420R-16,0 R0,5 TH/TX",
+  "satis": 343.63,
+  "liste": 389.0
+ },
+ {
+  "sku": "MONEPF452R01010",
+  "ad": "HardCO-452R 4 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "4*50",
+  "satis": 16.97,
+  "liste": 37.72
+ },
+ {
+  "sku": "MONEPF452R01015",
+  "ad": "HardCO-452R 5 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "5*50",
+  "satis": 23.87,
+  "liste": 53.04
+ },
+ {
+  "sku": "MONEPF452R01020",
+  "ad": "HardCO-452R 6 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*55",
+  "satis": 28.84,
+  "liste": 64.08
+ },
+ {
+  "sku": "MONEPF452R01030",
+  "ad": "HardCO-452R 8 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*64",
+  "satis": 39.39,
+  "liste": 87.53
+ },
+ {
+  "sku": "MONEPF452R01040",
+  "ad": "HardCO-452R 10 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*73",
+  "satis": 55.55,
+  "liste": 123.45
+ },
+ {
+  "sku": "MONEPF452R01050",
+  "ad": "HardCO-452R 12 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*83",
+  "satis": 79.01,
+  "liste": 175.57
+ },
+ {
+  "sku": "MONEPF452RL01010",
+  "ad": "HardCO-452RL 4*75 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "4*75",
+  "satis": 19.9,
+  "liste": 44.22
+ },
+ {
+  "sku": "MONEPF452RL01020",
+  "ad": "HardCO-452RL 6*75 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*75",
+  "satis": 34.61,
+  "liste": 76.91
+ },
+ {
+  "sku": "MONEPF452RL01030",
+  "ad": "HardCO-452RL 6*100 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "6*100",
+  "satis": 42.58,
+  "liste": 94.62
+ },
+ {
+  "sku": "MONEPF452RL01040",
+  "ad": "HardCO-452RL 8*75 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*75",
+  "satis": 45.85,
+  "liste": 101.89
+ },
+ {
+  "sku": "MONEPF452RL01050",
+  "ad": "HardCO-452RL 8*100 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "8*100",
+  "satis": 53.42,
+  "liste": 118.7
+ },
+ {
+  "sku": "MONEPF452RL01060",
+  "ad": "HardCO-452RL 10*100 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "10*100",
+  "satis": 70.46,
+  "liste": 156.57
+ },
+ {
+  "sku": "MONEPF452RL01070",
+  "ad": "HardCO-452RL 12*100 R0,5 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "12*100",
+  "satis": 95.25,
+  "liste": 211.66
+ },
+ {
+  "sku": "MONEPF452R01060",
+  "ad": "HardCO-452R 4 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 37.72,
+  "liste": 37.72
+ },
+ {
+  "sku": "MONEPF452R01070",
+  "ad": "HardCO-452R 6 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 64.08,
+  "liste": 64.08
+ },
+ {
+  "sku": "MONEPF452R01080",
+  "ad": "HardCO-452R 8 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 87.53,
+  "liste": 87.53
+ },
+ {
+  "sku": "MONEPF452R01090",
+  "ad": "HardCO-452R 10 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 123.45,
+  "liste": 123.45
+ },
+ {
+  "sku": "MONEPF452R01100",
+  "ad": "HardCO-452R 12 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 175.57,
+  "liste": 175.57
+ },
+ {
+  "sku": "MONEPF452RL01080",
+  "ad": "HardCO-452RL 4*75 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 44.22,
+  "liste": 44.22
+ },
+ {
+  "sku": "MONEPF452RL01090",
+  "ad": "HardCO-452RL 6*75 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 76.91,
+  "liste": 76.91
+ },
+ {
+  "sku": "MONEPF452RL01100",
+  "ad": "HardCO-452RL 6*100 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 94.62,
+  "liste": 94.62
+ },
+ {
+  "sku": "MONEPF452RL01110",
+  "ad": "HardCO-452RL 8*75 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 101.89,
+  "liste": 101.89
+ },
+ {
+  "sku": "MONEPF452RL01120",
+  "ad": "HardCO-452RL 8*100 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 118.7,
+  "liste": 118.7
+ },
+ {
+  "sku": "MONEPF452RL01130",
+  "ad": "HardCO-452RL 10*100 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 156.57,
+  "liste": 156.57
+ },
+ {
+  "sku": "MONEPF452RL01140",
+  "ad": "HardCO-452RL 12*100 R1,0 TH/TX",
+  "aile": "HARDCO-452R",
+  "kat": "Köşe Radüslü",
+  "olcu": "",
+  "satis": 211.66,
+  "liste": 211.66
+ },
+ {
+  "sku": "MONEPF2201010",
+  "ad": "HardBALL-220-  3,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "3*50",
+  "satis": 13.59,
+  "liste": 30.19
+ },
+ {
+  "sku": "MONEPF220L1010",
+  "ad": "HardBALL-220 L-  3,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "3*75",
+  "satis": 16.29,
+  "liste": 36.19
+ },
+ {
+  "sku": "MONEPF2201020",
+  "ad": "HardBALL-220-  4,0 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "4*50",
+  "satis": 14.84,
+  "liste": 32.97
+ },
+ {
+  "sku": "MONEPF220L1020",
+  "ad": "HardBALL-220 L-  4,0 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "4*75",
+  "satis": 18.09,
+  "liste": 40.19
+ },
+ {
+  "sku": "MONEPF2201030",
+  "ad": "HardBALL-220-  5,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "5*50",
+  "satis": 21.19,
+  "liste": 47.09
+ },
+ {
+  "sku": "MONEPF220L1030",
+  "ad": "HardBALL-220 L-  5,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "5*75",
+  "satis": 23.76,
+  "liste": 52.79
+ },
+ {
+  "sku": "MONEPF2201040",
+  "ad": "HardBALL-220-  6,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "6*55",
+  "satis": 23.3,
+  "liste": 51.79
+ },
+ {
+  "sku": "MONEPF220L1050",
+  "ad": "HardBALL-220 L-  6*75 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "6*75",
+  "satis": 26.39,
+  "liste": 58.65
+ },
+ {
+  "sku": "MONEPF220L1040",
+  "ad": "HardBALL-220 L-  6*100 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "6*100",
+  "satis": 34.37,
+  "liste": 76.38
+ },
+ {
+  "sku": "MONEPF2201050",
+  "ad": "HardBALL-220-  8,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "8*60",
+  "satis": 30.43,
+  "liste": 67.63
+ },
+ {
+  "sku": "MONEPF220L1070",
+  "ad": "HardBALL-220 L-  8*75 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "8*75",
+  "satis": 35.12,
+  "liste": 78.04
+ },
+ {
+  "sku": "MONEPF220L1060",
+  "ad": "HardBALL-220 L-  8*100 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "8*100",
+  "satis": 40.81,
+  "liste": 90.68
+ },
+ {
+  "sku": "MONEPF220L1080",
+  "ad": "HardBALL-220 L-  8*110 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "8*130",
+  "satis": 50.48,
+  "liste": 112.17
+ },
+ {
+  "sku": "MONEPF2201060",
+  "ad": "HardBALL-220- 10,0 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "10*70",
+  "satis": 44.17,
+  "liste": 98.16
+ },
+ {
+  "sku": "MONEPF220L1090",
+  "ad": "HardBALL-220 L-10,0 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "10*100",
+  "satis": 56.5,
+  "liste": 125.54
+ },
+ {
+  "sku": "MONEPF220L1100",
+  "ad": "HardBALL-220 L-10*110 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "10*130",
+  "satis": 70.11,
+  "liste": 155.79
+ },
+ {
+  "sku": "MONEPF2201070",
+  "ad": "HardBALL-220- 12,0 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "12*75",
+  "satis": 61.56,
+  "liste": 136.79
+ },
+ {
+  "sku": "MONEPF220L1110",
+  "ad": "HardBALL-220 L-12,0 TSH KARBÜR FREZE",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "12*100",
+  "satis": 76.9,
+  "liste": 170.89
+ },
+ {
+  "sku": "MONEPF220L1112",
+  "ad": "HardBALL-220 L-12,0*120 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "12*130",
+  "satis": 97.34,
+  "liste": 216.31
+ },
+ {
+  "sku": "MONEPF220LX0100",
+  "ad": "HardBALL-220 LX-4*100 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "4*100",
+  "satis": 27.59,
+  "liste": 61.3
+ },
+ {
+  "sku": "MONEPF220LX0108",
+  "ad": "HardBALL-220 LX-5*100 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "5*100",
+  "satis": 30.86,
+  "liste": 68.57
+ },
+ {
+  "sku": "MONEPF220LX0109",
+  "ad": "HardBALL-220 LX-6*150 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "6*150",
+  "satis": 41.36,
+  "liste": 91.92
+ },
+ {
+  "sku": "MONEPF220LX0107",
+  "ad": "HardBALL-220 LX-8*150 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "8*150",
+  "satis": 58.35,
+  "liste": 129.67
+ },
+ {
+  "sku": "MONEPF220LX0103",
+  "ad": "HardBALL-220 LX-10*150 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "10*150",
+  "satis": 79.72,
+  "liste": 177.16
+ },
+ {
+  "sku": "MONEPF220LX0106",
+  "ad": "HardBALL-220 LX-12*150 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "12*150",
+  "satis": 106.21,
+  "liste": 236.01
+ },
+ {
+  "sku": "MONEPF2201006",
+  "ad": "HardBALL-220-  1,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 30.19,
+  "liste": 39.3
+ },
+ {
+  "sku": "MONEPF2201007",
+  "ad": "HardBALL-220-  1,5 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 30.19,
+  "liste": 39.3
+ },
+ {
+  "sku": "MONEPF2201008",
+  "ad": "HardBALL-220-  2,0 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 30.19,
+  "liste": 39.3
+ },
+ {
+  "sku": "MONEPF2201009",
+  "ad": "HardBALL-220-  2,5 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 30.19,
+  "liste": 39.3
+ },
+ {
+  "sku": "MONEPF220L1111",
+  "ad": "HardBALL-220 L-12,0*110 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 136.79,
+  "liste": 200.0
+ },
+ {
+  "sku": "MONEPF220LX0090",
+  "ad": "HardBALL-220 LX-3*100 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 30.19,
+  "liste": 64.0
+ },
+ {
+  "sku": "MONEPF220LX0101",
+  "ad": "HardBALL-220 LX-6*180 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 51.79,
+  "liste": 102.0
+ },
+ {
+  "sku": "MONEPF220LX0102",
+  "ad": "HardBALL-220 LX-8*180 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 67.63,
+  "liste": 147.0
+ },
+ {
+  "sku": "MONEPF220LX0104",
+  "ad": "HardBALL-220 LX-12*180 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 136.79,
+  "liste": 274.0
+ },
+ {
+  "sku": "MONEPF220LX0105",
+  "ad": "HardBALL-220 LX-6*120 TSH",
+  "aile": "HARDBALL-220",
+  "kat": "Küre Frezeler",
+  "olcu": "",
+  "satis": 51.79,
+  "liste": 51.79
+ },
+ {
+  "sku": "MONEPF210TH1010",
+  "ad": "HardBALL-210-  3,0 TH/TX",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "3*50",
+  "satis": 15.83,
+  "liste": 35.19
+ },
+ {
+  "sku": "MONEPF210LTH1010",
+  "ad": "HardBALL-210 L-  3,0 TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "3*75",
+  "satis": 19.7,
+  "liste": 43.78
+ },
+ {
+  "sku": "MONEPF210TH1020",
+  "ad": "HardBALL-210-  4,0 TH/TX",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "4*50",
+  "satis": 17.83,
+  "liste": 39.63
+ },
+ {
+  "sku": "MONEPF210LTH1020",
+  "ad": "HardBALL-210 L-  4,0 TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "4*75",
+  "satis": 22.21,
+  "liste": 49.35
+ },
+ {
+  "sku": "MONEPF210TH1030",
+  "ad": "HardBALL-210-  5,0 TH/TX",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "5*50",
+  "satis": 25.6,
+  "liste": 56.89
+ },
+ {
+  "sku": "MONEPF210LTH1030",
+  "ad": "HardBALL-210 L-  5,0 TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "5*75",
+  "satis": 29.46,
+  "liste": 65.47
+ },
+ {
+  "sku": "MONEPF210TH1040",
+  "ad": "HardBALL-210-  6,0 TH/TX",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "6*55",
+  "satis": 28.93,
+  "liste": 64.29
+ },
+ {
+  "sku": "MONEPF210LTH1050",
+  "ad": "HardBALL-210 L-  6*75 TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "6*75",
+  "satis": 32.41,
+  "liste": 72.03
+ },
+ {
+  "sku": "MONEPF210LTH1040",
+  "ad": "HardBALL-210 L-  6,0 TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "6*100",
+  "satis": 37.23,
+  "liste": 82.73
+ },
+ {
+  "sku": "MONEPF210TH1050",
+  "ad": "HardBALL-210-  8,0 TH/TX",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "8*64",
+  "satis": 37.99,
+  "liste": 84.42
+ },
+ {
+  "sku": "MONEPF210LTH1070",
+  "ad": "HardBALL-210 L-  8*75 TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "8*75",
+  "satis": 42.28,
+  "liste": 93.95
+ },
+ {
+  "sku": "MONEPF210LTH1060",
+  "ad": "HardBALL-210 L-  8,0    TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "8*100",
+  "satis": 49.85,
+  "liste": 110.77
+ },
+ {
+  "sku": "MONEPF210TH1060",
+  "ad": "HardBALL-210- 10,0 TH/TX",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "10*73",
+  "satis": 53.78,
+  "liste": 119.5
+ },
+ {
+  "sku": "MONEPF210LTH1080",
+  "ad": "HardBALL-210 L- 10,0   TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "10*100",
+  "satis": 67.71,
+  "liste": 150.47
+ },
+ {
+  "sku": "MONEPF210TH1070",
+  "ad": "HardBALL-210- 12,0 TH/TX",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "12*83",
+  "satis": 78.26,
+  "liste": 173.9
+ },
+ {
+  "sku": "MONEPF210LTH1090",
+  "ad": "HardBALL-210 L- 12,0   TH",
+  "aile": "HARDBALL-210",
+  "kat": "Küre Frezeler",
+  "olcu": "12*100",
+  "satis": 91.18,
+  "liste": 202.61
+ },
+ {
+  "sku": "MONEPF240L001010",
+  "ad": "HardBALL-240L-4*75 TLX",
+  "aile": "HARDBALL-240L",
+  "kat": "Sert Malzeme",
+  "olcu": "4*75",
+  "satis": 19.68,
+  "liste": 43.73
+ },
+ {
+  "sku": "MONEPF240L001015",
+  "ad": "HardBALL-240L-6*75 TLX",
+  "aile": "HARDBALL-240L",
+  "kat": "Sert Malzeme",
+  "olcu": "6*75",
+  "satis": 36.39,
+  "liste": 80.87
+ },
+ {
+  "sku": "MONEPF240L001020",
+  "ad": "HardBALL-240L-6*100 TLX",
+  "aile": "HARDBALL-240L",
+  "kat": "Sert Malzeme",
+  "olcu": "6*100",
+  "satis": 39.7,
+  "liste": 88.23
+ },
+ {
+  "sku": "MONEPF240L001030",
+  "ad": "HardBALL-240L-8*100 TLX",
+  "aile": "HARDBALL-240L",
+  "kat": "Sert Malzeme",
+  "olcu": "8*100",
+  "satis": 49.53,
+  "liste": 110.08
+ },
+ {
+  "sku": "MONEPF240L001040",
+  "ad": "HardBALL-240L-10*100 TLX",
+  "aile": "HARDBALL-240L",
+  "kat": "Sert Malzeme",
+  "olcu": "10*100",
+  "satis": 65.83,
+  "liste": 146.29
+ },
+ {
+  "sku": "MONEPF240L001050",
+  "ad": "HardBALL-240L-12*100 TLX",
+  "aile": "HARDBALL-240L",
+  "kat": "Sert Malzeme",
+  "olcu": "12*100",
+  "satis": 80.9,
+  "liste": 179.77
+ },
+ {
+  "sku": "MONEPF630TH1030",
+  "ad": "HardFIN-630- 10 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "10*100",
+  "satis": 73.75,
+  "liste": 163.89
+ },
+ {
+  "sku": "MONEPF630TH1040",
+  "ad": "HardFIN-630- 12 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "12*100",
+  "satis": 101.12,
+  "liste": 224.71
+ },
+ {
+  "sku": "MONEPF630TH1049",
+  "ad": "HardFIN-630- 16X100 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "16*100",
+  "satis": 163.97,
+  "liste": 364.37
+ },
+ {
+  "sku": "MONEPF630TH1050",
+  "ad": "HardFIN-630L- 16X130 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "16*130",
+  "satis": 212.43,
+  "liste": 472.07
+ },
+ {
+  "sku": "MONEPF630TH1060",
+  "ad": "HardFIN-630L 16X150 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "16*150",
+  "satis": 245.76,
+  "liste": 546.13
+ },
+ {
+  "sku": "MONEPF630TH1080",
+  "ad": "HardFIN-630-  20 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "20*100",
+  "satis": 248.59,
+  "liste": 552.41
+ },
+ {
+  "sku": "MONEPF630TH1090",
+  "ad": "HardFIN-630L 20*150 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "20*150",
+  "satis": 338.67,
+  "liste": 752.59
+ },
+ {
+  "sku": "MONEPF630TH1043",
+  "ad": "HardFIN-630L- 14 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "HardFIN-630L- 16X130 TH",
+  "satis": 472.07,
+  "liste": 415.9
+ },
+ {
+  "sku": "MONEPF630TH1052",
+  "ad": "HardFIN-630L- 16X130 TX PRO",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "HardFIN-630L- 16X130 TH",
+  "satis": 472.07,
+  "liste": 540.5
+ },
+ {
+  "sku": "MONEPF630TH1070",
+  "ad": "HardFIN-630-  18 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "HardFIN-630- 16X100 TH",
+  "satis": 364.37,
+  "liste": 630.8
+ },
+ {
+  "sku": "MONEPF630TH1092",
+  "ad": "HardFIN-630L 20*150 TX PRO",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "HardFIN-630L 20*150 TH",
+  "satis": 752.59,
+  "liste": 869.4
+ },
+ {
+  "sku": "MONEPF630TH1100",
+  "ad": "HardFIN-630L 25*160 TH",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "HardFIN-630L 20*150 TH",
+  "satis": 752.59,
+  "liste": 1300.0
+ },
+ {
+  "sku": "MONEPF630TH1105",
+  "ad": "HardFIN-630L 25*130*200",
+  "aile": "HARDFIN-630L",
+  "kat": "Sert Malzeme",
+  "olcu": "HardFIN-630L 20*150 TH",
+  "satis": 752.59,
+  "liste": 752.59
+ },
+ {
+  "sku": "MONEPF530000008",
+  "ad": "EPF 530 2-2 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530000009",
+  "ad": "EPF 530 -2,5-2 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530000010",
+  "ad": "EPF 530 -2,5-1 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530001005",
+  "ad": "EPF 530 -3-1 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530001010",
+  "ad": "EPF 530 -3-3 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530001015",
+  "ad": "EPF 530L -3-1 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530001020",
+  "ad": "EPF 530 -3-2 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530003010",
+  "ad": "EPF 530 -4-1 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530003015",
+  "ad": "EPF 530L -4-1 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530003020",
+  "ad": "EPF 530 -4-2 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530003030",
+  "ad": "EPF 530 -4-3 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF530004010",
+  "ad": "EPF 530 -5-1 DERECE",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "6*55",
+  "satis": 26.97,
+  "liste": 59.93
+ },
+ {
+  "sku": "MONEPF53001010105",
+  "ad": "EPF 530-10-10º-R0,5",
+  "aile": "EPF-530",
+  "kat": "Sert Malzeme",
+  "olcu": "10*70",
+  "satis": 55.37,
+  "liste": 123.05
+ },
+ {
+  "sku": "MONEPF710AR1010",
+  "ad": "AluCO-710AR-  3,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "3*50",
+  "satis": 13.38,
+  "liste": 29.74
+ },
+ {
+  "sku": "MONEPF710ALR1010",
+  "ad": "AluCO-710ALR-  3,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "3*75",
+  "satis": 16.58,
+  "liste": 36.85
+ },
+ {
+  "sku": "MONEPF710AR1020",
+  "ad": "AluCO-710AR-  4,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "4*50",
+  "satis": 14.64,
+  "liste": 32.53
+ },
+ {
+  "sku": "MONEPF710ALR1020",
+  "ad": "AluCO-710ALR-  4,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "4*75",
+  "satis": 18.38,
+  "liste": 40.85
+ },
+ {
+  "sku": "MONEPF710AR1030",
+  "ad": "AluCO-710AR-  5,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "5*50",
+  "satis": 22.15,
+  "liste": 49.23
+ },
+ {
+  "sku": "MONEPF710ALR1030",
+  "ad": "AluCO-710ALR-  5,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "5*75",
+  "satis": 26.58,
+  "liste": 59.07
+ },
+ {
+  "sku": "MONEPF710AR1040",
+  "ad": "AluCO-710AR-  6,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "6*55",
+  "satis": 27.34,
+  "liste": 60.76
+ },
+ {
+  "sku": "MONEPF710ALR1040",
+  "ad": "AluCO-710ALR-  6,0*75 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "6*75",
+  "satis": 33.38,
+  "liste": 74.17
+ },
+ {
+  "sku": "MONEPF710ALR1050",
+  "ad": "AluCO-710ALR-  6,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "6*100",
+  "satis": 42.4,
+  "liste": 94.21
+ },
+ {
+  "sku": "MONEPF710AR1050",
+  "ad": "AluCO-710AR-  8,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "8*60",
+  "satis": 37.11,
+  "liste": 82.46
+ },
+ {
+  "sku": "MONEPF710ALR1070",
+  "ad": "AluCO-710ALR-  8,0*75 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "8*75",
+  "satis": 45.69,
+  "liste": 101.54
+ },
+ {
+  "sku": "MONEPF710ALR1080",
+  "ad": "AluCO-710ALR-  8,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "8*100",
+  "satis": 53.38,
+  "liste": 118.62
+ },
+ {
+  "sku": "MONEPF710AR1060",
+  "ad": "AluCO-710AR-  10 R0,5  NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "10*70",
+  "satis": 55.46,
+  "liste": 123.24
+ },
+ {
+  "sku": "MONEPF710ALR1090",
+  "ad": "AluCO-710ALR-  10  R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "10*100",
+  "satis": 79.69,
+  "liste": 177.08
+ },
+ {
+  "sku": "MONEPF710AR1070",
+  "ad": "AluCO-710AR-  12 R0,5  NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "12*75",
+  "satis": 75.88,
+  "liste": 168.61
+ },
+ {
+  "sku": "MONEPF710ALR1100",
+  "ad": "AluCO-710ALR-  12 R0,5  NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "12*100",
+  "satis": 95.69,
+  "liste": 212.64
+ },
+ {
+  "sku": "MONEPF710AR1072",
+  "ad": "AluCO-710AR-  12 R0,2  NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 168.61,
+  "liste": 187.5
+ },
+ {
+  "sku": "MONEPF710AR1080",
+  "ad": "AluCO-710AR-  3,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 29.74,
+  "liste": 40.3
+ },
+ {
+  "sku": "MONEPF710AR1090",
+  "ad": "AluCO-710AR-  4,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 32.53,
+  "liste": 43.7
+ },
+ {
+  "sku": "MONEPF710AR1100",
+  "ad": "AluCO-710AR-  5,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 49.23,
+  "liste": 51.5
+ },
+ {
+  "sku": "MONEPF710AR1110",
+  "ad": "AluCO-710AR-  6,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 60.76,
+  "liste": 64.4
+ },
+ {
+  "sku": "MONEPF710AR1120",
+  "ad": "AluCO-710AR-  8,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 82.46,
+  "liste": 89.4
+ },
+ {
+  "sku": "MONEPF710AR1130",
+  "ad": "AluCO-710AR-  10 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 123.24,
+  "liste": 135.6
+ },
+ {
+  "sku": "MONEPF710AR1140",
+  "ad": "AluCO-710AR-  12 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 168.61,
+  "liste": 187.5
+ },
+ {
+  "sku": "MONEPF710AR1150",
+  "ad": "AluCO-710AR-  12 R1,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 168.61,
+  "liste": 187.5
+ },
+ {
+  "sku": "MONEPF710ALR1060",
+  "ad": "AluCO-710ALR-  7,0 R0,5 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 118.62,
+  "liste": 110.2
+ },
+ {
+  "sku": "MONEPF710ALR1110",
+  "ad": "AluCO-710ALR-  3,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 36.85,
+  "liste": 49.8
+ },
+ {
+  "sku": "MONEPF710ALR1120",
+  "ad": "AluCO-710ALR-  4,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 40.85,
+  "liste": 54.7
+ },
+ {
+  "sku": "MONEPF710ALR1130",
+  "ad": "AluCO-710ALR-  5,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 49.23,
+  "liste": 62.7
+ },
+ {
+  "sku": "MONEPF710ALR1140",
+  "ad": "AluCO-710ALR-  6,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 94.21,
+  "liste": 100.8
+ },
+ {
+  "sku": "MONEPF710ALR1145",
+  "ad": "AluCO-710ALR-  6,0X75 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 74.17,
+  "liste": 79.1
+ },
+ {
+  "sku": "MONEPF710ALR1150",
+  "ad": "AluCO-710ALR-  7,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 118.62,
+  "liste": 110.2
+ },
+ {
+  "sku": "MONEPF710ALR1160",
+  "ad": "AluCO-710ALR-  8,0 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 118.62,
+  "liste": 130.1
+ },
+ {
+  "sku": "MONEPF710ALR1165",
+  "ad": "AluCO-710ALR-  8,0X75 R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 101.54,
+  "liste": 110.2
+ },
+ {
+  "sku": "MONEPF710ALR1170",
+  "ad": "AluCO-710ALR-  10  R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 177.08,
+  "liste": 194.8
+ },
+ {
+  "sku": "MONEPF710ALR1180",
+  "ad": "AluCO-710ALR- 12  R1,0 NA",
+  "aile": "ALUCO-710AR",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 212.64,
+  "liste": 237.8
+ },
+ {
+  "sku": "MONEPF710A1010",
+  "ad": "AluRO-710A-  3,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "3*50",
+  "satis": 13.38,
+  "liste": 29.74
+ },
+ {
+  "sku": "MONEPF710AL1010",
+  "ad": "AluRO-710AL-  3,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "3*75",
+  "satis": 16.58,
+  "liste": 36.85
+ },
+ {
+  "sku": "MONEPF710A1020",
+  "ad": "AluRO-710A-  4,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "4*50",
+  "satis": 14.64,
+  "liste": 32.53
+ },
+ {
+  "sku": "MONEPF710AL1020",
+  "ad": "AluRO-710AL-  4,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "4*75",
+  "satis": 18.38,
+  "liste": 40.85
+ },
+ {
+  "sku": "MONEPF710A1030",
+  "ad": "AluRO-710A-  5,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "5*50",
+  "satis": 22.15,
+  "liste": 49.23
+ },
+ {
+  "sku": "MONEPF710AL1030",
+  "ad": "AluRO-710AL-  5,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "5*75",
+  "satis": 26.58,
+  "liste": 59.07
+ },
+ {
+  "sku": "MONEPF710A1040",
+  "ad": "AluRO-710A-  6,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "6*55",
+  "satis": 27.34,
+  "liste": 60.76
+ },
+ {
+  "sku": "MONEPF710AL1040",
+  "ad": "AluRO-710AL-  6,0 *75 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "6*75",
+  "satis": 33.38,
+  "liste": 74.17
+ },
+ {
+  "sku": "MONEPF710AL1050",
+  "ad": "AluRO-710AL-  6,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "6*100",
+  "satis": 42.4,
+  "liste": 94.21
+ },
+ {
+  "sku": "MONEPF710A1060",
+  "ad": "AluRO-710A-  8,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "8*60",
+  "satis": 37.11,
+  "liste": 82.46
+ },
+ {
+  "sku": "MONEPF710AL1070",
+  "ad": "AluRO-710AL-  8,0 *75 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "8*75",
+  "satis": 45.69,
+  "liste": 101.54
+ },
+ {
+  "sku": "MONEPF710AL1080",
+  "ad": "AluRO-710AL-  8,0 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "8*100",
+  "satis": 53.38,
+  "liste": 118.62
+ },
+ {
+  "sku": "MONEPF710A1080",
+  "ad": "AluRO-710A-  10 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "10*70",
+  "satis": 55.46,
+  "liste": 123.24
+ },
+ {
+  "sku": "MONEPF710AL1100",
+  "ad": "AluRO-710AL-  10 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "10*100",
+  "satis": 79.69,
+  "liste": 177.08
+ },
+ {
+  "sku": "MONEPF710A1090",
+  "ad": "AluRO-710A-  12 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "12*75",
+  "satis": 75.88,
+  "liste": 168.61
+ },
+ {
+  "sku": "MONEPF710AL1110",
+  "ad": "AluRO-710AL-  12 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "12*100",
+  "satis": 95.69,
+  "liste": 212.64
+ },
+ {
+  "sku": "MONEPF710AL1115",
+  "ad": "AluRO-710AL-  14 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "14*330",
+  "satis": 196.99,
+  "liste": 437.76
+ },
+ {
+  "sku": "MONEPF710A1110",
+  "ad": "AluRO-710A-  16 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "16*100",
+  "satis": 157.01,
+  "liste": 348.92
+ },
+ {
+  "sku": "MONEPF710AL1120",
+  "ad": "AluRO-710AL-  16 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "16*150",
+  "satis": 214.17,
+  "liste": 475.94
+ },
+ {
+  "sku": "MONEPF710A1113",
+  "ad": "AluRO-710A-  20 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "20*100",
+  "satis": 239.91,
+  "liste": 533.13
+ },
+ {
+  "sku": "MONEPF710AL1130",
+  "ad": "AluRO-710AL-  20 NA (150BOY)",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "20*150",
+  "satis": 322.0,
+  "liste": 715.55
+ },
+ {
+  "sku": "MONEPF710A1083",
+  "ad": "AluRO-710A-  11 NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 168.61,
+  "liste": 187.5
+ },
+ {
+  "sku": "MONEPF710AL01010",
+  "ad": "EPF 710 AL -16*165 Z:3 ALU FREZE",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 475.94,
+  "liste": 475.94
+ },
+ {
+  "sku": "MONEPF710AL01020",
+  "ad": "EPF 710 AL -20*165 Z:3 ALU FREZE",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 715.55,
+  "liste": 715.55
+ },
+ {
+  "sku": "MONEPF710AL1121",
+  "ad": "AluRO-710AL-  16*150 özel  NA",
+  "aile": "ALURO-710A",
+  "kat": "Alüminyum",
+  "olcu": "",
+  "satis": 475.94,
+  "liste": 542.0
+ },
+ {
+  "sku": "MONEPF11001010",
+  "ad": "ALURO-110 4*12*50 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "4*50",
+  "satis": 13.91,
+  "liste": 30.92
+ },
+ {
+  "sku": "MONEPF11001020",
+  "ad": "ALURO-110 5*15*50 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "5*50",
+  "satis": 17.18,
+  "liste": 38.18
+ },
+ {
+  "sku": "MONEPF11001030",
+  "ad": "ALURO-110 6*18*50 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "6*55",
+  "satis": 20.05,
+  "liste": 44.56
+ },
+ {
+  "sku": "MONEPF11001033",
+  "ad": "ALURO-110 6*30*75 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "6*75",
+  "satis": 23.37,
+  "liste": 51.94
+ },
+ {
+  "sku": "MONEPF11001040",
+  "ad": "ALURO-110 8*24*63 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "8*75",
+  "satis": 27.45,
+  "liste": 61.0
+ },
+ {
+  "sku": "MONEPF11001043",
+  "ad": "ALURO-110 8*40*100 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "8*100",
+  "satis": 39.47,
+  "liste": 87.72
+ },
+ {
+  "sku": "MONEPF11001050",
+  "ad": "ALURO-110 10*30*70 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "10*70",
+  "satis": 44.2,
+  "liste": 98.22
+ },
+ {
+  "sku": "MONEPF11001053",
+  "ad": "ALURO-110 10*50*100 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "10*100",
+  "satis": 57.58,
+  "liste": 127.96
+ },
+ {
+  "sku": "MONEPF11001060",
+  "ad": "ALURO-110 12*36*75 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "12*75",
+  "satis": 54.73,
+  "liste": 121.63
+ },
+ {
+  "sku": "MONEPF11001063",
+  "ad": "ALURO-110 12*50*100 Z1 NA",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "12*100",
+  "satis": 69.71,
+  "liste": 154.91
+ },
+ {
+  "sku": "MONEPF11001070",
+  "ad": "ALURO-110-14*40*165",
+  "aile": "ALURO-110",
+  "kat": "Alüminyum",
+  "olcu": "14*130",
+  "satis": 17.4,
+  "liste": 38.67
+ },
+ {
+  "sku": "MONEPF720A1010",
+  "ad": "AluBall-720A-  3,0 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "3*50",
+  "satis": 13.38,
+  "liste": 29.74
+ },
+ {
+  "sku": "MONEPF720AL1010",
+  "ad": "AluBall-720AL-  3,0 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "3*75",
+  "satis": 16.58,
+  "liste": 36.85
+ },
+ {
+  "sku": "MONEPF720A1020",
+  "ad": "AluBall-720A-  4,0 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "4*50",
+  "satis": 14.64,
+  "liste": 32.53
+ },
+ {
+  "sku": "MONEPF720AL1020",
+  "ad": "AluBall-720AL-  4,0 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "4*75",
+  "satis": 18.38,
+  "liste": 40.85
+ },
+ {
+  "sku": "MONEPF720A1025",
+  "ad": "AluBall-720A-  5,0 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "5*50",
+  "satis": 22.15,
+  "liste": 49.23
+ },
+ {
+  "sku": "MONEPF720A1030",
+  "ad": "AluBall-720A-  6,0 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "6*55",
+  "satis": 27.34,
+  "liste": 60.76
+ },
+ {
+  "sku": "MONEPF720AL1030",
+  "ad": "AluBall-720AL-  6,0X75 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "6*75",
+  "satis": 33.38,
+  "liste": 74.17
+ },
+ {
+  "sku": "MONEPF720AL10334",
+  "ad": "AluBall-720AL-  6,0X100 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "6*100",
+  "satis": 42.4,
+  "liste": 94.21
+ },
+ {
+  "sku": "MONEPF720A1040",
+  "ad": "AluBall-720A-  8,0 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "8*60",
+  "satis": 37.11,
+  "liste": 82.46
+ },
+ {
+  "sku": "MONEPF720AL1040",
+  "ad": "AluBall-720AL-  8,0X75 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "8*75",
+  "satis": 45.69,
+  "liste": 101.54
+ },
+ {
+  "sku": "MONEPF720AL1044",
+  "ad": "AluBall-720AL-  8,0X100 NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "8*100",
+  "satis": 53.38,
+  "liste": 118.62
+ },
+ {
+  "sku": "MONEPF720A1050",
+  "ad": "AluBall-720A-  10  NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "10*70",
+  "satis": 55.46,
+  "liste": 123.24
+ },
+ {
+  "sku": "MONEPF720AL1050",
+  "ad": "AluBall-720AL-  10  NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "10*100",
+  "satis": 79.69,
+  "liste": 177.08
+ },
+ {
+  "sku": "MONEPF720A1060",
+  "ad": "AluBall-720A-  12  NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "12*75",
+  "satis": 75.88,
+  "liste": 168.61
+ },
+ {
+  "sku": "MONEPF720AL1060",
+  "ad": "AluBall-720AL-  12X100  NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "12*100",
+  "satis": 95.69,
+  "liste": 212.64
+ },
+ {
+  "sku": "MONEPF720AL1070",
+  "ad": "AluBall-720AL-  12X110  NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "12*100",
+  "satis": 95.69,
+  "liste": 212.64
+ },
+ {
+  "sku": "MONEPF720A1065",
+  "ad": "AluBall-720A-  16  NA",
+  "aile": "ALUBALL-720A",
+  "kat": "Alüminyum",
+  "olcu": "16*100",
+  "satis": 157.01,
+  "liste": 348.92
+ },
+ {
+  "sku": "MONERY21201031",
+  "ad": "ERY-212  3,0*75  TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "3*75",
+  "satis": 22.18,
+  "liste": 49.28
+ },
+ {
+  "sku": "MONERY21201010",
+  "ad": "ERY-212  4,0*75 TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "4*75",
+  "satis": 23.98,
+  "liste": 53.28
+ },
+ {
+  "sku": "MONERY21201030",
+  "ad": "ERY-212  4,0*100  TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "4*100",
+  "satis": 25.72,
+  "liste": 57.16
+ },
+ {
+  "sku": "MONERY21201040",
+  "ad": "ERY-212  5,0*100  TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "5*100",
+  "satis": 28.99,
+  "liste": 64.42
+ },
+ {
+  "sku": "MONERY21201050",
+  "ad": "ERY-212  6,0*100  TSH KARBÜR FREZE RAYBA",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "6*100",
+  "satis": 38.1,
+  "liste": 84.67
+ },
+ {
+  "sku": "MONERY21201060",
+  "ad": "ERY-212  8,0 *100 TSH KARBÜR FREZE RAYBA",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "8*100",
+  "satis": 52.2,
+  "liste": 116.0
+ },
+ {
+  "sku": "MONERY21201063",
+  "ad": "ERY-212  8,0 *150 TSH KARBÜR FREZE RAYBA",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "8*150",
+  "satis": 64.02,
+  "liste": 142.26
+ },
+ {
+  "sku": "MONERY21201070",
+  "ad": "ERY-212  10,0 *150 TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "10*150",
+  "satis": 86.61,
+  "liste": 192.46
+ },
+ {
+  "sku": "MONERY21201080",
+  "ad": "ERY-212  12,0*165  TSH KARBÜR FREZE RAYBA",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "12*150",
+  "satis": 118.21,
+  "liste": 262.68
+ },
+ {
+  "sku": "MONERY21201090",
+  "ad": "ERY-212  16,0*150  TSH KARBÜR FREZE RAYBA",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "16*150",
+  "satis": 191.56,
+  "liste": 425.68
+ },
+ {
+  "sku": "MONERY21201100",
+  "ad": "ERY-212  20,0 *165 TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "20*150",
+  "satis": 273.9,
+  "liste": 608.66
+ },
+ {
+  "sku": "MONERY21201020",
+  "ad": "ERY-212  8,0*75  TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 116.0,
+  "liste": 127.5
+ },
+ {
+  "sku": "MONERY21201035",
+  "ad": "ERY-212  5,0*75  TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 64.42,
+  "liste": 69.3
+ },
+ {
+  "sku": "MONERY21201065",
+  "ad": "ERY-212  8,0 *200 TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 116.0,
+  "liste": 116.0
+ },
+ {
+  "sku": "MONERY21201075",
+  "ad": "ERY-212  11,44*110  TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 262.68,
+  "liste": 262.68
+ },
+ {
+  "sku": "MONERY21201085",
+  "ad": "ERY-212  12,0*200  TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 262.68,
+  "liste": 262.68
+ },
+ {
+  "sku": "MONERY21201102",
+  "ad": "ERY-212  19,3 *200 TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 608.66,
+  "liste": 608.66
+ },
+ {
+  "sku": "MONERY212L01101",
+  "ad": "ERY-212L  10,0 *180 TSH",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 192.46,
+  "liste": 192.46
+ },
+ {
+  "sku": "MONERY212L01140",
+  "ad": "ERY-212L  40*250 *200 KAYNAKLI RAYBA",
+  "aile": "ERY-212",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 608.66,
+  "liste": 608.66
+ },
+ {
+  "sku": "MONEPK1010",
+  "ad": "CHEMFER-EPK-  6-90 TLX",
+  "aile": "CHEMFER-EPK",
+  "kat": "Rayba & Özel",
+  "olcu": "6*55",
+  "satis": 25.03,
+  "liste": 55.62
+ },
+ {
+  "sku": "MONEPK1020",
+  "ad": "CHEMFER-EPK-  8-90 TLX",
+  "aile": "CHEMFER-EPK",
+  "kat": "Rayba & Özel",
+  "olcu": "8*60",
+  "satis": 33.23,
+  "liste": 73.85
+ },
+ {
+  "sku": "MONEPK1030",
+  "ad": "CHEMFER-EPK-10-90 TLX",
+  "aile": "CHEMFER-EPK",
+  "kat": "Rayba & Özel",
+  "olcu": "10*70",
+  "satis": 48.37,
+  "liste": 107.5
+ },
+ {
+  "sku": "MONEPK1040",
+  "ad": "CHEMFER-EPK-12-90 TLX",
+  "aile": "CHEMFER-EPK",
+  "kat": "Rayba & Özel",
+  "olcu": "12*75",
+  "satis": 64.56,
+  "liste": 143.46
+ },
+ {
+  "sku": "MONEPK1050",
+  "ad": "CHEMFER-EPK-16-90 TLX",
+  "aile": "CHEMFER-EPK",
+  "kat": "Rayba & Özel",
+  "olcu": "16*100",
+  "satis": 133.39,
+  "liste": 296.42
+ },
+ {
+  "sku": "MONEPK1110",
+  "ad": "CHEMFER-EPK-16-38.6° TSH",
+  "aile": "CHEMFER-EPK",
+  "kat": "Rayba & Özel",
+  "olcu": "",
+  "satis": 296.42,
+  "liste": 296.42
+ },
+ {
+  "sku": "MONEPK1005",
+  "ad": "CHEMFER-EPK-  4-90 TLX",
+  "aile": "CHEMFER-EPK",
+  "kat": "Rayba & Özel",
+  "olcu": "CHEMFER-EPK-  6-90 TLX",
+  "satis": 55.62,
+  "liste": 40.0
+ },
+ {
+  "sku": "MONEMT110001009",
+  "ad": "EMT 110- 2,8  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "2.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001010",
+  "ad": "EMT 110- 3,0  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001020",
+  "ad": "EMT 110- 3,2 ( M4 ) ELMAS MATKAP TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001050",
+  "ad": "EMT 110- 3,3  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001030",
+  "ad": "EMT 110- 3,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001040",
+  "ad": "EMT 110- 3,70  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.7 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001048",
+  "ad": "EMT 110- 3,8  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001070",
+  "ad": "EMT 110- 4,0  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001080",
+  "ad": "EMT 110- 4,1  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.1 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001060",
+  "ad": "EMT 110- 4,2 (M5) ELMAS MATKAP TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001061",
+  "ad": "EMT 110- 4,3  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001089",
+  "ad": "EMT 110- 4,4  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.4 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001090",
+  "ad": "EMT 110- 4,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001100",
+  "ad": "EMT 110- 4,6  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.6 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001109",
+  "ad": "EMT 110- 4,8  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001110",
+  "ad": "EMT 110- 4,9  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.9 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001119",
+  "ad": "EMT 110- 5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001120",
+  "ad": "EMT 110- 5,1  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.1 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001121",
+  "ad": "EMT 110- 5,2  ( M6 ) ELMAS MATKAP TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001123",
+  "ad": "EMT 110- 5,3  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001122",
+  "ad": "EMT 110- 5,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001130",
+  "ad": "EMT 110- 5,8  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001140",
+  "ad": "EMT 110- 6  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001143",
+  "ad": "EMT 110- 6,2 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001144",
+  "ad": "EMT 110- 6,30 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001147",
+  "ad": "EMT 110- 6,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001150",
+  "ad": "EMT 110- 6,7  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.7 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001160",
+  "ad": "EMT 110- 6,8  (M8) ELMAS MATKAP TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110KAD680",
+  "ad": "EMT 110- 6,8 KADEMELİ MAT. TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001162",
+  "ad": "EMT 110- 6,9  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.9 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001163",
+  "ad": "EMT 110- 7,0  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001170",
+  "ad": "EMT 110- 7,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001174",
+  "ad": "EMT 110- 7,8  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001181",
+  "ad": "EMT 110- 8,0  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001190",
+  "ad": "EMT 110- 8,1 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.1 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001192",
+  "ad": "EMT 110- 8,3 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001180",
+  "ad": "EMT 110- 8,5 (M10) ELMAS MATKAP  TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001178",
+  "ad": "EMT 110- 8,6  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.6 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001179",
+  "ad": "EMT 110- 8,8  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001194",
+  "ad": "EMT 110- 8,80 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001210",
+  "ad": "EMT 110- 9,0  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001200",
+  "ad": "EMT 110- 9,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001214",
+  "ad": "EMT 110- 9,80  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001215",
+  "ad": "EMT 110- 9,95  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.95 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001220",
+  "ad": "EMT 110- 10,0 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001222",
+  "ad": "EMT 110- 10,2 (M12) ELMAS MATKAP TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001221",
+  "ad": "EMT 110- 10,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001230",
+  "ad": "EMT 110- 11 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001231",
+  "ad": "EMT 110- 11,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001233",
+  "ad": "EMT 110- 11,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001232",
+  "ad": "EMT 110- 12 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001229",
+  "ad": "EMT 110- 12,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001236",
+  "ad": "EMT 110- 13 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001240",
+  "ad": "EMT 110- 13,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001234",
+  "ad": "EMT 110- 14 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "14 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001241",
+  "ad": "EMT 110- 14,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "14.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001242",
+  "ad": "EMT 110- 15 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "15 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001237",
+  "ad": "EMT 110- 16 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "16 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001235",
+  "ad": "EMT 110- 16,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "16.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001238",
+  "ad": "EMT 110- 17 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "17 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001239",
+  "ad": "EMT 110- 17,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "17.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001243",
+  "ad": "EMT 110- 19  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "19 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT110001250",
+  "ad": "EMT 110- 20,0  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "20 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000100",
+  "ad": "EMT 120 - 4,0 TSH 3D SU KAN.KAR.MATKAP",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000101",
+  "ad": "EMT 120 - 4,2 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000102",
+  "ad": "EMT 120 - 4,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000103",
+  "ad": "EMT 120 - 4,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000104",
+  "ad": "EMT 120 - 5,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000105",
+  "ad": "EMT 120 - 5,2 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000106",
+  "ad": "EMT 120 - 5,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000107",
+  "ad": "EMT 120 - 5,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000108",
+  "ad": "EMT 120 - 6,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000109",
+  "ad": "EMT 120 - 6,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000110",
+  "ad": "EMT 120 - 6,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000111",
+  "ad": "EMT 120 - 7,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000112",
+  "ad": "EMT 120 - 7,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000113",
+  "ad": "EMT 120 - 7,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000114",
+  "ad": "EMT 120 - 8,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000115",
+  "ad": "EMT 120 - 8,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000116",
+  "ad": "EMT 120 - 9,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000117",
+  "ad": "EMT 120 - 9,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000118",
+  "ad": "EMT 120 - 9,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000119",
+  "ad": "EMT 120 - 10,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000120",
+  "ad": "EMT 120 - 10,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000121",
+  "ad": "EMT 120 - 11,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000122",
+  "ad": "EMT 120 - 11,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000123",
+  "ad": "EMT 120 - 12,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000124",
+  "ad": "EMT 120 - 12,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000125",
+  "ad": "EMT 120 - 13,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000126",
+  "ad": "EMT 120 - 13,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT12000127",
+  "ad": "EMT 120 - 14,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "14 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001007",
+  "ad": "EMT 210- 2,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "2.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001010",
+  "ad": "EMT 210- 3,0 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001020",
+  "ad": "EMT 210- 3,2 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001030",
+  "ad": "EMT 210- 3,3 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001040",
+  "ad": "EMT 210- 3,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001041",
+  "ad": "EMT 210- 3,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "3.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001050",
+  "ad": "EMT 210- 4,0 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001060",
+  "ad": "EMT 210- 4,1 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.1 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001070",
+  "ad": "EMT 210- 4,2 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001080",
+  "ad": "EMT 210- 4,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001083",
+  "ad": "EMT 210- 4,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001090",
+  "ad": "EMT 210-5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001091",
+  "ad": "EMT 210-5,1 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.1 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001095",
+  "ad": "EMT 210-5,2 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001096",
+  "ad": "EMT 210-5,3 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.3 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001100",
+  "ad": "EMT 210-5,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001110",
+  "ad": "EMT 210-5,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001120",
+  "ad": "EMT 210-6 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001141",
+  "ad": "EMT 210-6,13 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.13 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001142",
+  "ad": "EMT 210-6,14 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.14 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001140",
+  "ad": "EMT 210-6,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001130",
+  "ad": "EMT 210-6,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001150",
+  "ad": "EMT 210-6,8x8,5 KADEMELİ MAT.TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001143",
+  "ad": "EMT 210-6,96 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.96 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001151",
+  "ad": "EMT 210-7,0 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001153",
+  "ad": "EMT 210-7,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001160",
+  "ad": "EMT 210-7,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001161",
+  "ad": "EMT 210-7,95 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.95 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001210",
+  "ad": "EMT 210-8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001170",
+  "ad": "EMT 210-8,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001172",
+  "ad": "EMT 210-8,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001179",
+  "ad": "EMT 210-9 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001181",
+  "ad": "EMT 210-9,5  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001180",
+  "ad": "EMT 210-9,8  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001189",
+  "ad": "EMT 210-10  TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001190",
+  "ad": "EMT 210- 10,2 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001191",
+  "ad": "EMT 210- 10,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001192",
+  "ad": "EMT 210- 10,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001250",
+  "ad": "EMT 210-11 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001220",
+  "ad": "EMT 210-11,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001230",
+  "ad": "EMT 210-11,8 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001204",
+  "ad": "EMT 210-12 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001206",
+  "ad": "EMT 210-12,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001232",
+  "ad": "EMT 210-13 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001235",
+  "ad": "EMT 210-13,5 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT210001240",
+  "ad": "EMT 210-14 TLX",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "14 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000100",
+  "ad": "EMT - 220 4,0 TSH 5D SU KAN.KAR.MATKAP",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000101",
+  "ad": "EMT - 220 4,2 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000102",
+  "ad": "EMT - 220 4,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT220001020",
+  "ad": "EMT - 220 4,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000103",
+  "ad": "EMT 220- 5,0 TSH 5D SU KANALLI KARBÜR MATKAP",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000104",
+  "ad": "EMT - 220 5,2 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000105",
+  "ad": "EMT 220- 5,5 TSH 5D SU KANALLI KARBÜR MATKAP",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000106",
+  "ad": "EMT - 220 5,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000107",
+  "ad": "EMT 220- 6,0 TSH 5D SU KANALLI KARBÜR MATKAP",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000108",
+  "ad": "EMT - 220 6,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000109",
+  "ad": "EMT - 220 6,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000110",
+  "ad": "EMT - 220 7,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000111",
+  "ad": "EMT - 220 7,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000112",
+  "ad": "EMT - 220 7,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000113",
+  "ad": "EMT - 220 8,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000114",
+  "ad": "EMT - 220 8,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000115",
+  "ad": "EMT - 220 9,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000116",
+  "ad": "EMT - 220 9,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000117",
+  "ad": "EMT - 220 9,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000118",
+  "ad": "EMT - 220 10,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000119",
+  "ad": "EMT - 220 10,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000120",
+  "ad": "EMT - 220 10,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000121",
+  "ad": "EMT - 220 11,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000122",
+  "ad": "EMT - 220 11,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000123",
+  "ad": "EMT - 220 11,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "11.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000124",
+  "ad": "EMT - 220 12,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000125",
+  "ad": "EMT - 220 12,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000126",
+  "ad": "EMT - 220 13,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000127",
+  "ad": "EMT - 220 13,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "13.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT22000128",
+  "ad": "EMT - 220 14,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "14 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000100",
+  "ad": "EMT - 310 4,0 TSH 8D SU KAN.KAR.MATKAP",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000101",
+  "ad": "EMT - 310 4,2 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000102",
+  "ad": "EMT - 310 4,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT310001020",
+  "ad": "EMT - 310 4,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "4.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000103",
+  "ad": "EMT - 310 5,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000104",
+  "ad": "EMT - 310 5,2 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.2 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000105",
+  "ad": "EMT - 310 5,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000106",
+  "ad": "EMT - 310 5,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "5.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000107",
+  "ad": "EMT - 310 6,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000108",
+  "ad": "EMT - 310 6,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000109",
+  "ad": "EMT - 310 6,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "6.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000110",
+  "ad": "EMT - 310 7,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000111",
+  "ad": "EMT - 310 7,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000112",
+  "ad": "EMT - 310 7,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "7.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000113",
+  "ad": "EMT - 310 8,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000114",
+  "ad": "EMT - 310 8,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "8.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000115",
+  "ad": "EMT - 310 9,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000116",
+  "ad": "EMT - 310 9,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000117",
+  "ad": "EMT - 310 9,8 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "9.8 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000118",
+  "ad": "EMT - 310 10,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000119",
+  "ad": "EMT - 310 10,5 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "10.5 mm",
+  "satis": null,
+  "liste": null
+ },
+ {
+  "sku": "MONEMT31000120",
+  "ad": "EMT - 310 12,0 TSH",
+  "aile": "EMT",
+  "kat": "Karbür Matkap",
+  "olcu": "12 mm",
+  "satis": null,
+  "liste": null
+ }
+]
