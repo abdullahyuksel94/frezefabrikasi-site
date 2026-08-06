@@ -99,8 +99,23 @@ async function katalog() {
   ara.oninput = ciz; sec.onchange = ciz; ciz();
 }
 
+/* ---------- YORUMLAR (yorumlar.json — sadece sahibin onayıyla eklenir) ---------- */
+async function yorumlar() {
+  const kok = document.getElementById('yorum-liste');
+  if (!kok) return;
+  try {
+    const l = await (await fetch('yorumlar.json')).json();
+    if (!l.length) { document.getElementById('yorum-bos').style.display = 'flex'; return; }
+    kok.innerHTML = l.map(y => `<div class="prod">
+      <div class="fam">${'★'.repeat(y.yildiz || 5)}</div>
+      <div class="nm" style="font-weight:600; font-size:.9rem;">"${y.metin}"</div>
+      <div class="spec">${y.ad}${y.firma ? ' · ' + y.firma : ''}${y.sehir ? ' · ' + y.sehir : ''}</div>
+    </div>`).join('');
+  } catch { document.getElementById('yorum-bos').style.display = 'flex'; }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  katalog(); bar();
+  katalog(); bar(); yorumlar();
   const t = document.querySelector('#cartbar .clear');
   if (t) t.onclick = () => sepet.bosalt();
 });
