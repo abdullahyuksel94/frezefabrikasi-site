@@ -1,6 +1,12 @@
 # frezefabrikasi.com
 
-FREZE FABRİKASI — Moncarb alt markası e-ticaret sitesi.
+FREZE FABRİKASI — Moncarb alt markası e-ticaret sitesi (kuruluş 2018, İstanbul; hedef pazar Anadolu).
+
+## ⚠️ İŞ BÖLÜMÜ — çakışma olmasın
+- **Claude Code** (kullanıcının bilgisayarında): TÜM kod/içerik değişiklikleri burada yapılır → GitHub'a push.
+- **GitHub**: tek doğruluk kaynağı.
+- **Replit**: SADECE yayınlar (pull + deploy + domain). Replit'te kod DÜZENLENMEZ. Detay: `replit.md`.
+- Değişiklik isteği → kullanıcı Claude'a söyler; Claude push'lar; Replit'te "pull" yapılıp yayınlanır.
 
 ## Durum
 - **Faz 0 (şimdi):** `index.html` = "Yakında" sayfası. Replit'te bunu yayınla.
