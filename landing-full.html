@@ -202,9 +202,25 @@
     <div class="prods" id="yorum-liste"></div>
     <div class="band" id="yorum-bos" style="display:none;">
       <div class="big">İlk yorumu sen yaz 🏁</div>
-      <p>Takımı dene, ne düşündüğünü WhatsApp'tan yaz — adın ve şehrinle (istersen firma adınla) burada yayınlayalım. İyi de yaz, kötü de: ikisi de yayına girer.</p>
-      <a class="cta" href="#">Yorumunu Gönder</a>
+      <p>Takımı dene, ne düşündüğünü aşağıdaki formdan yaz. İyi de yaz, kötü de — onaydan sonra ikisi de yayına girer.</p>
     </div>
+    <form id="yorum-form" class="compare" style="margin-top:.8rem; display:flex; flex-direction:column; gap:.6rem;">
+      <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+        <input required name="ad" placeholder="Adın Soyadın *" style="flex:1; min-width:160px; padding:.55rem .8rem; border:1px solid var(--line); border-radius:3px;">
+        <input name="firma" placeholder="Firma (istersen)" style="flex:1; min-width:160px; padding:.55rem .8rem; border:1px solid var(--line); border-radius:3px;">
+        <input name="sehir" placeholder="Şehir" style="flex:1; min-width:120px; padding:.55rem .8rem; border:1px solid var(--line); border-radius:3px;">
+        <select name="yildiz" style="padding:.55rem .8rem; border:1px solid var(--line); border-radius:3px;">
+          <option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option>
+          <option value="2">★★</option><option value="1">★</option>
+        </select>
+      </div>
+      <textarea required name="yorum" rows="3" placeholder="Hangi takımı kullandın, nasıl buldun? *" style="padding:.55rem .8rem; border:1px solid var(--line); border-radius:3px; font-family:inherit;"></textarea>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div style="display:flex; gap:.8rem; align-items:center; flex-wrap:wrap;">
+        <button class="cta" type="submit">Yorumu Gönder</button>
+        <span id="yorum-durum" style="font-size:.85rem; color:var(--muted);">Yorumlar onaydan sonra yayınlanır.</span>
+      </div>
+    </form>
   </section>
 
   <section>

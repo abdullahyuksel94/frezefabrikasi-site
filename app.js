@@ -114,8 +114,29 @@ async function yorumlar() {
   } catch { document.getElementById('yorum-bos').style.display = 'flex'; }
 }
 
+function yorumFormu() {
+  const f = document.getElementById('yorum-form');
+  if (!f) return;
+  f.addEventListener('submit', async e => {
+    e.preventDefault();
+    const d = document.getElementById('yorum-durum');
+    d.textContent = 'Gönderiliyor…';
+    try {
+      const r = await fetch('https://formsubmit.co/ajax/abdullahyuksel94@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(Object.assign({ _subject: 'FrezeFabrikasi YENİ YORUM', _captcha: 'false' },
+          Object.fromEntries(new FormData(f)))),
+      });
+      if (!r.ok) throw 0;
+      f.reset();
+      d.textContent = '✓ Yorumun alındı — onaydan sonra burada yayınlanacak. Teşekkürler!';
+    } catch { d.textContent = 'Gönderilemedi — lütfen tekrar dene.'; }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  katalog(); bar(); yorumlar();
+  katalog(); bar(); yorumlar(); yorumFormu();
   const t = document.querySelector('#cartbar .clear');
   if (t) t.onclick = () => sepet.bosalt();
 });
