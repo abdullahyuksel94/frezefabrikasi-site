@@ -199,7 +199,7 @@ async function katalog() {
       katSira.clear(); katSirali.forEach((v, k) => katSira.set(k, v));
       html = [...katSira.entries()].map(([kat, gruplar]) => {
         if (kat === 'Karbür Uçlar') {
-          const sira = { 'Finish': 0, 'Yarı Kaba': 1, 'Kaba': 2 };
+          const sira = { 'Finish': 0, 'Yarı Kaba': 1, 'Kaba': 2, 'Yüzey Tarama': 3 };
           gruplar.sort((a, b) => (sira[a[1][0].altkat] ?? 9) - (sira[b[1][0].altkat] ?? 9));
         }
         let sonAlt = null;
