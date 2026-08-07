@@ -139,3 +139,11 @@ footer b{color:#f5f3f0;}
 
 /* katalog kartı ürün fotoğrafı */
 .prod img.foto{width:100%; height:110px; object-fit:contain; background:#fff; border-radius:3px;}
+
+/* aile sayfası başlığı */
+.aile-bas{display:flex; gap:1.2rem; align-items:center; background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--red); border-radius:6px; padding:1rem 1.2rem; margin-bottom:.8rem; flex-wrap:wrap;}
+.aile-bas img{width:150px; height:100px; object-fit:contain; background:#fff; border-radius:4px;}
+.aile-bas h3{margin:.1rem 0; font-size:1.3rem; font-weight:850; text-transform:uppercase;}
+.aile-bas p{margin:0; color:var(--muted); font-size:.9rem; max-width:60ch;}
+.aile-bas .geri{font-size:.78rem; color:var(--red); text-decoration:none; font-weight:700;}
+.prod .tier{margin-left:.4rem;}

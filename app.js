@@ -49,55 +49,123 @@ function bar() {
     `${aday.ad.slice(0, 25)}: ${5 - aday.adet} adet daha → 5+ indirimi`;
   el.querySelector('.info').textContent = `Sepet: ${adet} ürün · ${fmt(toplam)} (${etiket})`;
   el.querySelector('.next').textContent = sonraki;
-  const metin = l.map(x => `• ${x.ad} × ${x.adet}`).join('%0A');
+  const metin = l.map(x => `• [${x.sku}] ${x.ad} × ${x.adet}`).join('%0A');
   el.querySelector('.wa').href =
     `https://wa.me/90XXXXXXXXXX?text=Merhaba, sipariş vermek istiyorum:%0A${metin}%0AToplam: ${encodeURIComponent(fmt(toplam))} (${encodeURIComponent(etiket)})`;
   el.classList.add('on');
 }
 
-/* ---------- KATALOG ---------- */
+/* ---------- AİLE BİLGİLERİ (moncarb site yapısından) ---------- */
+const AILE_BILGI = {
+  'SHARPRO-430': ['Genel amaçlı düz freze — Z4, TSH kaplama, mikro tane karbür. İmalat ve ıslah çeliklerinin ekmek teknesi.', 'images/products/sharpro430.png'],
+  'SHARPRO-420': ['2 ağızlı düz freze — kanal ve cep açmada talaş tahliyesi rahat.', 'images/products/hardsharp420_new.png'],
+  'HIGHRO-410R': ['Yüksek ilerleme (high-feed) frezesi — kaba talaşta zaman kazandırır.', 'images/products/highro410_new.png'],
+  'EPF-530': ['55 HRC sınıfı parmak freze — sertleştirilmiş kalıp çeliğinde güvenilir.', 'images/products/hardsharp420l.png'],
+  'HARDCO-430R': ['Köşe radüslü freze R0,2-R3 — kalıpçının kaba+yarı finiş standardı.', 'images/products/hardco430r.png'],
+  'HARDCO-420R': ['2 ağızlı köşe radüslü — dalma ve cep işlerinde.', 'images/products/hardco420r_new.png'],
+  'HARDCO-452R': ['Ağır kaba talaş radüslü serisi — yüksek talaş debisi.', 'images/products/hardco452r_new.png'],
+  'HARDBALL-220': ['Tam küre freze Z2 — 55 HRC\'ye kadar profil ve finiş.', 'images/products/hardball220.png'],
+  'HARDBALL-210': ['Küre freze — genel amaçlı profil işleme.', 'images/products/hardball210_new.png'],
+  'HARDBALL-240L': ['65 HRC sert malzeme küresi, TLX kaplama, uzun boy — uzmanlık serimiz.', 'images/products/hardball240l.png'],
+  'HARDFIN-630L': ['Sert malzeme finiş frezesi — kalıpta son yüzey kalitesi.', 'images/products/hardfin630.png'],
+  'ALUCO-710AR': ['Alüminyum köşe radüslü — polisajlı, yapışma yapmaz.', 'images/products/aluco710ar.png'],
+  'ALURO-710A': ['Alüminyum düz freze — parlak ağız, yüksek devir.', 'images/products/aluro710a.png'],
+  'ALURO-110': ['Alüminyum ekonomik seri.', 'images/products/alu_main.png'],
+  'ALUBALL-720A': ['Alüminyum küre freze.', 'images/products/alu710.png'],
+  'NECK': ['Boğazlı (neck) frezeler — derin cepte gövde sürtmez.', 'images/products/neckball220b_new.png'],
+  'PEN': ['Mikro ve pen frezeler — hassas küçük çap işleri.', 'images/products/penco410br_new.png'],
+  'EMT': ['Karbür matkaplar — 3D/5D, içten soğutmalı seçenekler.', 'images/products/dr210-1.png'],
+  'INSERT': ['Değiştirilebilir kesici uçlar — freze gövdeleriniz için.', 'images/products/insert-tools-hero.png'],
+  'KR': ['KR serisi değiştirilebilir kafa uçları — kendi üretimimiz.', 'images/products/insert-38-kr220-1.png'],
+  'KR TUTUCU': ['KR uçları için tutucular.', 'images/products/insert-tools-hero.png'],
+  'THREMILL': ['Diş frezeleri — tek takımla çok diş standardı.', 'images/products/th30-1.png'],
+  'AYDIN TAKIM': ['Takım tutucular ve tarama kafaları.', 'images/products/insert_apkt10.png'],
+  'ECO': ['ECO ithal seri — küçük çapta en iyi fiyat/performans.', 'images/products/bm220new.png'],
+  'ETF (OUTSOURCE)': ['ETF ekonomik düz freze serisi.', 'images/products/sharp430l.png'],
+  'CMC': ['CMC özel frezeler.', ''],
+  'TORNA': ['Tornalama uçları.', ''],
+  'ERY-212': ['Raybalar — hassas delik toleransı.', ''],
+  'CHEMFER-EPK': ['Pah ve havşa frezeleri.', ''],
+};
+
+/* ---------- KATALOG: Kategori → Aile → Ölçü tablosu (frezecim/moncarb yapısı) ---------- */
 async function katalog() {
   const kok = document.getElementById('katalog');
   if (!kok) return;
-  const res = await fetch('products.json');
-  const hepsi = await res.json();
+  const hepsi = await (await fetch('products.json')).json();
   const params = new URLSearchParams(location.search);
   const sec = document.getElementById('f-kat');
   const ara = document.getElementById('f-ara');
   [...new Set(hepsi.map(u => u.kat))].forEach(k => sec.add(new Option(k, k)));
   if (params.get('kat')) sec.value = params.get('kat');
+  let seciliAile = params.get('aile') || '';
+
+  function satirlar(liste) { /* aile içi ölçü tablosu */
+    return `<div class="compare"><div class="tblwrap"><table>
+      <tr><th>Ürün</th><th>10+ Fiyat</th><th>5+</th><th>Tek</th><th>Adet</th><th></th></tr>
+      ${liste.map(u => u.satis == null
+        ? `<tr><td>${u.mad || u.ad}</td><td colspan="4" style="text-align:left; color:var(--muted);">Fiyat için sorun</td>
+           <td><a class="btn gri" style="padding:.3rem .7rem;" target="_blank" rel="noopener" href="https://wa.me/90XXXXXXXXXX?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`
+        : `<tr><td>${u.mad || u.ad}</td>
+           <td class="our mono">${fmt(u.satis)}</td>
+           <td class="mono">${fmt(KDM.bes(u.satis))}</td>
+           <td class="mono" style="color:var(--muted);">${fmt(KDM.tek(u.satis))}</td>
+           <td><input class="qty mono" type="number" min="1" value="10" style="width:3.6rem;"></td>
+           <td><button class="btn" style="padding:.35rem .8rem;" data-sku="${u.sku}">Ekle</button></td></tr>`).join('')}
+    </table></div></div>`;
+  }
 
   function ciz() {
     const q = (ara.value || '').toLocaleLowerCase('tr');
     const k = sec.value;
-    const liste = hepsi.filter(u =>
-      (!k || u.kat === k) &&
-      (!q || (u.ad + ' ' + u.sku + ' ' + u.olcu).toLocaleLowerCase('tr').includes(q)));
-    document.getElementById('f-say').textContent = liste.length + ' ürün';
-    kok.innerHTML = liste.slice(0, 120).map(u => {
-      const fiyat = u.satis == null
-        ? `<div class="ask">Fiyat için WhatsApp'tan sorun</div>`
-        : `<div class="price"><span class="now mono">${fmt(u.satis)}</span></div>
-           <div class="tier">10+ adet alımda · tek: <span class="mono">${fmt(KDM.tek(u.satis))}</span> · 5+: <span class="mono">${fmt(KDM.bes(u.satis))}</span></div>`;
-      const buton = u.satis == null
-        ? `<a class="btn gri" target="_blank" rel="noopener" href="https://wa.me/90XXXXXXXXXX?text=${encodeURIComponent(u.ad + ' fiyatını öğrenmek istiyorum')}">Fiyat Sor</a>`
-        : `<div class="buyrow"><input class="qty mono" type="number" min="1" value="10" aria-label="adet"><button class="btn" data-sku="${u.sku}">Sepete Ekle</button></div>`;
-      return `<div class="prod">
-        ${u.foto ? `<img class="foto" src="${u.foto}" alt="" loading="lazy">` : ''}
-        <div class="fam">${u.aile}</div>
-        <div class="nm">${u.ad}</div>
-        <div class="spec mono">${u.olcu || u.kat}</div>
-        ${fiyat}${buton}
-      </div>`;
-    }).join('') + (liste.length > 120 ? `<p class="sec-sub">İlk 120 ürün gösteriliyor — aramayı daraltın.</p>` : '');
+    let html = '';
+
+    if (q) { /* ARAMA: tüm katalogda düz tablo */
+      const liste = hepsi.filter(u => (u.ad + ' ' + u.sku + ' ' + u.olcu + ' ' + u.aile).toLocaleLowerCase('tr').includes(q)).slice(0, 150);
+      document.getElementById('f-say').textContent = liste.length + ' sonuç';
+      html = liste.length ? satirlar(liste) : '<p class="sec-sub">Sonuç yok — farklı yazmayı dene (örn. "küre 8").</p>';
+    } else if (seciliAile) { /* AİLE SAYFASI: başlık + ölçü tablosu */
+      const liste = hepsi.filter(u => u.aile === seciliAile);
+      const [acik, foto] = AILE_BILGI[seciliAile] || ['', ''];
+      document.getElementById('f-say').textContent = liste.length + ' ölçü';
+      html = `<div class="aile-bas">
+          ${foto ? `<img src="${foto}" alt="">` : ''}
+          <div><a href="katalog.html${k ? '?kat=' + encodeURIComponent(k) : ''}" class="geri">← ${k || 'Tüm aileler'}</a>
+          <h3>${seciliAile}</h3><p>${acik}</p></div>
+        </div>` + satirlar(liste);
+    } else { /* KATEGORİ SAYFASI: aile kartları */
+      const aileler = new Map();
+      hepsi.filter(u => !k || u.kat === k).forEach(u => {
+        if (!aileler.has(u.aile)) aileler.set(u.aile, { n: 0, kat: u.kat, min: Infinity });
+        const a = aileler.get(u.aile); a.n++;
+        if (u.satis && u.satis < a.min) a.min = u.satis;
+      });
+      document.getElementById('f-say').textContent = aileler.size + ' ürün ailesi';
+      html = '<div class="prods">' + [...aileler.entries()].map(([aile, a]) => {
+        const [acik, foto] = AILE_BILGI[aile] || ['', ''];
+        return `<a class="prod" style="text-decoration:none;" href="katalog.html?${k ? 'kat=' + encodeURIComponent(k) + '&' : ''}aile=${encodeURIComponent(aile)}">
+          ${foto ? `<img class="foto" src="${foto}" alt="" loading="lazy">` : ''}
+          <div class="fam">${a.kat} · ${a.n} ölçü</div>
+          <div class="nm">${aile}</div>
+          <div class="spec">${acik}</div>
+          ${a.min < Infinity ? `<div class="price"><span class="now mono">${fmt(a.min)}</span><span class="tier">'den başlayan 10+ fiyatı</span></div>` : '<div class="ask">Fiyat sor</div>'}
+          <span class="btn">Ölçüleri Gör →</span>
+        </a>`;
+      }).join('') + '</div>';
+    }
+
+    kok.innerHTML = html;
     kok.querySelectorAll('button[data-sku]').forEach(b => b.onclick = () => {
       const u = hepsi.find(x => x.sku === b.dataset.sku);
-      const adet = Math.max(1, parseInt(b.previousElementSibling.value) || 1);
-      sepet.ekle(u.sku, u.ad, u.satis, adet);
-      b.textContent = 'Eklendi ✓'; setTimeout(() => b.textContent = 'Sepete Ekle', 900);
+      const kutu = b.closest('tr').querySelector('.qty');
+      const adet = Math.max(1, parseInt(kutu && kutu.value) || 1);
+      sepet.ekle(u.sku, u.mad || u.ad, u.satis, adet);
+      b.textContent = '✓'; setTimeout(() => b.textContent = 'Ekle', 900);
     });
   }
-  ara.oninput = ciz; sec.onchange = ciz; ciz();
+  ara.oninput = () => { seciliAile = ''; ciz(); };
+  sec.onchange = () => { seciliAile = ''; ciz(); };
+  ciz();
 }
 
 /* ---------- YORUMLAR (yorumlar.json — sadece sahibin onayıyla eklenir) ---------- */
