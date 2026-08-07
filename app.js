@@ -92,7 +92,7 @@ const AILE_BILGI = {
 async function katalog() {
   const kok = document.getElementById('katalog');
   if (!kok) return;
-  const hepsi = await (await fetch('products.json')).json();
+  const hepsi = (await (await fetch('products.json')).json()).filter(u => u.aktif !== false);
   const params = new URLSearchParams(location.search);
   const sec = document.getElementById('f-kat');
   const ara = document.getElementById('f-ara');
