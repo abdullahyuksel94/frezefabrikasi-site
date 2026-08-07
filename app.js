@@ -173,11 +173,17 @@ async function katalog() {
         const ilk = liste.find(u => u.foto) || liste[0];
         const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
         const enDusuk = Math.min(...liste.filter(u => u.satis).map(u => u.satis));
-        return `<a class="grup-satir" href="katalog.html?${ilk.kat ? 'kat=' + encodeURIComponent(ilk.kat) + '&' : ''}grup=${encodeURIComponent(g)}">
-          ${ilk.foto ? `<img src="${ilk.foto}" alt="" loading="lazy">` : '<span class="bosfoto"></span>'}
-          <span class="gbilgi"><b>${g}</b><small>${acik}</small></span>
-          <span class="gfiyat">${isFinite(enDusuk) ? `<span class="mono our">${fmt(enDusuk)}</span><small>'den başlar · 10+ fiyatı</small>` : '<small>fiyat sor</small>'}</span>
-          <span class="gok">${liste.length} ölçü →</span>
+        return `<a class="grup-satir" href="urun/${slugTR(g)}.html">
+          <span class="gfoto">${ilk.foto ? `<img src="${ilk.foto}" alt="" loading="lazy">` : ''}</span>
+          <span class="gbilgi">
+            <b>${g}</b>
+            <small>${acik}</small>
+            <em>${liste.length} ölçü stokta</em>
+          </span>
+          <span class="gsag">
+            ${isFinite(enDusuk) ? `<span class="gfx"><span class="mono our">${fmt(enDusuk)}</span><small>'den başlar (10+)</small></span>` : '<span class="gfx"><small>fiyat sorunuz</small></span>'}
+            <span class="btn mini">Ölçüler & Fiyatlar →</span>
+          </span>
         </a>`;
       }).join('') + '</div>';
     }
@@ -232,8 +238,23 @@ function yorumFormu() {
   });
 }
 
+/* statik ürün sayfalarındaki sepet butonları (SEO sayfaları, fetch'siz) */
+function statikSepet() {
+  document.querySelectorAll('.sepet-btn').forEach(b => b.onclick = () => {
+    const kutu = b.closest('tr').querySelector('.qty');
+    const adet = Math.max(1, parseInt(kutu && kutu.value) || 1);
+    sepet.ekle(b.dataset.sku, b.dataset.ad, parseFloat(b.dataset.satis), adet);
+    b.textContent = '✓'; setTimeout(() => b.textContent = 'Ekle', 900);
+  });
+}
+
+function slugTR(s) {
+  const m = { 'ç': 'c', 'ğ': 'g', 'ı': 'i', 'ö': 'o', 'ş': 's', 'ü': 'u' };
+  return s.toLowerCase().replace(/[çğıöşü]/g, x => m[x]).replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  katalog(); bar(); yorumlar(); yorumFormu();
+  katalog(); bar(); yorumlar(); yorumFormu(); statikSepet();
   const t = document.querySelector('#cartbar .clear');
   if (t) t.onclick = () => sepet.bosalt();
 });
