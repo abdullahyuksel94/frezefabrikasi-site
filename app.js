@@ -100,19 +100,25 @@ async function katalog() {
   if (params.get('kat')) sec.value = params.get('kat');
   let seciliAile = params.get('aile') || '';
 
-  function satirlar(liste) { /* aile içi ölçü tablosu */
-    return `<div class="compare"><div class="tblwrap"><table>
-      <tr><th>Ürün</th><th>10+ Fiyat</th><th>5+</th><th>Tek</th><th>Adet</th><th></th></tr>
-      ${liste.map(u => u.satis == null
-        ? `<tr><td>${u.mad || u.ad}</td><td colspan="4" style="text-align:left; color:var(--muted);">Fiyat için sorun</td>
-           <td><a class="btn gri" style="padding:.3rem .7rem;" target="_blank" rel="noopener" href="https://wa.me/902129060303?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`
-        : `<tr><td>${u.mad || u.ad}</td>
-           <td class="our mono">${fmt(u.satis)}</td>
-           <td class="mono">${fmt(KDM.bes(u.satis))}</td>
-           <td class="mono" style="color:var(--muted);">${fmt(KDM.tek(u.satis))}</td>
-           <td><input class="qty mono" type="number" min="1" value="10" style="width:3.6rem;"></td>
-           <td><button class="btn" style="padding:.35rem .8rem;" data-sku="${u.sku}">Ekle</button></td></tr>`).join('')}
-    </table></div></div>`;
+  function satirlar(liste, teknik) { /* frezecim usulü teknik sütunlu ölçü tablosu */
+    const t = teknik && liste.some(u => u.D);
+    const bas = t
+      ? `<tr><th style="text-align:left;">⌀ D1</th><th>Boy L</th><th>R</th><th>z</th><th>10+ Fiyat</th><th>5+</th><th>Tek</th><th>Adet</th><th>Sepet</th></tr>`
+      : `<tr><th>Ürün</th><th>10+ Fiyat</th><th>5+</th><th>Tek</th><th>Adet</th><th>Sepet</th></tr>`;
+    const satir = u => {
+      const kimlik = t
+        ? `<td class="mono" style="text-align:left; font-weight:750;">⌀${u.D || '—'}</td><td class="mono">${u.L || '—'}</td><td class="mono">${u.R || '—'}</td><td class="mono">${u.z || '—'}</td>`
+        : `<td>${u.mad || u.ad}</td>`;
+      if (u.satis == null) return `<tr>${kimlik}<td colspan="${t ? 4 : 4}" style="text-align:left; color:var(--muted);">Fiyat için sorun</td>
+        <td><a class="btn gri" style="padding:.3rem .7rem;" target="_blank" rel="noopener" href="https://wa.me/902129060303?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`;
+      return `<tr>${kimlik}
+        <td class="our mono">${fmt(u.satis)}</td>
+        <td class="mono">${fmt(KDM.bes(u.satis))}</td>
+        <td class="mono" style="color:var(--muted);">${fmt(KDM.tek(u.satis))}</td>
+        <td><input class="qty mono" type="number" min="1" value="10" style="width:3.6rem;"></td>
+        <td><button class="btn" style="padding:.35rem .8rem;" data-sku="${u.sku}">Ekle</button></td></tr>`;
+    };
+    return `<div class="compare"><div class="tblwrap"><table>${bas}${liste.map(satir).join('')}</table></div></div>`;
   }
 
   function ciz() {
@@ -133,22 +139,25 @@ async function katalog() {
           <div><a href="katalog.html${k ? '?kat=' + encodeURIComponent(k) : ''}" class="geri">← ${k || 'Tüm aileler'}</a>
           <h3>${seciliAile}</h3><p>${acik}</p></div>
         </div>` + satirlar(liste);
-    } else { /* KATEGORİ SAYFASI: aileler ALT ALTA, her birinin altında ölçü tablosu (frezecim usulü) */
+    } else { /* KATEGORİ SAYFASI: müşteri dilinde ürün grupları ALT ALTA + teknik ölçü tabloları */
       const grup = new Map();
       hepsi.filter(u => !k || u.kat === k).forEach(u => {
-        if (!grup.has(u.aile)) grup.set(u.aile, []);
-        grup.get(u.aile).push(u);
+        const g = u.grup || u.aile;
+        if (!grup.has(g)) grup.set(g, []);
+        grup.get(g).push(u);
       });
       const toplam = [...grup.values()].reduce((t, l) => t + l.length, 0);
       document.getElementById('f-say').textContent = grup.size + ' ürün grubu · ' + toplam + ' ölçü';
-      html = [...grup.entries()].map(([aile, liste]) => {
-        const [acik, foto] = AILE_BILGI[aile] || ['', ''];
-        return `<div class="aile-blok" id="a-${aile.replace(/[^A-Za-z0-9]/g,'')}">
+      html = [...grup.entries()].map(([g, liste]) => {
+        liste.sort((a, b) => (parseFloat((a.D || '99').replace(',', '.')) - parseFloat((b.D || '99').replace(',', '.'))) || ((a.L || 0) - (b.L || 0)));
+        const ilk = liste.find(u => u.foto) || liste[0];
+        const acik = (AILE_BILGI[ilk.aile] || [''])[0];
+        return `<div class="aile-blok">
           <div class="aile-bas">
-            ${foto ? `<img src="${foto}" alt="" loading="lazy">` : ''}
-            <div><h3>${aile}</h3><p>${acik}</p></div>
+            ${ilk.foto ? `<img src="${ilk.foto}" alt="" loading="lazy">` : ''}
+            <div><h3>${g}</h3><p>${acik} <span class="mono" style="color:var(--muted);">· ${liste.length} ölçü</span></p></div>
           </div>
-          ${satirlar(liste)}
+          ${satirlar(liste, true)}
         </div>`;
       }).join('');
     }
