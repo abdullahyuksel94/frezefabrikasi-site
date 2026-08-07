@@ -151,3 +151,10 @@ footer b{color:#f5f3f0;}
 .aile-blok .aile-bas{margin-bottom:.5rem;}
 .aile-blok .aile-bas img{width:110px; height:74px;}
 .aile-blok .aile-bas h3{font-size:1.1rem;}
+
+/* üst telefon rozeti — patron kuşağı için hep görünür */
+.tel-ust{margin-left:auto; background:var(--coal); color:#fff; text-decoration:none; font-weight:800; padding:.45rem .9rem; border-radius:3px; font-size:.88rem; white-space:nowrap;}
+.tel-ust:hover{background:var(--red);}
+@media (max-width:640px){ .tel-ust{margin-left:0;} header.site{gap:.7rem;} }
+/* mobil tablo rahatlığı */
+@media (max-width:640px){ td, th{padding:.4rem .45rem; font-size:.82rem;} .aile-bas img{width:80px; height:56px;} }

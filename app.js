@@ -51,7 +51,7 @@ function bar() {
   el.querySelector('.next').textContent = sonraki;
   const metin = l.map(x => `• [${x.sku}] ${x.ad} × ${x.adet}`).join('%0A');
   el.querySelector('.wa').href =
-    `https://wa.me/90XXXXXXXXXX?text=Merhaba, sipariş vermek istiyorum:%0A${metin}%0AToplam: ${encodeURIComponent(fmt(toplam))} (${encodeURIComponent(etiket)})`;
+    `https://wa.me/902129060303?text=Merhaba, sipariş vermek istiyorum:%0A${metin}%0AToplam: ${encodeURIComponent(fmt(toplam))} (${encodeURIComponent(etiket)})`;
   el.classList.add('on');
 }
 
@@ -105,7 +105,7 @@ async function katalog() {
       <tr><th>Ürün</th><th>10+ Fiyat</th><th>5+</th><th>Tek</th><th>Adet</th><th></th></tr>
       ${liste.map(u => u.satis == null
         ? `<tr><td>${u.mad || u.ad}</td><td colspan="4" style="text-align:left; color:var(--muted);">Fiyat için sorun</td>
-           <td><a class="btn gri" style="padding:.3rem .7rem;" target="_blank" rel="noopener" href="https://wa.me/90XXXXXXXXXX?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`
+           <td><a class="btn gri" style="padding:.3rem .7rem;" target="_blank" rel="noopener" href="https://wa.me/902129060303?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`
         : `<tr><td>${u.mad || u.ad}</td>
            <td class="our mono">${fmt(u.satis)}</td>
            <td class="mono">${fmt(KDM.bes(u.satis))}</td>
