@@ -103,22 +103,21 @@ async function katalog() {
   function satirlar(liste, teknik) { /* frezecim usulü teknik sütunlu ölçü tablosu */
     const t = teknik && liste.some(u => u.D);
     const bas = t
-      ? `<tr><th style="text-align:left;">⌀ D1</th><th>Boy L</th><th>R</th><th>z</th><th>10+ Fiyat</th><th>5+</th><th>Tek</th><th>Adet</th><th>Sepet</th></tr>`
-      : `<tr><th>Ürün</th><th>10+ Fiyat</th><th>5+</th><th>Tek</th><th>Adet</th><th>Sepet</th></tr>`;
-    const satir = u => {
+      ? `<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th><th class="orta">R</th><th class="orta">z</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
+      : `<tr><th class="sol">Ürün</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`;
+    const satir = (u, i) => {
       const kimlik = t
-        ? `<td class="mono" style="text-align:left; font-weight:750;">⌀${u.D || '—'}</td><td class="mono">${u.L || '—'}</td><td class="mono">${u.R || '—'}</td><td class="mono">${u.z || '—'}</td>`
-        : `<td>${u.mad || u.ad}</td>`;
-      if (u.satis == null) return `<tr>${kimlik}<td colspan="${t ? 4 : 4}" style="text-align:left; color:var(--muted);">Fiyat için sorun</td>
-        <td><a class="btn gri" style="padding:.3rem .7rem;" target="_blank" rel="noopener" href="https://wa.me/902129060303?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`;
+        ? `<td class="sol mono kalin">${u.D || '—'}</td><td class="orta mono">${u.L || '—'}</td><td class="orta mono">${u.R || '—'}</td><td class="orta mono">${u.z || '—'}</td>`
+        : `<td class="sol">${u.mad || u.ad}</td>`;
+      if (u.satis == null) return `<tr>${kimlik}<td colspan="3" class="sol soluk">Fiyat için sorun</td>
+        <td class="orta"><a class="btn gri mini" target="_blank" rel="noopener" href="https://wa.me/902129060303?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`;
       return `<tr>${kimlik}
-        <td class="our mono">${fmt(u.satis)}</td>
+        <td class="our mono dip">${fmt(u.satis)}</td>
         <td class="mono">${fmt(KDM.bes(u.satis))}</td>
-        <td class="mono" style="color:var(--muted);">${fmt(KDM.tek(u.satis))}</td>
-        <td><input class="qty mono" type="number" min="1" value="10" style="width:3.6rem;"></td>
-        <td><button class="btn" style="padding:.35rem .8rem;" data-sku="${u.sku}">Ekle</button></td></tr>`;
+        <td class="mono soluk">${fmt(KDM.tek(u.satis))}</td>
+        <td class="orta"><span class="alsat"><input class="qty mono" type="number" min="1" value="10" aria-label="adet"><button class="btn mini" data-sku="${u.sku}">Ekle</button></span></td></tr>`;
     };
-    return `<div class="compare"><div class="tblwrap"><table>${bas}${liste.map(satir).join('')}</table></div></div>`;
+    return `<div class="tblwrap olcu-kart"><table class="olcu-tablo">${bas}${liste.map(satir).join('')}</table></div>`;
   }
 
   function ciz() {

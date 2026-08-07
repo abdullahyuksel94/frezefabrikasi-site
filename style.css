@@ -184,3 +184,24 @@ footer b{color:#f5f3f0;}
 .grup-satir .gfiyat small{display:block; color:var(--muted); font-size:.7rem;}
 .grup-satir .gok{color:var(--red); font-weight:800; font-size:.85rem; white-space:nowrap;}
 @media (max-width:640px){ .grup-satir img,.grup-satir .bosfoto{width:80px; height:56px;} .grup-satir .gfiyat{display:none;} }
+
+/* ölçü tablosu — yeniden yerleşim */
+.olcu-kart{background:var(--panel); border:1px solid var(--line); border-radius:6px; overflow:hidden;}
+.olcu-tablo{width:100%;}
+.olcu-tablo th{position:sticky; top:0; background:var(--coal); color:#fff; border-bottom:none; padding:.6rem .7rem; letter-spacing:.05em; z-index:1;}
+.olcu-tablo th.sol{text-align:left;} .olcu-tablo th.orta{text-align:center;}
+.olcu-tablo td{padding:.55rem .7rem; border-bottom:1px solid var(--line);}
+.olcu-tablo td.sol{text-align:left;} .olcu-tablo td.orta{text-align:center;}
+.olcu-tablo td.kalin{font-weight:800; font-size:.95rem;}
+.olcu-tablo td.soluk{color:var(--muted);}
+.olcu-tablo td.dip{font-size:1rem; font-weight:900;}
+.olcu-tablo tr:nth-child(even) td{background:rgba(0,0,0,.022);}
+.olcu-tablo tr:hover td{background:var(--red-soft);}
+.alsat{display:inline-flex; gap:.35rem; align-items:center;}
+.alsat .qty{width:3.4rem; padding:.35rem .3rem; border:1px solid var(--line); border-radius:3px; text-align:center; font-size:.85rem;}
+.btn.mini{padding:.4rem .8rem; font-size:.78rem; margin-top:0;}
+@media (max-width:640px){
+  .olcu-tablo th, .olcu-tablo td{padding:.45rem .4rem;}
+  .olcu-tablo td.dip{font-size:.92rem;}
+  .alsat .qty{width:2.8rem;}
+}
