@@ -85,7 +85,7 @@ const AILE_BILGI = {
   'KR TUTUCU': ['KR uçları için tutucular.', 'images/products/insert-tools-hero.png'],
   'THREMILL': ['Diş frezeleri — tek takımla çok diş standardı.', 'images/products/th30-1.png'],
   'AYDIN TAKIM': ['Takım tutucular ve tarama kafaları.', 'images/products/insert_apkt10.png'],
-  'ECO': ['ECO ithal seri — küçük çapta en iyi fiyat/performans.', 'images/products/bm220new.png'],
+  'ECO': ['Ekonomik seri — küçük çapta en iyi fiyat/performans.', 'images/products/bm220new.png'],
   'ETF (OUTSOURCE)': ['ETF ekonomik düz freze serisi.', 'images/products/sharp430l.png'],
   'CMC': ['CMC özel frezeler.', ''],
   'TORNA': ['Tornalama uçları.', ''],
@@ -101,6 +101,8 @@ function grupSira(g){
   if (/Saplı Kater/.test(g)) return 0;
   if (/Vidalı Kater/.test(g)) return 1;
   if (/Arbor/.test(g)) return 2;
+  if (/Radius/.test(g)) p += 100;      // tip sırası: düz < köşe radius < küre
+  else if (/Küre/.test(g)) p += 200;
   if (/Sert/.test(g)) p += 10;          // standartlar önce, sertler sonra
   if (/Uzun/.test(g)) p += 1;           // kısa önce, uzun sonra
   if (/Süper|Ağır|High|Dört Ağızlı/.test(g)) p += 20; // özel seriler en sona
