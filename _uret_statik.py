@@ -32,11 +32,15 @@ for g, liste in gruplar.items():
                else 'TLX — 70 HRC sınıfı' if sert else 'TSH — 55 HRC sınıfı')
     sertlik = ('Alüminyum · bakır · plastik' if 'Alüminyum' in g else '70 HRC sertliğe kadar' if sert else '55 HRC sertliğe kadar')
     r_var = any(u.get('R') for u in liste)
+    uc_mu = any(u.get('ic') for u in liste)
     fiyatli = [u for u in liste if u.get('satis')]
     min_f = min((u['satis'] for u in fiyatli), default=None)
     satirlar = []
-    for u in [x for x in liste if x.get('D')]:
-        kim = f"<td class='sol mono kalin'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
+    for u in [x for x in liste if x.get('D') or x.get('ic')]:
+        if uc_mu:
+            kim = f"<td class='sol kalin'>{u.get('mad') or u['ad']}</td><td class='orta mono'>{u.get('ic') or '—'}</td><td class='orta mono'>{u.get('kal') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
+        else:
+            kim = f"<td class='sol mono kalin'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
         if u.get('satis'):
             tek = u['satis'] / 0.88; bes = tek * 0.93
             satirlar.append(f"""<tr>{kim}<td class='our mono dip'>{fmt(u['satis'])}</td><td class='mono'>{fmt(bes)}</td><td class='mono soluk'>{fmt(tek)}</td>
@@ -105,7 +109,7 @@ for g, liste in gruplar.items():
       </div>
     </div>
     <div class="tblwrap olcu-kart"><table class="olcu-tablo">
-      <tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>{('<th class="orta">R</th>' if r_var else '')}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>
+      {('<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if uc_mu else ('<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>')}
       {''.join(satirlar)}
     </table></div>
   </section>

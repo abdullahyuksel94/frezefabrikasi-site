@@ -112,13 +112,18 @@ async function katalog() {
   let seciliGrup = params.get('grup') || '';
 
   function satirlar(liste, teknik) { /* frezecim usulü teknik sütunlu ölçü tablosu — R sütunu sadece R'li gruplarda */
-    const t = teknik && liste.some(u => u.D);
-    const rVar = t && liste.some(u => u.R);
-    const bas = t
+    const uc = liste.some(u => u.ic);
+    const t = !uc && teknik && liste.some(u => u.D);
+    const rVar = (t || uc) && liste.some(u => u.R);
+    const bas = uc
+      ? `<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
+      : t
       ? `<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
       : `<tr><th class="sol">Ürün</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`;
     const satir = (u, i) => {
-      const kimlik = t
+      const kimlik = uc
+        ? `<td class="sol kalin">${u.mad || u.ad}</td><td class="orta mono">${u.ic || '—'}</td><td class="orta mono">${u.kal || '—'}</td>${rVar ? `<td class="orta mono">${u.R || '—'}</td>` : ''}`
+        : t
         ? `<td class="sol mono kalin">${u.D || '—'}</td><td class="orta mono">${u.L || '—'}</td>${rVar ? `<td class="orta mono">${u.R || '—'}</td>` : ''}`
         : `<td class="sol">${u.mad || u.ad}</td>`;
       if (u.satis == null) return `<tr>${kimlik}<td colspan="3" class="sol soluk">Fiyat için sorun</td>
