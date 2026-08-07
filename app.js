@@ -89,6 +89,8 @@ const AILE_BILGI = {
 };
 
 
+const KAT_SIRA = ['Düz Frezeler','Köşe Radüslü','Küre Frezeler','Alüminyum','Mikro Frezeler','Özel Görev Serisi','Karbür Matkap','Karbür Uçlar','Uç Katerleri & Tutucular'];
+function katSiraNo(k){ const i = KAT_SIRA.indexOf(k); return i < 0 ? 99 : i; }
 function grupSira(g){
   let p = 0;
   if (/Sert/.test(g)) p += 10;          // standartlar önce, sertler sonra
@@ -188,6 +190,8 @@ async function katalog() {
         katSira.get(kat).push([g, liste]);
       });
       katSira.forEach(gr => gr.sort((a, b) => grupSira(a[0]) - grupSira(b[0])));
+      const katSirali = new Map([...katSira.entries()].sort((a, b) => katSiraNo(a[0]) - katSiraNo(b[0])));
+      katSira.clear(); katSirali.forEach((v, k) => katSira.set(k, v));
       html = [...katSira.entries()].map(([kat, gruplar]) =>
         `<h2 class="kat-baslik"><span class="tick">/</span> ${kat}</h2>
          <div class="grup-liste">` + gruplar.map(([g, liste]) => {
