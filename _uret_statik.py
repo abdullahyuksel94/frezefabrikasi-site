@@ -32,12 +32,16 @@ for g, liste in gruplar.items():
                else 'TLX — 70 HRC sınıfı' if sert else 'TSH — 55 HRC sınıfı')
     sertlik = ('Alüminyum · bakır · plastik' if 'Alüminyum' in g else '70 HRC sertliğe kadar' if sert else '55 HRC sertliğe kadar')
     r_var = any(u.get('R') for u in liste)
-    uc_mu = any(u.get('ic') for u in liste)
+    tut_mu = any(u.get('tut') for u in liste)
+    uc_mu = (not tut_mu) and any(u.get('ic') for u in liste)
+    kaplamalar = ' / '.join(sorted({m2.group(1) for u in liste for m2 in [__import__('re').search(r'\b(TSH|TLX|TH|TX|PM)\b', u['ad'].upper())] if m2})) or 'TSH'
     fiyatli = [u for u in liste if u.get('satis')]
     min_f = min((u['satis'] for u in fiyatli), default=None)
     satirlar = []
-    for u in [x for x in liste if x.get('D') or x.get('ic')]:
-        if uc_mu:
+    for u in [x for x in liste if x.get('D') or x.get('ic') or x.get('tut')]:
+        if tut_mu:
+            kim = f"<td class='sol'>{html.escape(u.get('mad') or u['ad'])}</td><td class='orta mono'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('bag') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td>"
+        elif uc_mu:
             kim = f"<td class='sol kalin'>{u.get('mad') or u['ad']}</td><td class='orta mono'>{u.get('ic') or '—'}</td><td class='orta mono'>{u.get('kal') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
         else:
             kim = f"<td class='sol mono kalin'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
@@ -48,6 +52,26 @@ for g, liste in gruplar.items():
         else:
             ad = html.escape(u.get('mad') or u['ad'])
             satirlar.append(f"""<tr>{kim}<td colspan='3' class='sol soluk'>Fiyat için sorun</td><td class='orta'><a class='btn gri mini' target='_blank' rel='noopener' href='https://wa.me/902129060303?text={html.escape(ad)}%20fiyat%C4%B1%3F'>Sor</a></td></tr>""")
+
+    # uyumlu katerler (uc sayfalari)
+    kater_html = ''
+    if uc_mu:
+        import re as _re
+        kod = (_re.match(r'^([A-Z]{2,6}\d{0,2})', g) or [None]) and (_re.match(r'^([A-Z]{2,6}\d{0,2})', g).group(1) if _re.match(r'^([A-Z]{2,6}\d{0,2})', g) else None)
+        if kod:
+            katerler = [x for x in urunler if x['aile'] == 'AYDIN TAKIM' and kod in x['ad'].upper().replace(' ', '')]
+            if katerler:
+                ksatir = []
+                for x in katerler[:40]:
+                    if x.get('satis'):
+                        tekk = x['satis'] / 0.88; besk = tekk * 0.93
+                        ksatir.append(f"<tr><td class='sol'>{html.escape(x.get('mad') or x['ad'])}</td><td class='our mono dip'>{fmt(x['satis'])}</td><td class='mono'>{fmt(besk)}</td><td class='mono soluk'>{fmt(tekk)}</td><td class='orta'><span class='alsat'><input class='qty mono' type='number' min='1' value='1'><button class='btn mini sepet-btn' data-sku='{html.escape(x['sku'])}' data-ad='{html.escape(x.get('mad') or x['ad'])}' data-satis='{x['satis']}'>Ekle</button></span></td></tr>")
+                if ksatir:
+                    kater_html = ("<h2 style='margin-top:1.4rem; font-size:1.15rem; font-weight:850; text-transform:uppercase;'><span style='color:#d81f26;'>/</span> Bu Uca Uygun Katerler (" + str(len(ksatir)) + ")</h2>"
+                        "<div class='tblwrap olcu-kart'><table class='olcu-tablo'>"
+                        "<tr><th class='sol'>Kater</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class='orta'>Sipariş</th></tr>"
+                        + ''.join(ksatir) + "</table></div>")
+
     jsonld = json.dumps({
         "@context": "https://schema.org", "@type": "Product",
         "name": g, "brand": {"@type": "Brand", "name": "FREZE FABRİKASI (MONCARB)"},
@@ -95,11 +119,7 @@ for g, liste in gruplar.items():
         <h1 style="font-size:1.5rem; margin:.2rem 0 .3rem; text-transform:uppercase; font-weight:900;">{g}</h1>
         <p class="uzun">Üreticiden {html.escape(g.lower())} — stoktan aynı gün kargo, aynı üründen 10+ adette dip fiyat.</p>
         <div class="spec-grid">
-          <div><small>Kaplama</small><b>{kaplama}</b></div>
-          <div><small>Kullanım alanı</small><b>{sertlik}</b></div>
-          <div><small>Çap toleransı (D1)</small><b>{'m7' if 'Matkap' in g else '0 / −0,02 mm'}</b></div>
-          <div><small>Şaft toleransı (D2)</small><b>h6</b></div>
-          {'<div><small>Radius toleransı</small><b>±0,01 mm</b></div>' if ('Radius' in g or 'Küre' in g) else ''}
+          {'<div><small>Kaplama seçenekleri</small><b>' + kaplamalar + '</b></div><div><small>Uç tipi</small><b>Değiştirilebilir (ISO)</b></div>' if uc_mu else ('<div><small>Kaplama</small><b>' + kaplama + '</b></div><div><small>Kullanım alanı</small><b>' + sertlik + '</b></div><div><small>Çap toleransı (D1)</small><b>' + ('m7' if 'Matkap' in g else '0 / −0,02 mm') + '</b></div><div><small>Şaft toleransı (D2)</small><b>h6</b></div>' + ('<div><small>Radius toleransı</small><b>±0,01 mm</b></div>' if ('Radius' in g or 'Küre' in g) else ''))}
           <div><small>Karbür</small><b>Mikro tane (ultra-fine)</b></div>
           <div><small>Menşei</small><b>Türkiye — kendi üretimimiz</b></div>
         </div>
@@ -108,10 +128,12 @@ for g, liste in gruplar.items():
         </div>
       </div>
     </div>
+    
     <div class="tblwrap olcu-kart"><table class="olcu-tablo">
-      {('<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if uc_mu else ('<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>')}
+      {('<tr><th class="sol">Kater</th><th class="orta">Uç Çapı</th><th class="orta">Bağlantı</th><th class="orta">Toplam Boy</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if tut_mu else ('<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if uc_mu else ('<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>')}
       {''.join(satirlar)}
     </table></div>
+    {kater_html}
   </section>
 </main>
 <div id="cartbar">

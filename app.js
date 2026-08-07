@@ -98,9 +98,12 @@ const KAT_SIRA = ['Düz Frezeler','Köşe Radüslü','Küre Frezeler','Alüminyu
 function katSiraNo(k){ const i = KAT_SIRA.indexOf(k); return i < 0 ? 99 : i; }
 function grupSira(g){
   let p = 0;
+  if (/Saplı Kater/.test(g)) return 0;
+  if (/Vidalı Kater/.test(g)) return 1;
+  if (/Arbor/.test(g)) return 2;
   if (/Sert/.test(g)) p += 10;          // standartlar önce, sertler sonra
   if (/Uzun/.test(g)) p += 1;           // kısa önce, uzun sonra
-  if (/Süper|Ağır|High/.test(g)) p += 20; // özel seriler en sona
+  if (/Süper|Ağır|High|Dört Ağızlı/.test(g)) p += 20; // özel seriler en sona
   return p;
 }
 
@@ -117,16 +120,21 @@ async function katalog() {
   let seciliGrup = params.get('grup') || '';
 
   function satirlar(liste, teknik) { /* frezecim usulü teknik sütunlu ölçü tablosu — R sütunu sadece R'li gruplarda */
-    const uc = liste.some(u => u.ic);
+    const tut = liste.some(u => u.tut);
+    const uc = !tut && liste.some(u => u.ic);
     const t = !uc && teknik && liste.some(u => u.D);
     const rVar = (t || uc) && liste.some(u => u.R);
-    const bas = uc
+    const bas = tut
+      ? `<tr><th class="sol">Kater</th><th class="orta">Uç Çapı</th><th class="orta">Bağlantı</th><th class="orta">Toplam Boy</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
+      : uc
       ? `<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
       : t
       ? `<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
       : `<tr><th class="sol">Ürün</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`;
     const satir = (u, i) => {
-      const kimlik = uc
+      const kimlik = tut
+        ? `<td class="sol">${u.mad || u.ad}</td><td class="orta mono">${u.D || '—'}</td><td class="orta mono">${u.bag || '—'}</td><td class="orta mono">${u.L || '—'}</td>`
+        : uc
         ? `<td class="sol kalin">${u.mad || u.ad}</td><td class="orta mono">${u.ic || '—'}</td><td class="orta mono">${u.kal || '—'}</td>${rVar ? `<td class="orta mono">${u.R || '—'}</td>` : ''}`
         : t
         ? `<td class="sol mono kalin">${u.D || '—'}</td><td class="orta mono">${u.L || '—'}</td>${rVar ? `<td class="orta mono">${u.R || '—'}</td>` : ''}`
