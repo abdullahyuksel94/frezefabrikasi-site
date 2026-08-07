@@ -129,17 +129,37 @@ async function katalog() {
       const liste = hepsi.filter(u => (u.ad + ' ' + u.sku + ' ' + u.olcu + ' ' + u.aile).toLocaleLowerCase('tr').includes(q)).slice(0, 150);
       document.getElementById('f-say').textContent = liste.length + ' sonuç';
       html = liste.length ? satirlar(liste) : '<p class="sec-sub">Sonuç yok — farklı yazmayı dene (örn. "küre 8").</p>';
-    } else if (seciliGrup) { /* ALT GRUP SAYFASI (frezecim ürün sayfası): tek grup + tek tablo */
+    } else if (seciliGrup) { /* ALT GRUP = ÜRÜN SAYFASI (frezecim/agnero modeli): büyük görsel + teknik özellikler + ölçü tablosu */
       const liste = hepsi.filter(u => (u.grup || u.aile) === seciliGrup);
       liste.sort((a, b) => (parseFloat((a.D || '99').replace(',', '.')) - parseFloat((b.D || '99').replace(',', '.'))) || ((a.L || 0) - (b.L || 0)));
       const ilk = liste.find(u => u.foto) || liste[0] || {};
       const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
       const kat = ilk.kat || k;
+      const zlar = [...new Set(liste.map(u => u.z).filter(Boolean))].join(' / ');
+      const sert = /Sert|65 HRC|55 HRC/.test(seciliGrup);
+      const kaplama = /Alüminyum/.test(seciliGrup) ? 'Kaplamasız — polisajlı ağız'
+                    : /Matkap/.test(seciliGrup) ? 'TLX / AlTiN' : sert ? 'TLX — 65 HRC sınıfı' : 'TSH — 55 HRC sınıfı';
+      const sertlik = /Alüminyum/.test(seciliGrup) ? 'Alüminyum · bakır · plastik'
+                    : sert ? '65 HRC sertliğe kadar' : '55 HRC sertliğe kadar';
       document.getElementById('f-say').textContent = liste.length + ' ölçü';
-      html = `<div class="aile-bas">
-          ${ilk.foto ? `<img src="${ilk.foto}" alt="">` : ''}
-          <div><a href="katalog.html${kat ? '?kat=' + encodeURIComponent(kat) : ''}" class="geri">← ${kat || 'Kategoriler'}</a>
-          <h3>${seciliGrup}</h3><p>${acik}</p></div>
+      html = `<div class="urun-ust">
+          <div class="urun-foto">${ilk.foto ? `<img src="${ilk.foto}" alt="${seciliGrup}">` : ''}</div>
+          <div class="urun-bilgi">
+            <a href="katalog.html${kat ? '?kat=' + encodeURIComponent(kat) : ''}" class="geri">← ${kat || 'Kategoriler'}</a>
+            <h2>${seciliGrup}</h2>
+            <p class="uzun">${acik}</p>
+            <div class="spec-grid">
+              <div><small>Kaplama</small><b>${kaplama}</b></div>
+              <div><small>Ağız sayısı (z)</small><b>${zlar || '—'}</b></div>
+              <div><small>Kullanım alanı</small><b>${sertlik}</b></div>
+              <div><small>Şaft toleransı</small><b>h6</b></div>
+              <div><small>Karbür</small><b>Mikro tane (ultra-fine)</b></div>
+              <div><small>Menşei</small><b>Türkiye — kendi üretimimiz</b></div>
+            </div>
+            <div class="chips" style="margin-top:.7rem;">
+              <div class="chip2">🚚 Aynı gün kargo</div><div class="chip2">💵 Kapıda ödeme</div><div class="chip2">↩ 14 gün iade</div>
+            </div>
+          </div>
         </div>` + satirlar(liste, true);
     } else { /* KATEGORİ SAYFASI (frezecim usulü): alt grup LİSTESİ — her biri kendi sayfasına gider */
       const grup = new Map();
