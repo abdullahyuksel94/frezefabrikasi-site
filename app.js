@@ -83,6 +83,7 @@ async function katalog() {
         ? `<a class="btn gri" target="_blank" rel="noopener" href="https://wa.me/90XXXXXXXXXX?text=${encodeURIComponent(u.ad + ' fiyatını öğrenmek istiyorum')}">Fiyat Sor</a>`
         : `<div class="buyrow"><input class="qty mono" type="number" min="1" value="10" aria-label="adet"><button class="btn" data-sku="${u.sku}">Sepete Ekle</button></div>`;
       return `<div class="prod">
+        ${u.foto ? `<img class="foto" src="${u.foto}" alt="" loading="lazy">` : ''}
         <div class="fam">${u.aile}</div>
         <div class="nm">${u.ad}</div>
         <div class="spec mono">${u.olcu || u.kat}</div>

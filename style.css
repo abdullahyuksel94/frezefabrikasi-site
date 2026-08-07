@@ -136,3 +136,6 @@ footer b{color:#f5f3f0;}
 .guven .g{background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--red); border-radius:4px; padding: .9rem 1rem;}
 .guven .g b{display:block; margin-bottom:.2rem;}
 .guven .g span{color:var(--muted); font-size:.85rem;}
+
+/* katalog kartı ürün fotoğrafı */
+.prod img.foto{width:100%; height:110px; object-fit:contain; background:#fff; border-radius:3px;}
