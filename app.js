@@ -11,6 +11,9 @@ const KDM = {
 };
 const fmt = n => n.toFixed(2).replace('.', ',') + ' $';
 
+/* ---------- ANALİTİK (GA4 — ID girilince aktif; ANALITIK.md) ---------- */
+function olay(ad, veri) { try { if (window.gtag) gtag('event', ad, veri || {}); } catch (e) {} }
+
 /* ---------- SEPET ---------- */
 const sepet = {
   oku()  { try { return JSON.parse(localStorage.getItem('ff-sepet') || '[]'); } catch { return []; } },
@@ -19,6 +22,7 @@ const sepet = {
     const l = sepet.oku();
     const m = l.find(x => x.sku === sku);
     if (m) m.adet += adet; else l.push({ sku, ad, satis, adet });
+    olay('add_to_cart', { currency: 'USD', value: (satis || 0) * adet, items: [{ item_id: sku, item_name: ad, quantity: adet }] });
     sepet.yaz(l);
   },
   bosalt() { sepet.yaz([]); },
@@ -50,6 +54,7 @@ function bar() {
   el.querySelector('.info').textContent = `Sepet: ${adet} ürün · ${fmt(toplam)} (${etiket})`;
   el.querySelector('.next').textContent = sonraki;
   const metin = l.map(x => `• [${x.sku}] ${x.ad} × ${x.adet}`).join('%0A');
+  el.querySelector('.wa').onclick = () => olay('begin_checkout', { currency: 'USD', value: toplam, adet });
   el.querySelector('.wa').href =
     `https://wa.me/902129060303?text=Merhaba, sipariş vermek istiyorum:%0A${metin}%0AToplam: ${encodeURIComponent(fmt(toplam))} (${encodeURIComponent(etiket)})`;
   el.classList.add('on');

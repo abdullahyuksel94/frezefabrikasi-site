@@ -47,7 +47,7 @@ function botKur() {
   <div id="bot-panel">
     <div class="bot-bas">FF Asistan <small>ürün · fiyat · malzeme</small><span id="bot-kapat">✕</span></div>
     <div class="bot-log" id="bot-log">
-      <div class="bot-msg">Merhaba! 👋 Hangi malzemeyi işleyeceksin, hangi ürünü arıyorsun? Kargo/ödeme/iade de sorabilirsin.</div>
+      <div class="bot-msg">Merhaba! 👋 Ben FF Asistan — yapay zekâyım, komisyon almam: bana çeliğini ve operasyonunu söyle, işini görecek EN MANTIKLI takımı söyleyeyim (ucuzu varsa ucuzunu). Kargo/ödeme/kampanya da sorabilirsin.</div>
     </div>
     <form id="bot-form"><input id="bot-in" placeholder="Sorunu yaz… (örn: 1.2344 için freze)" autocomplete="off"><button class="btn mini" type="submit">Sor</button></form>
   </div>`;
