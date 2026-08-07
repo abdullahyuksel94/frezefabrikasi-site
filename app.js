@@ -152,8 +152,9 @@ async function katalog() {
             <div class="spec-grid">
               <div><small>Kaplama</small><b>${kaplama}</b></div>
               <div><small>Kullanım alanı</small><b>${sertlik}</b></div>
-              <div><small>Çap toleransı (D1)</small><b>${/Matkap/.test(seciliGrup) ? 'm7' : 'h10'}</b></div>
+              <div><small>Çap toleransı (D1)</small><b>${/Matkap/.test(seciliGrup) ? 'm7' : '0 / −0,02 mm'}</b></div>
               <div><small>Şaft toleransı (D2)</small><b>h6</b></div>
+              ${/Radius|Küre/.test(seciliGrup) ? '<div><small>Radius toleransı</small><b>±0,01 mm</b></div>' : ''}
               <div><small>Karbür</small><b>Mikro tane (ultra-fine)</b></div>
               <div><small>Menşei</small><b>Türkiye — kendi üretimimiz</b></div>
             </div>

@@ -93,8 +93,9 @@ for g, liste in gruplar.items():
         <div class="spec-grid">
           <div><small>Kaplama</small><b>{kaplama}</b></div>
           <div><small>Kullanım alanı</small><b>{sertlik}</b></div>
-          <div><small>Çap toleransı (D1)</small><b>{'m7' if 'Matkap' in g else 'h10'}</b></div>
+          <div><small>Çap toleransı (D1)</small><b>{'m7' if 'Matkap' in g else '0 / −0,02 mm'}</b></div>
           <div><small>Şaft toleransı (D2)</small><b>h6</b></div>
+          {'<div><small>Radius toleransı</small><b>±0,01 mm</b></div>' if ('Radius' in g or 'Küre' in g) else ''}
           <div><small>Karbür</small><b>Mikro tane (ultra-fine)</b></div>
           <div><small>Menşei</small><b>Türkiye — kendi üretimimiz</b></div>
         </div>
