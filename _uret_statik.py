@@ -56,7 +56,12 @@ for g, liste in gruplar.items():
             kim = f"<td class='sol mono kalin'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
         if u.get('satis'):
             tek = u['satis'] / 0.88; bes = tek * 0.93
-            satirlar.append(f"""<tr>{kim}<td class='our mono dip'>{fmt(u['satis'])}</td><td class='mono'>{fmt(bes)}</td><td class='mono soluk'>{fmt(tek)}</td>
+            if tut_mu:
+                satirlar.append(f"<tr>{kim}<td class='our mono dip'>{fmt(u['satis'])}</td><td class='orta'><span class='alsat'><input class='qty mono' type='number' min='1' value='1'><button class='btn mini sepet-btn' data-sku='{html.escape(u['sku'])}' data-ad='{html.escape(u.get('mad') or u['ad'])}' data-satis='{u['satis']}' data-tur='kater'>Ekle</button></span></td></tr>")
+            elif uc_mu:
+                satirlar.append(f"<tr>{kim}<td class='our mono dip'>{fmt(u['satis'])}</td><td class='orta'><span class='alsat'><input class='qty mono' type='number' min='10' step='10' value='10'><button class='btn mini sepet-btn' data-sku='{html.escape(u['sku'])}' data-ad='{html.escape(u.get('mad') or u['ad'])}' data-satis='{u['satis']}' data-tur='uc'>Ekle</button></span></td></tr>")
+            else:
+                satirlar.append(f"""<tr>{kim}<td class='our mono dip'>{fmt(u['satis'])}</td><td class='mono'>{fmt(bes)}</td><td class='mono soluk'>{fmt(tek)}</td>
 <td class='orta'><span class='alsat'><input class='qty mono' type='number' min='1' value='10' aria-label='adet'><button class='btn mini sepet-btn' data-sku='{html.escape(u['sku'])}' data-ad='{html.escape(u.get('mad') or u['ad'])}' data-satis='{u['satis']}'>Ekle</button></span></td></tr>""")
         else:
             ad = html.escape(u.get('mad') or u['ad'])
@@ -74,12 +79,13 @@ for g, liste in gruplar.items():
                 for x in katerler[:40]:
                     if x.get('satis'):
                         tekk = x['satis'] / 0.88; besk = tekk * 0.93
-                        ksatir.append(f"<tr><td class='sol'>{html.escape(x.get('mad') or x['ad'])}</td><td class='our mono dip'>{fmt(x['satis'])}</td><td class='mono'>{fmt(besk)}</td><td class='mono soluk'>{fmt(tekk)}</td><td class='orta'><span class='alsat'><input class='qty mono' type='number' min='1' value='1'><button class='btn mini sepet-btn' data-sku='{html.escape(x['sku'])}' data-ad='{html.escape(x.get('mad') or x['ad'])}' data-satis='{x['satis']}'>Ekle</button></span></td></tr>")
+                        ksatir.append(f"<tr><td class='sol'>{html.escape(x.get('mad') or x['ad'])}</td><td class='our mono dip'>{fmt(x['satis'])}</td><td class='orta'><span class='alsat'><input class='qty mono' type='number' min='1' value='1'><button class='btn mini sepet-btn' data-sku='{html.escape(x['sku'])}' data-ad='{html.escape(x.get('mad') or x['ad'])}' data-satis='{x['satis']}' data-tur='kater'>Ekle</button></span></td></tr>")
                 if ksatir:
                     kater_html = ("<h2 style='margin-top:1.4rem; font-size:1.15rem; font-weight:850; text-transform:uppercase;'><span style='color:#d81f26;'>/</span> Bu Uca Uygun Katerler (" + str(len(ksatir)) + ")</h2>"
                         "<div class='tblwrap olcu-kart'><table class='olcu-tablo'>"
-                        "<tr><th class='sol'>Kater</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class='orta'>Sipariş</th></tr>"
-                        + ''.join(ksatir) + "</table></div>")
+                        "<tr><th class='sol'>Kater</th><th>Fiyat</th><th class='orta'>Sipariş</th></tr>"
+                        + ''.join(ksatir) + "</table></div>"
+                        + "<div class='asistan-band'>🎁 <b>Kampanya:</b> Aynı uçtan 50+ alana uyumlu kater sadece <b>1 $</b>! · Emin değil misin? <button class='btn mini' onclick=\"document.getElementById('bot-panel').classList.add('on')\">Asistana Danış 💬</button></div>")
 
     jsonld = json.dumps({
         "@context": "https://schema.org", "@type": "Product",
@@ -139,10 +145,11 @@ for g, liste in gruplar.items():
     </div>
     
     <div class="tblwrap olcu-kart"><table class="olcu-tablo">
-      {('<tr><th class="sol">Kater</th><th class="orta">DC (Uç Çapı)</th><th class="orta">DCON (Bağlantı)</th><th class="orta">LF (Boy)</th><th class="orta">Z</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if tut_mu else ('<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if uc_mu else ('<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>')}
+      {('<tr><th class="sol">Kater</th><th class="orta">DC (Uç Çapı)</th><th class="orta">DCON (Bağlantı)</th><th class="orta">LF (Boy)</th><th class="orta">Z</th><th>Fiyat</th><th class="orta">Sipariş</th></tr>') if tut_mu else ('<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>Adet Fiyatı</th><th class="orta">Sipariş — 10 ve katları</th></tr>') if uc_mu else ('<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>')}
       {''.join(satirlar)}
     </table></div>
     {kater_html}
+    <div class="asistan-band">🤔 Hangi ölçüyü alacağından emin değil misin? <button class="btn mini" onclick="document.getElementById('bot-panel').classList.add('on')">Asistana Danış 💬</button> <span style="color:#6b6864;">ya da ara: 0212 906 03 03</span></div>
   </section>
 </main>
 <div id="cartbar">

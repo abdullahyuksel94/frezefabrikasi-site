@@ -271,3 +271,4 @@ a.btn.gri, button.btn.gri{background:var(--coal);}
 .bot-msg.kul{background:var(--red-soft); border-radius:8px 8px 2px 8px; align-self:flex-end;}
 #bot-form{display:flex; gap:.4rem; padding:.6rem; border-top:1px solid var(--line);}
 #bot-in{flex:1; padding:.5rem .7rem; border:1px solid var(--line); border-radius:4px; font-size:.85rem;}
+.asistan-band{margin-top:.9rem; background:var(--red-soft); border:1px solid var(--line); border-left:4px solid var(--red); border-radius:5px; padding:.7rem 1rem; font-size:.9rem; display:flex; align-items:center; gap:.6rem; flex-wrap:wrap;}

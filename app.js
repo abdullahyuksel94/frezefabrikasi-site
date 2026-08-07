@@ -18,10 +18,10 @@ function olay(ad, veri) { try { if (window.gtag) gtag('event', ad, veri || {}); 
 const sepet = {
   oku()  { try { return JSON.parse(localStorage.getItem('ff-sepet') || '[]'); } catch { return []; } },
   yaz(l) { localStorage.setItem('ff-sepet', JSON.stringify(l)); bar(); },
-  ekle(sku, ad, satis, adet) {
+  ekle(sku, ad, satis, adet, tur) {
     const l = sepet.oku();
     const m = l.find(x => x.sku === sku);
-    if (m) m.adet += adet; else l.push({ sku, ad, satis, adet });
+    if (m) m.adet += adet; else l.push({ sku, ad, satis, adet, tur: tur || 'freze' });
     olay('add_to_cart', { currency: 'USD', value: (satis || 0) * adet, items: [{ item_id: sku, item_name: ad, quantity: adet }] });
     sepet.yaz(l);
   },
@@ -29,8 +29,20 @@ const sepet = {
 };
 
 function satirFiyat(x) {
+  if (x.tur === 'uc' || x.tur === 'kater') return x.satis * x.adet; // uç ve katerde kademe yok (tek fiyat)
   const fn = x.adet >= 10 ? KDM.on : x.adet >= 5 ? KDM.bes : KDM.tek;
   return fn(x.satis) * x.adet;
+}
+/* KAMPANYA: aynı uçtan 50+ alana uyumlu kater 1 $ (şimdilik tüm uçlarda — sahip listesi gelince ayrışır) */
+function kampanyaIndirim(l) {
+  let ind = 0; const notlar = [];
+  l.filter(x => x.tur === 'uc' && x.adet >= 50).forEach(ucx => {
+    const kod = (ucx.ad.toUpperCase().match(/[A-Z]{3,4}/) || [''])[0];
+    const kater = l.find(x => x.tur === 'kater' && kod && x.ad.toUpperCase().includes(kod));
+    if (kater && kater.satis > 1) { ind += kater.satis - 1; notlar.push(`🎁 ${kod}: 50+ uç → kater 1 $`); }
+    else if (!kater) notlar.push(`🎁 ${kod} ucundan 50+ aldın: uyumlu kateri sadece 1 $'a ekleyebilirsin!`);
+  });
+  return { ind, notlar };
 }
 function kademeHesap(l) {
   const adet = l.reduce((t, x) => t + x.adet, 0);
@@ -46,13 +58,15 @@ function bar() {
   if (!el) return;
   const l = sepet.oku();
   if (!l.length) { el.classList.remove('on'); return; }
-  const { adet, toplam, etiket } = kademeHesap(l);
+  let { adet, toplam, etiket } = kademeHesap(l);
+  const kamp = kampanyaIndirim(l);
+  toplam -= kamp.ind;
   const aday = l.filter(x => x.adet < 10).sort((a, b) => b.adet - a.adet)[0];
   const sonraki = !aday ? 'Dip fiyattasınız 🔥' :
     aday.adet >= 5 ? `${aday.ad.slice(0, 25)}: ${10 - aday.adet} adet daha → DİP FİYAT` :
     `${aday.ad.slice(0, 25)}: ${5 - aday.adet} adet daha → 5+ indirimi`;
   el.querySelector('.info').textContent = `Sepet: ${adet} ürün · ${fmt(toplam)} (${etiket})`;
-  el.querySelector('.next').textContent = sonraki;
+  el.querySelector('.next').textContent = kamp.notlar.length ? kamp.notlar[0] : sonraki;
   const metin = l.map(x => `• [${x.sku}] ${x.ad} × ${x.adet}`).join('%0A');
   el.querySelector('.wa').onclick = () => olay('begin_checkout', { currency: 'USD', value: toplam, adet });
   el.querySelector('.wa').href =
@@ -127,9 +141,9 @@ async function katalog() {
     const t = !uc && teknik && liste.some(u => u.D);
     const rVar = (t || uc) && liste.some(u => u.R);
     const bas = tut
-      ? `<tr><th class="sol">Kater</th><th class="orta">DC (Uç Çapı)</th><th class="orta">DCON (Bağlantı)</th><th class="orta">LF (Boy)</th><th class="orta">Z</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
+      ? `<tr><th class="sol">Kater</th><th class="orta">DC (Uç Çapı)</th><th class="orta">DCON (Bağlantı)</th><th class="orta">LF (Boy)</th><th class="orta">Z</th><th>Fiyat</th><th class="orta">Sipariş</th></tr>`
       : uc
-      ? `<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
+      ? `<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>${rVar ? '<th class="orta">R</th>' : ''}<th>Adet Fiyatı</th><th class="orta">Sipariş — 10 ve katları</th></tr>`
       : t
       ? `<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
       : `<tr><th class="sol">Ürün</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`;
@@ -143,6 +157,12 @@ async function katalog() {
         : `<td class="sol">${u.mad || u.ad}</td>`;
       if (u.satis == null) return `<tr>${kimlik}<td colspan="3" class="sol soluk">Fiyat için sorun</td>
         <td class="orta"><a class="btn gri mini" target="_blank" rel="noopener" href="https://wa.me/902129060303?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`;
+      if (tut) return `<tr>${kimlik}
+        <td class="our mono dip">${fmt(u.satis)}</td>
+        <td class="orta"><span class="alsat"><input class="qty mono" type="number" min="1" value="1" aria-label="adet"><button class="btn mini" data-sku="${u.sku}" data-tur="kater">Ekle</button></span></td></tr>`;
+      if (uc) return `<tr>${kimlik}
+        <td class="our mono dip">${fmt(u.satis)}</td>
+        <td class="orta"><span class="alsat"><input class="qty mono" type="number" min="10" step="10" value="10" aria-label="adet"><button class="btn mini" data-sku="${u.sku}" data-tur="uc">Ekle</button></span></td></tr>`;
       return `<tr>${kimlik}
         <td class="our mono dip">${fmt(u.satis)}</td>
         <td class="mono">${fmt(KDM.bes(u.satis))}</td>
@@ -193,7 +213,8 @@ async function katalog() {
               <div class="chip2">🚚 Aynı gün kargo</div><div class="chip2">💵 Kapıda ödeme</div><div class="chip2">↩ 14 gün iade</div>
             </div>
           </div>
-        </div>` + tipBolumlu(liste) + uyumluKaterler(seciliGrup, hepsi);
+        </div>` + tipBolumlu(liste) + uyumluKaterler(seciliGrup, hepsi) +
+        `<div class="asistan-band">🤔 Hangi ölçüyü / kaliteyi alacağından emin değil misin? <button class="btn mini" onclick="document.getElementById('bot-panel').classList.add('on')">Asistana Danış 💬</button> <span style="color:var(--muted);">ya da ara: 0212 906 03 03</span></div>`;
     } else { /* KATEGORİ SAYFASI (frezecim usulü): alt grup LİSTESİ — her biri kendi sayfasına gider */
       const grup = new Map();
       hepsi.filter(u => !k || u.kat === k).forEach(u => {
@@ -248,7 +269,7 @@ async function katalog() {
       const u = hepsi.find(x => x.sku === b.dataset.sku);
       const kutu = b.closest('tr').querySelector('.qty');
       const adet = Math.max(1, parseInt(kutu && kutu.value) || 1);
-      sepet.ekle(u.sku, u.mad || u.ad, u.satis, adet);
+      sepet.ekle(u.sku, u.mad || u.ad, u.satis, adet, b.dataset.tur);
       b.textContent = '✓'; setTimeout(() => b.textContent = 'Ekle', 900);
     });
   }
