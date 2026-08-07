@@ -197,13 +197,23 @@ async function katalog() {
       katSira.forEach(gr => gr.sort((a, b) => grupSira(a[0]) - grupSira(b[0])));
       const katSirali = new Map([...katSira.entries()].sort((a, b) => katSiraNo(a[0]) - katSiraNo(b[0])));
       katSira.clear(); katSirali.forEach((v, k) => katSira.set(k, v));
-      html = [...katSira.entries()].map(([kat, gruplar]) =>
-        `<h2 class="kat-baslik"><span class="tick">/</span> ${kat}</h2>
+      html = [...katSira.entries()].map(([kat, gruplar]) => {
+        if (kat === 'Karbür Uçlar') {
+          const sira = { 'Finish': 0, 'Yarı Kaba': 1, 'Kaba': 2 };
+          gruplar.sort((a, b) => (sira[a[1][0].altkat] ?? 9) - (sira[b[1][0].altkat] ?? 9));
+        }
+        let sonAlt = null;
+        return `<h2 class="kat-baslik"><span class="tick">/</span> ${kat}</h2>
          <div class="grup-liste">` + gruplar.map(([g, liste]) => {
+        let altBaslik = '';
+        if (kat === 'Karbür Uçlar' && liste[0].altkat && liste[0].altkat !== sonAlt) {
+          sonAlt = liste[0].altkat;
+          altBaslik = `<h3 class="alt-baslik">${sonAlt} Uçlar</h3>`;
+        }
         const ilk = liste.find(u => u.foto) || liste[0];
         const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
         const enDusuk = Math.min(...liste.filter(u => u.satis).map(u => u.satis));
-        return `<a class="grup-satir" href="urun/${slugTR(g)}.html">
+        return altBaslik + `<a class="grup-satir" href="urun/${slugTR(g)}.html">
           <span class="gfoto">${ilk.foto ? `<img src="${ilk.foto}" alt="" loading="lazy">` : ''}</span>
           <span class="gbilgi">
             <b>${g}</b>
@@ -215,7 +225,7 @@ async function katalog() {
             <span class="btn mini">Ölçüler & Fiyatlar →</span>
           </span>
         </a>`;
-      }).join('') + '</div>').join('');
+      }).join('') + '</div>'; }).join('');
     }
 
     kok.innerHTML = html;
