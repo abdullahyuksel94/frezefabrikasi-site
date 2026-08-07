@@ -128,6 +128,7 @@ for g, liste in gruplar.items():
   </div>
 </footer>
 <script src="../app.js"></script>
+<script src="../bot.js"></script>
 </body>
 </html>"""
     open(os.path.join(KOK, 'urun', sl + '.html'), 'w', encoding='utf-8').write(sayfa)
