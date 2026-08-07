@@ -66,7 +66,7 @@ const AILE_BILGI = {
   'HARDCO-452R': ['Ağır kaba talaş radüslü serisi — yüksek talaş debisi.', 'images/products/hardco452r_new.png'],
   'HARDBALL-220': ['Tam küre freze Z2 — 55 HRC\'ye kadar profil ve finiş.', 'images/products/hardball220.png'],
   'HARDBALL-210': ['Küre freze — genel amaçlı profil işleme.', 'images/products/hardball210_new.png'],
-  'HARDBALL-240L': ['65 HRC sert malzeme küresi, TLX kaplama, uzun boy — uzmanlık serimiz.', 'images/products/hardball240l.png'],
+  'HARDBALL-240L': ['70 HRC sert malzeme küresi, TLX kaplama, uzun boy — uzmanlık serimiz.', 'images/products/hardball240l.png'],
   'HARDFIN-630L': ['Sert malzeme finiş frezesi — kalıpta son yüzey kalitesi.', 'images/products/hardfin630.png'],
   'ALUCO-710AR': ['Alüminyum köşe radüslü — polisajlı, yapışma yapmaz.', 'images/products/aluco710ar.png'],
   'ALURO-710A': ['Alüminyum düz freze — parlak ağız, yüksek devir.', 'images/products/aluro710a.png'],
@@ -148,11 +148,11 @@ async function katalog() {
       const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
       const kat = ilk.kat || k;
       const zlar = [...new Set(liste.map(u => u.z).filter(Boolean))].join(' / ');
-      const sert = /Sert|65 HRC|55 HRC/.test(seciliGrup);
+      const sert = /Sert|70 HRC|55 HRC/.test(seciliGrup);
       const kaplama = /Alüminyum/.test(seciliGrup) ? 'Kaplamasız — polisajlı ağız'
-                    : /Matkap/.test(seciliGrup) ? 'TLX / AlTiN' : sert ? 'TLX — 65 HRC sınıfı' : 'TSH — 55 HRC sınıfı';
+                    : /Matkap/.test(seciliGrup) ? 'TLX / AlTiN' : sert ? 'TLX — 70 HRC sınıfı' : 'TSH — 55 HRC sınıfı';
       const sertlik = /Alüminyum/.test(seciliGrup) ? 'Alüminyum · bakır · plastik'
-                    : sert ? '65 HRC sertliğe kadar' : '55 HRC sertliğe kadar';
+                    : sert ? '70 HRC sertliğe kadar' : '55 HRC sertliğe kadar';
       document.getElementById('f-say').textContent = liste.length + ' ölçü';
       html = `<div class="urun-ust">
           <div class="urun-foto">${ilk.foto ? `<img src="${ilk.foto}" alt="${seciliGrup}">` : ''}</div>
@@ -173,7 +173,7 @@ async function katalog() {
               <div class="chip2">🚚 Aynı gün kargo</div><div class="chip2">💵 Kapıda ödeme</div><div class="chip2">↩ 14 gün iade</div>
             </div>
           </div>
-        </div>` + satirlar(liste, true);
+        </div>` + satirlar(liste, true) + uyumluKaterler(seciliGrup, hepsi);
     } else { /* KATEGORİ SAYFASI (frezecim usulü): alt grup LİSTESİ — her biri kendi sayfasına gider */
       const grup = new Map();
       hepsi.filter(u => !k || u.kat === k).forEach(u => {

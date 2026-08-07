@@ -27,10 +27,10 @@ for g, liste in gruplar.items():
     liste.sort(key=lambda u: (float((u.get('D') or '99').replace(',', '.')), float((u.get('L') or '0').replace(',', '.')) if u.get('L') else 0))
     ilk = next((u for u in liste if u.get('foto')), liste[0])
     kat = ilk['kat']; sl = slug(g)
-    sert = bool(re.search(r'Sert|65 HRC|55 HRC', g))
+    sert = bool(re.search(r'Sert|70 HRC|55 HRC', g))
     kaplama = ('Kaplamasız — polisajlı ağız' if 'Alüminyum' in g else 'TLX / AlTiN' if 'Matkap' in g
-               else 'TLX — 65 HRC sınıfı' if sert else 'TSH — 55 HRC sınıfı')
-    sertlik = ('Alüminyum · bakır · plastik' if 'Alüminyum' in g else '65 HRC sertliğe kadar' if sert else '55 HRC sertliğe kadar')
+               else 'TLX — 70 HRC sınıfı' if sert else 'TSH — 55 HRC sınıfı')
+    sertlik = ('Alüminyum · bakır · plastik' if 'Alüminyum' in g else '70 HRC sertliğe kadar' if sert else '55 HRC sertliğe kadar')
     r_var = any(u.get('R') for u in liste)
     fiyatli = [u for u in liste if u.get('satis')]
     min_f = min((u['satis'] for u in fiyatli), default=None)
