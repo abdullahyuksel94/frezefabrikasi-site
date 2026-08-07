@@ -40,7 +40,7 @@ for g, liste in gruplar.items():
     satirlar = []
     for u in [x for x in liste if x.get('D') or x.get('ic') or x.get('tut')]:
         if tut_mu:
-            kim = f"<td class='sol'>{html.escape(u.get('mad') or u['ad'])}</td><td class='orta mono'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('bag') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td>"
+            kim = f"<td class='sol'>{html.escape(u.get('mad') or u['ad'])}</td><td class='orta mono'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('bag') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td><td class='orta mono'>{u.get('z') or '—'}</td>"
         elif uc_mu:
             kim = f"<td class='sol kalin'>{u.get('mad') or u['ad']}</td><td class='orta mono'>{u.get('ic') or '—'}</td><td class='orta mono'>{u.get('kal') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
         else:
@@ -130,7 +130,7 @@ for g, liste in gruplar.items():
     </div>
     
     <div class="tblwrap olcu-kart"><table class="olcu-tablo">
-      {('<tr><th class="sol">Kater</th><th class="orta">Uç Çapı</th><th class="orta">Bağlantı</th><th class="orta">Toplam Boy</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if tut_mu else ('<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if uc_mu else ('<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>')}
+      {('<tr><th class="sol">Kater</th><th class="orta">DC (Uç Çapı)</th><th class="orta">DCON (Bağlantı)</th><th class="orta">LF (Boy)</th><th class="orta">Z</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if tut_mu else ('<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>') if uc_mu else ('<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>' + ('<th class="orta">R</th>' if r_var else '') + '<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>')}
       {''.join(satirlar)}
     </table></div>
     {kater_html}

@@ -125,7 +125,7 @@ async function katalog() {
     const t = !uc && teknik && liste.some(u => u.D);
     const rVar = (t || uc) && liste.some(u => u.R);
     const bas = tut
-      ? `<tr><th class="sol">Kater</th><th class="orta">Uç Çapı</th><th class="orta">Bağlantı</th><th class="orta">Toplam Boy</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
+      ? `<tr><th class="sol">Kater</th><th class="orta">DC (Uç Çapı)</th><th class="orta">DCON (Bağlantı)</th><th class="orta">LF (Boy)</th><th class="orta">Z</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
       : uc
       ? `<tr><th class="sol">Uç Adı</th><th class="orta">IC</th><th class="orta">Kalınlık</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
       : t
@@ -133,7 +133,7 @@ async function katalog() {
       : `<tr><th class="sol">Ürün</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`;
     const satir = (u, i) => {
       const kimlik = tut
-        ? `<td class="sol">${u.mad || u.ad}</td><td class="orta mono">${u.D || '—'}</td><td class="orta mono">${u.bag || '—'}</td><td class="orta mono">${u.L || '—'}</td>`
+        ? `<td class="sol">${u.mad || u.ad}</td><td class="orta mono">${u.D || '—'}</td><td class="orta mono">${u.bag || '—'}</td><td class="orta mono">${u.L || '—'}</td><td class="orta mono">${u.z || '—'}</td>`
         : uc
         ? `<td class="sol kalin">${u.mad || u.ad}</td><td class="orta mono">${u.ic || '—'}</td><td class="orta mono">${u.kal || '—'}</td>${rVar ? `<td class="orta mono">${u.R || '—'}</td>` : ''}`
         : t
