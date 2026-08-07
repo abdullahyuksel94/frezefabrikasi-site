@@ -223,3 +223,14 @@ footer b{color:#f5f3f0;}
 .spec-grid b{font-size:.88rem;}
 .chip2{border:1px solid var(--line); background:var(--bg); border-radius:3px; padding:.28rem .7rem; font-size:.78rem; font-weight:650;}
 @media (max-width:760px){ .urun-ust{grid-template-columns:1fr;} .urun-foto img{max-height:180px;} }
+
+/* mobil: fiyat + sipariş SABİT kalır, teknik sütunlar kayar (kullanıcı kuralı) */
+@media (max-width:760px){
+  .olcu-tablo td.dip, .olcu-tablo th:nth-last-child(4){position:sticky; right:96px; background:var(--panel); box-shadow:-4px 0 6px rgba(0,0,0,.06);}
+  .olcu-tablo td:last-child, .olcu-tablo th:last-child{position:sticky; right:0; background:var(--panel); box-shadow:-4px 0 6px rgba(0,0,0,.06);}
+  .olcu-tablo tr:nth-child(even) td.dip, .olcu-tablo tr:nth-child(even) td:last-child{background:#f4f2ef;}
+  .olcu-tablo th:nth-last-child(4), .olcu-tablo th:last-child{background:var(--coal);}
+  /* aradaki 5-9 / 1-4 kolonlari mobilde gizle — sadelik */
+  .olcu-tablo td:nth-last-child(2), .olcu-tablo td:nth-last-child(3),
+  .olcu-tablo th:nth-last-child(2), .olcu-tablo th:nth-last-child(3){display:none;}
+}
