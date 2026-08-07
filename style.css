@@ -1,6 +1,6 @@
 /* FREZE FABRİKASI — kırmızı/beyaz marka dili */
 :root{
-  --bg:#f7f6f5; --panel:#ffffff; --ink:#191817; --muted:#6b6864;
+  --bg:#ffffff; --panel:#ffffff; --ink:#191817; --muted:#6b6864;
   --line:#e5e2de; --red:#d81f26; --red-dark:#b0141b; --red-soft:#fdeceb;
   --coal:#211f1e; --coal-ink:#f5f3f0;
   --good:#1f7a3d; --good-soft:#e4f1e7;
@@ -161,7 +161,7 @@ footer b{color:#f5f3f0;}
 
 /* ürün fotoğrafı: stüdyo görünümü — gerçek foto + hafif zemin/gölge */
 .prod img.foto, .aile-bas img, .cat img{
-  background:linear-gradient(180deg,#ffffff 0%, #f1efec 100%);
+  background:#fff;
   filter:drop-shadow(0 3px 6px rgba(25,24,23,.18));
   border-radius:4px;
 }
@@ -177,7 +177,7 @@ footer b{color:#f5f3f0;}
 .olcu-tablo td.kalin{font-weight:800; font-size:.95rem;}
 .olcu-tablo td.soluk{color:var(--muted);}
 .olcu-tablo td.dip{font-size:1rem; font-weight:900;}
-.olcu-tablo tr:nth-child(even) td{background:rgba(0,0,0,.022);}
+.olcu-tablo tr:nth-child(even) td{background:rgba(0,0,0,.03);}
 .olcu-tablo tr:hover td{background:var(--red-soft);}
 .alsat{display:inline-flex; gap:.35rem; align-items:center;}
 .alsat .qty{width:3.4rem; padding:.35rem .3rem; border:1px solid var(--line); border-radius:3px; text-align:center; font-size:.85rem;}
@@ -194,7 +194,7 @@ footer b{color:#f5f3f0;}
   background:var(--panel); border:1px solid var(--line); border-radius:8px;
   padding:1.3rem; margin-bottom:1rem; align-items:center;
 }
-.urun-foto{background:linear-gradient(180deg,#fff,#f1efec); border-radius:6px; padding:1rem; display:flex; align-items:center; justify-content:center;}
+.urun-foto{background:#fff; border-radius:6px; padding:1rem; display:flex; align-items:center; justify-content:center;}
 .urun-foto img{width:100%; max-height:260px; object-fit:contain; filter:drop-shadow(0 6px 12px rgba(25,24,23,.22));}
 .urun-bilgi h2{font-size:1.5rem; margin:.2rem 0 .3rem; text-transform:uppercase; font-weight:900;}
 .urun-bilgi .uzun{color:var(--muted); font-size:.92rem; max-width:60ch; margin:0 0 .8rem;}
@@ -223,7 +223,7 @@ footer b{color:#f5f3f0;}
   background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:.8rem 1rem;}
 .grup-satir:hover{border-color:var(--red); box-shadow:0 3px 12px rgba(216,31,38,.12);}
 .gfoto{width:150px; height:96px; flex-shrink:0; border-radius:5px; overflow:hidden;
-  background:linear-gradient(180deg,#fff,#f1efec); display:flex; align-items:center; justify-content:center;}
+  background:#fff; display:flex; align-items:center; justify-content:center;}
 .gfoto img{width:92%; height:92%; object-fit:contain; background:none; filter:drop-shadow(0 3px 6px rgba(25,24,23,.18));}
 .gbilgi{flex:1; min-width:0;}
 .gbilgi b{display:block; font-size:1.05rem; font-weight:850; text-transform:uppercase; line-height:1.2; margin-bottom:.15rem;}
@@ -251,3 +251,6 @@ a.btn, span.btn, button.btn{
 a.btn:hover, span.btn:hover, button.btn:hover{background:var(--red-dark);}
 a.btn.gri, button.btn.gri{background:var(--coal);}
 .btn.mini{padding:.4rem .8rem; font-size:.78rem;}
+
+.kat-baslik{font-size:1.15rem; margin:1.4rem 0 .6rem; font-weight:850; text-transform:uppercase;}
+.kat-baslik:first-child{margin-top:0;}

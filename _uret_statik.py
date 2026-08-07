@@ -31,12 +31,12 @@ for g, liste in gruplar.items():
     kaplama = ('Kaplamasız — polisajlı ağız' if 'Alüminyum' in g else 'TLX / AlTiN' if 'Matkap' in g
                else 'TLX — 65 HRC sınıfı' if sert else 'TSH — 55 HRC sınıfı')
     sertlik = ('Alüminyum · bakır · plastik' if 'Alüminyum' in g else '65 HRC sertliğe kadar' if sert else '55 HRC sertliğe kadar')
-    zlar = ' / '.join(sorted({str(u['z']) for u in liste if u.get('z')}))
+    r_var = any(u.get('R') for u in liste)
     fiyatli = [u for u in liste if u.get('satis')]
     min_f = min((u['satis'] for u in fiyatli), default=None)
     satirlar = []
-    for u in liste:
-        kim = f"<td class='sol mono kalin'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td><td class='orta mono'>{u.get('R') or '—'}</td><td class='orta mono'>{u.get('z') or '—'}</td>"
+    for u in [x for x in liste if x.get('D')]:
+        kim = f"<td class='sol mono kalin'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td>" + (f"<td class='orta mono'>{u.get('R') or '—'}</td>" if r_var else "")
         if u.get('satis'):
             tek = u['satis'] / 0.88; bes = tek * 0.93
             satirlar.append(f"""<tr>{kim}<td class='our mono dip'>{fmt(u['satis'])}</td><td class='mono'>{fmt(bes)}</td><td class='mono soluk'>{fmt(tek)}</td>
@@ -92,9 +92,9 @@ for g, liste in gruplar.items():
         <p class="uzun">Üreticiden {html.escape(g.lower())} — stoktan aynı gün kargo, aynı üründen 10+ adette dip fiyat.</p>
         <div class="spec-grid">
           <div><small>Kaplama</small><b>{kaplama}</b></div>
-          <div><small>Ağız sayısı (z)</small><b>{zlar or '—'}</b></div>
           <div><small>Kullanım alanı</small><b>{sertlik}</b></div>
-          <div><small>Şaft toleransı</small><b>h6</b></div>
+          <div><small>Çap toleransı (D1)</small><b>{'m7' if 'Matkap' in g else 'h10'}</b></div>
+          <div><small>Şaft toleransı (D2)</small><b>h6</b></div>
           <div><small>Karbür</small><b>Mikro tane (ultra-fine)</b></div>
           <div><small>Menşei</small><b>Türkiye — kendi üretimimiz</b></div>
         </div>
@@ -104,7 +104,7 @@ for g, liste in gruplar.items():
       </div>
     </div>
     <div class="tblwrap olcu-kart"><table class="olcu-tablo">
-      <tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th><th class="orta">R</th><th class="orta">z</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>
+      <tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>{('<th class="orta">R</th>' if r_var else '')}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>
       {''.join(satirlar)}
     </table></div>
   </section>

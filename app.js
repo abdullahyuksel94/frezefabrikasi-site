@@ -100,14 +100,15 @@ async function katalog() {
   if (params.get('kat')) sec.value = params.get('kat');
   let seciliGrup = params.get('grup') || '';
 
-  function satirlar(liste, teknik) { /* frezecim usulü teknik sütunlu ölçü tablosu */
+  function satirlar(liste, teknik) { /* frezecim usulü teknik sütunlu ölçü tablosu — R sütunu sadece R'li gruplarda */
     const t = teknik && liste.some(u => u.D);
+    const rVar = t && liste.some(u => u.R);
     const bas = t
-      ? `<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th><th class="orta">R</th><th class="orta">z</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
+      ? `<tr><th class="sol">⌀ Çap</th><th class="orta">Boy</th>${rVar ? '<th class="orta">R</th>' : ''}<th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`
       : `<tr><th class="sol">Ürün</th><th>10+ Adet</th><th>5-9 Adet</th><th>1-4 Adet</th><th class="orta">Sipariş</th></tr>`;
     const satir = (u, i) => {
       const kimlik = t
-        ? `<td class="sol mono kalin">${u.D || '—'}</td><td class="orta mono">${u.L || '—'}</td><td class="orta mono">${u.R || '—'}</td><td class="orta mono">${u.z || '—'}</td>`
+        ? `<td class="sol mono kalin">${u.D || '—'}</td><td class="orta mono">${u.L || '—'}</td>${rVar ? `<td class="orta mono">${u.R || '—'}</td>` : ''}`
         : `<td class="sol">${u.mad || u.ad}</td>`;
       if (u.satis == null) return `<tr>${kimlik}<td colspan="3" class="sol soluk">Fiyat için sorun</td>
         <td class="orta"><a class="btn gri mini" target="_blank" rel="noopener" href="https://wa.me/902129060303?text=${encodeURIComponent((u.mad || u.ad) + ' (' + u.sku + ') fiyatı?')}">Sor</a></td></tr>`;
@@ -130,7 +131,7 @@ async function katalog() {
       document.getElementById('f-say').textContent = liste.length + ' sonuç';
       html = liste.length ? satirlar(liste) : '<p class="sec-sub">Sonuç yok — farklı yazmayı dene (örn. "küre 8").</p>';
     } else if (seciliGrup) { /* ALT GRUP = ÜRÜN SAYFASI (frezecim/agnero modeli): büyük görsel + teknik özellikler + ölçü tablosu */
-      const liste = hepsi.filter(u => (u.grup || u.aile) === seciliGrup);
+      const liste = hepsi.filter(u => (u.grup || u.aile) === seciliGrup).filter(u => u.D || !hepsi.some(x => (x.grup||x.aile)===seciliGrup && x.D));
       liste.sort((a, b) => (parseFloat((a.D || '99').replace(',', '.')) - parseFloat((b.D || '99').replace(',', '.'))) || ((a.L || 0) - (b.L || 0)));
       const ilk = liste.find(u => u.foto) || liste[0] || {};
       const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
@@ -150,9 +151,9 @@ async function katalog() {
             <p class="uzun">${acik}</p>
             <div class="spec-grid">
               <div><small>Kaplama</small><b>${kaplama}</b></div>
-              <div><small>Ağız sayısı (z)</small><b>${zlar || '—'}</b></div>
               <div><small>Kullanım alanı</small><b>${sertlik}</b></div>
-              <div><small>Şaft toleransı</small><b>h6</b></div>
+              <div><small>Çap toleransı (D1)</small><b>${/Matkap/.test(seciliGrup) ? 'm7' : 'h10'}</b></div>
+              <div><small>Şaft toleransı (D2)</small><b>h6</b></div>
               <div><small>Karbür</small><b>Mikro tane (ultra-fine)</b></div>
               <div><small>Menşei</small><b>Türkiye — kendi üretimimiz</b></div>
             </div>
@@ -169,7 +170,16 @@ async function katalog() {
         grup.get(g).push(u);
       });
       document.getElementById('f-say').textContent = grup.size + ' ürün grubu';
-      html = '<div class="grup-liste">' + [...grup.entries()].map(([g, liste]) => {
+      // kategoriye göre bölümle: başlık + o kategorinin grupları
+      const katSira = new Map();
+      [...grup.entries()].forEach(([g, liste]) => {
+        const kat = (liste.find(u => u.foto) || liste[0]).kat;
+        if (!katSira.has(kat)) katSira.set(kat, []);
+        katSira.get(kat).push([g, liste]);
+      });
+      html = [...katSira.entries()].map(([kat, gruplar]) =>
+        `<h2 class="kat-baslik"><span class="tick">/</span> ${kat}</h2>
+         <div class="grup-liste">` + gruplar.map(([g, liste]) => {
         const ilk = liste.find(u => u.foto) || liste[0];
         const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
         const enDusuk = Math.min(...liste.filter(u => u.satis).map(u => u.satis));
@@ -185,7 +195,7 @@ async function katalog() {
             <span class="btn mini">Ölçüler & Fiyatlar →</span>
           </span>
         </a>`;
-      }).join('') + '</div>';
+      }).join('') + '</div>').join('');
     }
 
     kok.innerHTML = html;
