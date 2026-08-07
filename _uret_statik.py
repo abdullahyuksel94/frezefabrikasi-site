@@ -37,8 +37,17 @@ for g, liste in gruplar.items():
     kaplamalar = ' / '.join(sorted({m2.group(1) for u in liste for m2 in [__import__('re').search(r'\b(TSH|TLX|TH|TX|PM)\b', u['ad'].upper())] if m2})) or 'TSH'
     fiyatli = [u for u in liste if u.get('satis')]
     min_f = min((u['satis'] for u in fiyatli), default=None)
+    TIP_SIRA = ['Düz', 'Köşe Radius', 'Küre']
+    tipler = [t for t in TIP_SIRA if any(u.get('tip') == t for u in liste)]
+    bolumlu = len(tipler) > 1
     satirlar = []
+    onceki_tip = None
+    liste = sorted(liste, key=lambda u: (TIP_SIRA.index(u.get('tip')) if bolumlu and u.get('tip') in TIP_SIRA else 0,
+        float((u.get('D') or '99').replace(',', '.')) if str(u.get('D') or '').replace(',','').replace('.','').isdigit() else 99))
     for u in [x for x in liste if x.get('D') or x.get('ic') or x.get('tut')]:
+        if bolumlu and u.get('tip') and u.get('tip') != onceki_tip:
+            onceki_tip = u.get('tip')
+            satirlar.append(f"<tr><td colspan='9' style='background:#211f1e; color:#fff; font-weight:800; text-transform:uppercase; padding:.45rem .7rem;'>{onceki_tip}</td></tr>")
         if tut_mu:
             kim = f"<td class='sol'>{html.escape(u.get('mad') or u['ad'])}</td><td class='orta mono'>{u.get('D') or '—'}</td><td class='orta mono'>{u.get('bag') or '—'}</td><td class='orta mono'>{u.get('L') or '—'}</td><td class='orta mono'>{u.get('z') or '—'}</td>"
         elif uc_mu:

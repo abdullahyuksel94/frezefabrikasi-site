@@ -193,7 +193,7 @@ async function katalog() {
               <div class="chip2">🚚 Aynı gün kargo</div><div class="chip2">💵 Kapıda ödeme</div><div class="chip2">↩ 14 gün iade</div>
             </div>
           </div>
-        </div>` + satirlar(liste, true) + uyumluKaterler(seciliGrup, hepsi);
+        </div>` + tipBolumlu(liste) + uyumluKaterler(seciliGrup, hepsi);
     } else { /* KATEGORİ SAYFASI (frezecim usulü): alt grup LİSTESİ — her biri kendi sayfasına gider */
       const grup = new Map();
       hepsi.filter(u => !k || u.kat === k).forEach(u => {
