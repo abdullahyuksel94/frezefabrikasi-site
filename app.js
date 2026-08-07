@@ -88,6 +88,15 @@ const AILE_BILGI = {
   'CHEMFER-EPK': ['Pah ve havşa frezeleri.', ''],
 };
 
+
+function grupSira(g){
+  let p = 0;
+  if (/Sert/.test(g)) p += 10;          // standartlar önce, sertler sonra
+  if (/Uzun/.test(g)) p += 1;           // kısa önce, uzun sonra
+  if (/Süper|Ağır|High/.test(g)) p += 20; // özel seriler en sona
+  return p;
+}
+
 /* ---------- KATALOG: Kategori → Aile → Ölçü tablosu (frezecim/moncarb yapısı) ---------- */
 async function katalog() {
   const kok = document.getElementById('katalog');
@@ -178,6 +187,7 @@ async function katalog() {
         if (!katSira.has(kat)) katSira.set(kat, []);
         katSira.get(kat).push([g, liste]);
       });
+      katSira.forEach(gr => gr.sort((a, b) => grupSira(a[0]) - grupSira(b[0])));
       html = [...katSira.entries()].map(([kat, gruplar]) =>
         `<h2 class="kat-baslik"><span class="tick">/</span> ${kat}</h2>
          <div class="grup-liste">` + gruplar.map(([g, liste]) => {
