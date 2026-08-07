@@ -158,3 +158,10 @@ footer b{color:#f5f3f0;}
 @media (max-width:640px){ .tel-ust{margin-left:0;} header.site{gap:.7rem;} }
 /* mobil tablo rahatlığı */
 @media (max-width:640px){ td, th{padding:.4rem .45rem; font-size:.82rem;} .aile-bas img{width:80px; height:56px;} }
+
+/* ürün fotoğrafı: stüdyo görünümü — gerçek foto + hafif zemin/gölge */
+.prod img.foto, .aile-bas img, .cat img{
+  background:linear-gradient(180deg,#ffffff 0%, #f1efec 100%);
+  filter:drop-shadow(0 3px 6px rgba(25,24,23,.18));
+  border-radius:4px;
+}
