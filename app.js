@@ -98,7 +98,7 @@ async function katalog() {
   const ara = document.getElementById('f-ara');
   [...new Set(hepsi.map(u => u.kat))].forEach(k => sec.add(new Option(k, k)));
   if (params.get('kat')) sec.value = params.get('kat');
-  let seciliAile = params.get('aile') || '';
+  let seciliGrup = params.get('grup') || '';
 
   function satirlar(liste, teknik) { /* frezecim usulü teknik sütunlu ölçü tablosu */
     const t = teknik && liste.some(u => u.D);
@@ -130,36 +130,37 @@ async function katalog() {
       const liste = hepsi.filter(u => (u.ad + ' ' + u.sku + ' ' + u.olcu + ' ' + u.aile).toLocaleLowerCase('tr').includes(q)).slice(0, 150);
       document.getElementById('f-say').textContent = liste.length + ' sonuç';
       html = liste.length ? satirlar(liste) : '<p class="sec-sub">Sonuç yok — farklı yazmayı dene (örn. "küre 8").</p>';
-    } else if (seciliAile) { /* AİLE SAYFASI: başlık + ölçü tablosu */
-      const liste = hepsi.filter(u => u.aile === seciliAile);
-      const [acik, foto] = AILE_BILGI[seciliAile] || ['', ''];
+    } else if (seciliGrup) { /* ALT GRUP SAYFASI (frezecim ürün sayfası): tek grup + tek tablo */
+      const liste = hepsi.filter(u => (u.grup || u.aile) === seciliGrup);
+      liste.sort((a, b) => (parseFloat((a.D || '99').replace(',', '.')) - parseFloat((b.D || '99').replace(',', '.'))) || ((a.L || 0) - (b.L || 0)));
+      const ilk = liste.find(u => u.foto) || liste[0] || {};
+      const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
+      const kat = ilk.kat || k;
       document.getElementById('f-say').textContent = liste.length + ' ölçü';
       html = `<div class="aile-bas">
-          ${foto ? `<img src="${foto}" alt="">` : ''}
-          <div><a href="katalog.html${k ? '?kat=' + encodeURIComponent(k) : ''}" class="geri">← ${k || 'Tüm aileler'}</a>
-          <h3>${seciliAile}</h3><p>${acik}</p></div>
-        </div>` + satirlar(liste);
-    } else { /* KATEGORİ SAYFASI: müşteri dilinde ürün grupları ALT ALTA + teknik ölçü tabloları */
+          ${ilk.foto ? `<img src="${ilk.foto}" alt="">` : ''}
+          <div><a href="katalog.html${kat ? '?kat=' + encodeURIComponent(kat) : ''}" class="geri">← ${kat || 'Kategoriler'}</a>
+          <h3>${seciliGrup}</h3><p>${acik}</p></div>
+        </div>` + satirlar(liste, true);
+    } else { /* KATEGORİ SAYFASI (frezecim usulü): alt grup LİSTESİ — her biri kendi sayfasına gider */
       const grup = new Map();
       hepsi.filter(u => !k || u.kat === k).forEach(u => {
         const g = u.grup || u.aile;
         if (!grup.has(g)) grup.set(g, []);
         grup.get(g).push(u);
       });
-      const toplam = [...grup.values()].reduce((t, l) => t + l.length, 0);
-      document.getElementById('f-say').textContent = grup.size + ' ürün grubu · ' + toplam + ' ölçü';
-      html = [...grup.entries()].map(([g, liste]) => {
-        liste.sort((a, b) => (parseFloat((a.D || '99').replace(',', '.')) - parseFloat((b.D || '99').replace(',', '.'))) || ((a.L || 0) - (b.L || 0)));
+      document.getElementById('f-say').textContent = grup.size + ' ürün grubu';
+      html = '<div class="grup-liste">' + [...grup.entries()].map(([g, liste]) => {
         const ilk = liste.find(u => u.foto) || liste[0];
-        const acik = (AILE_BILGI[ilk.aile] || [''])[0];
-        return `<div class="aile-blok">
-          <div class="aile-bas">
-            ${ilk.foto ? `<img src="${ilk.foto}" alt="" loading="lazy">` : ''}
-            <div><h3>${g}</h3><p>${acik} <span class="mono" style="color:var(--muted);">· ${liste.length} ölçü</span></p></div>
-          </div>
-          ${satirlar(liste, true)}
-        </div>`;
-      }).join('');
+        const acik = (AILE_BILGI[ilk.aile] || [''])[0] || '';
+        const enDusuk = Math.min(...liste.filter(u => u.satis).map(u => u.satis));
+        return `<a class="grup-satir" href="katalog.html?${ilk.kat ? 'kat=' + encodeURIComponent(ilk.kat) + '&' : ''}grup=${encodeURIComponent(g)}">
+          ${ilk.foto ? `<img src="${ilk.foto}" alt="" loading="lazy">` : '<span class="bosfoto"></span>'}
+          <span class="gbilgi"><b>${g}</b><small>${acik}</small></span>
+          <span class="gfiyat">${isFinite(enDusuk) ? `<span class="mono our">${fmt(enDusuk)}</span><small>'den başlar · 10+ fiyatı</small>` : '<small>fiyat sor</small>'}</span>
+          <span class="gok">${liste.length} ölçü →</span>
+        </a>`;
+      }).join('') + '</div>';
     }
 
     kok.innerHTML = html;

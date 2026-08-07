@@ -165,3 +165,22 @@ footer b{color:#f5f3f0;}
   filter:drop-shadow(0 3px 6px rgba(25,24,23,.18));
   border-radius:4px;
 }
+
+/* kategori sayfası: alt grup listesi (satır satır, frezecim usulü) */
+.grup-liste{display:flex; flex-direction:column; gap:.5rem;}
+.grup-satir{
+  display:flex; align-items:center; gap:1rem; text-decoration:none; color:var(--ink);
+  background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--line);
+  border-radius:5px; padding:.6rem .9rem;
+}
+.grup-satir:hover{border-left-color:var(--red); box-shadow:0 2px 8px rgba(216,31,38,.10);}
+.grup-satir img{width:120px; height:80px; object-fit:contain; flex-shrink:0;}
+.grup-satir .bosfoto{width:120px; height:80px; flex-shrink:0; background:var(--bg); border-radius:4px;}
+.grup-satir .gbilgi{flex:1; min-width:180px;}
+.grup-satir .gbilgi b{display:block; font-size:1.02rem; font-weight:800; text-transform:uppercase;}
+.grup-satir .gbilgi small{color:var(--muted); font-size:.8rem;}
+.grup-satir .gfiyat{text-align:right; min-width:120px;}
+.grup-satir .gfiyat .our{font-size:1.05rem;}
+.grup-satir .gfiyat small{display:block; color:var(--muted); font-size:.7rem;}
+.grup-satir .gok{color:var(--red); font-weight:800; font-size:.85rem; white-space:nowrap;}
+@media (max-width:640px){ .grup-satir img,.grup-satir .bosfoto{width:80px; height:56px;} .grup-satir .gfiyat{display:none;} }
