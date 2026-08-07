@@ -133,25 +133,24 @@ async function katalog() {
           <div><a href="katalog.html${k ? '?kat=' + encodeURIComponent(k) : ''}" class="geri">← ${k || 'Tüm aileler'}</a>
           <h3>${seciliAile}</h3><p>${acik}</p></div>
         </div>` + satirlar(liste);
-    } else { /* KATEGORİ SAYFASI: aile kartları */
-      const aileler = new Map();
+    } else { /* KATEGORİ SAYFASI: aileler ALT ALTA, her birinin altında ölçü tablosu (frezecim usulü) */
+      const grup = new Map();
       hepsi.filter(u => !k || u.kat === k).forEach(u => {
-        if (!aileler.has(u.aile)) aileler.set(u.aile, { n: 0, kat: u.kat, min: Infinity });
-        const a = aileler.get(u.aile); a.n++;
-        if (u.satis && u.satis < a.min) a.min = u.satis;
+        if (!grup.has(u.aile)) grup.set(u.aile, []);
+        grup.get(u.aile).push(u);
       });
-      document.getElementById('f-say').textContent = aileler.size + ' ürün ailesi';
-      html = '<div class="prods">' + [...aileler.entries()].map(([aile, a]) => {
+      const toplam = [...grup.values()].reduce((t, l) => t + l.length, 0);
+      document.getElementById('f-say').textContent = grup.size + ' ürün grubu · ' + toplam + ' ölçü';
+      html = [...grup.entries()].map(([aile, liste]) => {
         const [acik, foto] = AILE_BILGI[aile] || ['', ''];
-        return `<a class="prod" style="text-decoration:none;" href="katalog.html?${k ? 'kat=' + encodeURIComponent(k) + '&' : ''}aile=${encodeURIComponent(aile)}">
-          ${foto ? `<img class="foto" src="${foto}" alt="" loading="lazy">` : ''}
-          <div class="fam">${a.kat} · ${a.n} ölçü</div>
-          <div class="nm">${aile}</div>
-          <div class="spec">${acik}</div>
-          ${a.min < Infinity ? `<div class="price"><span class="now mono">${fmt(a.min)}</span><span class="tier">'den başlayan 10+ fiyatı</span></div>` : '<div class="ask">Fiyat sor</div>'}
-          <span class="btn">Ölçüleri Gör →</span>
-        </a>`;
-      }).join('') + '</div>';
+        return `<div class="aile-blok" id="a-${aile.replace(/[^A-Za-z0-9]/g,'')}">
+          <div class="aile-bas">
+            ${foto ? `<img src="${foto}" alt="" loading="lazy">` : ''}
+            <div><h3>${aile}</h3><p>${acik}</p></div>
+          </div>
+          ${satirlar(liste)}
+        </div>`;
+      }).join('');
     }
 
     kok.innerHTML = html;

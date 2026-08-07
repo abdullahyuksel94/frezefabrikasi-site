@@ -147,3 +147,7 @@ footer b{color:#f5f3f0;}
 .aile-bas p{margin:0; color:var(--muted); font-size:.9rem; max-width:60ch;}
 .aile-bas .geri{font-size:.78rem; color:var(--red); text-decoration:none; font-weight:700;}
 .prod .tier{margin-left:.4rem;}
+.aile-blok{margin-bottom:1.6rem;}
+.aile-blok .aile-bas{margin-bottom:.5rem;}
+.aile-blok .aile-bas img{width:110px; height:74px;}
+.aile-blok .aile-bas h3{font-size:1.1rem;}
